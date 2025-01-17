@@ -1,15 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Inter } from "next/font/google";
+import "./app.scss";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata = {
   title: "Create Next App",
@@ -20,8 +19,50 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable}  antialiased`}
       >
+        <header id="mainHeader" className="bg-theme py-5 text-white">
+          <div className="container">
+            <div className="flex  items-center">
+              <Link href="/" className="logo">
+                Helprush
+              </Link>
+              <nav className="lg:ml-10 navMenu flex flex-1">
+                <ul className="flex gap-5">
+                  <li>
+                    <Link href="/about">Hire</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Serve</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Business</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">About</Link>
+                  </li>
+                </ul>
+                <ul className="controls ml-auto flex gap-4">
+                  <li>
+                    <Link className="flex gap-1 items-center" href="/">
+                      <Icon icon="ci:globe" width="24" height="24" />
+                      EN
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/help">Help</Link>
+                  </li>
+                  <li>
+                    <Link href="/login">Login</Link>
+                  </li>
+                  <li>
+                    <Link className="bg-white text-primary py-0.5 px-2 rounded-full " href="/sign-up">Signup</Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
         {children}
       </body>
     </html>
