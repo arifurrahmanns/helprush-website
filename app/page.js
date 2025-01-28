@@ -1,4 +1,5 @@
 'use client';
+import Categories from "@/components/home/Categories";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react";
@@ -65,12 +66,12 @@ export default function Home() {
     <>
 
       <section id="hero" className="relative  py-10 lg:py-20 overflow-hidden">
-        <div className="container">
-          <div className="grid items-center lg:grid-cols-2 gap-10 lg:gap-20">
-            <div>
-              <h2 className="text-4xl lg:text-6xl text-neutral-700 font-bold">
-                Get Help Anytime, Anywhere with <span >
-                  HelpRush
+        <div className="container relative z-10">
+          <div className="grid items-center lg:grid-cols-5 gap-10 lg:gap-20">
+            <div className="lg:col-span-3">
+              <h2 className="text-4xl lg:text-7xl text-neutral-700 font-bold">
+                Get Help Anytime, Anywhere with <span className="shape-text">
+                  <span className="relative z-10"> HelpRush </span>
                 </span>
               </h2>
               <form action="#" className="searchForm mt-8 max-w-md flex gap-2">
@@ -80,7 +81,7 @@ export default function Home() {
                 </button>
               </form>
             </div>
-            <div>
+            <div className="lg:col-span-2">
               <MapComponent />
             </div>
           </div>
@@ -92,9 +93,75 @@ export default function Home() {
           repeatDelay={1}
           className={cn(
             "[mask-image:radial-gradient(60vw_circle_at_center,white,transparent)]",
-            "inset-x-0 inset-y-[-10%] opacity-55 w-[100%] h-[140%] skew-y-12  ",
+            "inset-x-0 inset-y-[-10%] opacity-55 w-[100%] h-[140%] skew-y-12",
           )}
         />
+      </section>
+
+      <section id="categories" className="py-10 lg:py-20">
+        <div className="container">
+          <h2 className="secttl">
+            Search by Category
+          </h2>
+          <Categories />
+        </div>
+      </section>
+      <section id="categories" className="pb-10 lg:pb-20">
+        <div className="container">
+          <h2 className="secttl">
+            Suggestions
+          </h2>
+          <div className="grid mt-5 lg:mt-8 lg:grid-cols-3 gap-5">
+            <div className="rounded-md border  p-4">
+              <div className="grid grid-cols-7">
+                <div className="col-span-5">
+                  <h3 className="font-semibold text-black text-lg">
+                    Hire
+                  </h3>
+                  <p className="text-sm mt-2 leading-tight text-neutral-800">
+                    Hire Trusted local experts anywhere,anytime.
+                  </p>
+                  <button className="btn !py-1 !px-2  !text-xs mt-3">
+                    Details
+                  </button>
+                </div>
+                <img className="lg:col-span-2" src="/img/12144979_Wavy_Bus-44_Single-01.svg" alt="" />
+              </div>
+            </div>
+            <div className="rounded-md border  p-4">
+              <div className="grid grid-cols-7">
+                <div className="col-span-5">
+                  <h3 className="font-semibold text-black text-lg">
+                  Advance
+                  </h3>
+                  <p className="text-sm mt-2 leading-tight text-neutral-800">
+                  Book your favourite Pro well in advance for peace of mind
+                  </p>
+                  <button className="btn !py-1 !px-2  !text-xs mt-3">
+                    Details
+                  </button>
+                </div>
+                <img className="lg:col-span-2" src="/img/7119384_3394894.svg" alt="" />
+              </div>
+            </div>
+            <div className="rounded-md border  p-4">
+              <div className="grid grid-cols-7">
+                <div className="col-span-5">
+                  <h3 className="font-semibold text-black text-lg">
+                  Emergency
+                  </h3>
+                  <p className="text-sm mt-2 leading-tight text-neutral-800">
+                  Book expert technicians for emergency repairs in minutes 
+                  </p>
+                  <button className="btn !py-1 !px-2  !text-xs mt-3">
+                    Details
+                  </button>
+                </div>
+                <img className="lg:col-span-2" src="/img/11906892_4867781.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
