@@ -25,7 +25,10 @@ export default function RootLayout({ children }) {
           <div className="container">
             <div className="flex  items-center">
               <Link href="/" className="logo">
-                Helprush
+                <div className="flex items-center">
+                  <img src="/img/Outlook-waxceeoc.png" alt="" />
+                  HelpRush
+                </div>
               </Link>
               <nav className="lg:ml-10 navMenu flex flex-1">
                 <ul className="flex gap-5">
@@ -64,6 +67,12 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         {children}
+
+        <footer className="bg-theme py-5 text-center text-sm text-white">
+          <div className="container">
+            @2025 HelpRush
+          </div>
+        </footer>
       </body>
     </html>
   );

@@ -69,10 +69,10 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="grid items-center lg:grid-cols-5 gap-10 lg:gap-20">
             <div className="lg:col-span-3">
-              <h2 className="text-4xl lg:text-7xl text-neutral-700 font-bold">
-                Get Help Anytime, Anywhere with <span className="shape-text">
-                  <span className="relative z-10"> HelpRush </span>
-                </span>
+              <h2 className="text-4xl lg:text-6xl text-neutral-700 font-bold">
+                Get Help Anytime, Anywhere with
+                <span className="relative text-theme2 z-10">  HelpRush </span>
+
               </h2>
               <form action="#" className="searchForm mt-8 max-w-md flex gap-2">
                 <input type="text" placeholder="Search for Services or Providers" className="flex-1" />
@@ -178,7 +178,7 @@ export default function Home() {
               </p>
               <div className="flex gap-5 items-center mt-5 lg:mt-10">
                 <a href="" className="btn !bg-theme2  !text-primary">Get Started </a>
-                <a href="" className="border-b-2  border-black pb-1">Already have an account?Sign in</a>
+                <a href="" className="border-b-2  border-black pb-1">Already have an account? Sign in</a>
               </div>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function Home() {
               </p>
               <div className="flex gap-5 items-center mt-5 lg:mt-10">
                 <a href="" className="btn !bg-theme2  !text-primary">Get Started </a>
-                <a href="" className="border-b-2  border-black pb-1">Already have an account?Sign in</a>
+                <a href="" className="border-b-2  border-black pb-1">Already have an account? Sign in</a>
               </div>
             </div>
           </div>
@@ -216,7 +216,29 @@ export default function Home() {
               </p>
               <div className="flex gap-5 items-center mt-5 lg:mt-10">
                 <a href="" className="btn !bg-theme2  !text-primary">Get Started </a>
-                <a href="" className="border-b-2  border-black pb-1">Already have an account?Sign in</a>
+                <a href="" className="border-b-2  border-black pb-1">Already have an account? Sign in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="appSection" className="py-10  lg:py-20 bg-neutral-50">
+        <div className="container">
+          <div className="grid items-center lg:grid-cols-8 lg:gap-20 gap-10 mx-auto max-w-4xl">
+            <div className="lg:col-span-3">
+              <img src="/img/appscreen.png" alt="" />
+            </div>
+            <div className="lg:col-span-5 capitalize">
+              <h3>
+                Get HelpRush on your phone
+              </h3>
+              <p>
+                {/* des */}
+                Download the HelpRush app and get help with your everyday tasks, anytime, anywhere.
+              </p>
+              <div className="flex gap-5 mt-8">
+                <a href="" className="hover:scale-105"><img src="/img/playstore.png" alt="" /></a>
+                <a href="" className="hover:scale-105"><img src="/img/appstore.png" alt="" /></a>
               </div>
             </div>
           </div>
