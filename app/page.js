@@ -12,11 +12,6 @@ export default function Home() {
 
 
 
-  const containerStyle = {
-    width: '100%',
-    height: '450px',
-  };
-
 
 
   const MapComponent = () => {
@@ -51,7 +46,7 @@ export default function Home() {
     return (
       <LoadScript googleMapsApiKey="AIzaSyDVmLxJagzx2MGSJ58SPiL3WXD-x4QPtf4">
         <GoogleMap
-          mapContainerStyle={containerStyle}
+          mapContainerClassName="heroMap"
           center={currentLocation}
           zoom={12}
           options={mapOptions}
@@ -125,7 +120,7 @@ export default function Home() {
                     Details
                   </button>
                 </div>
-                <img className="lg:col-span-2" src="/img/12144979_Wavy_Bus-44_Single-01.svg" alt="" />
+                <img className="col-span-2" src="/img/12144979_Wavy_Bus-44_Single-01.svg" alt="" />
               </div>
             </div>
             <div className="rounded-md border  p-4">
@@ -141,7 +136,7 @@ export default function Home() {
                     Details
                   </button>
                 </div>
-                <img className="lg:col-span-2" src="/img/7119384_3394894.svg" alt="" />
+                <img className="col-span-2" src="/img/7119384_3394894.svg" alt="" />
               </div>
             </div>
             <div className="rounded-md border  p-4">
@@ -157,13 +152,13 @@ export default function Home() {
                     Details
                   </button>
                 </div>
-                <img className="lg:col-span-2" src="/img/11906892_4867781.svg" alt="" />
+                <img className="col-span-2" src="/img/11906892_4867781.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="f1" className="pb-5 lg:pb-10">
+      <section id="f1" className="pb-10 lg:pb-10">
         <div className="container">
           <div className="grid items-center lg:gap-20 lg:grid-cols-5 gap-10">
             <img className="lg:col-span-2" src="/img/f1.svg" alt="" />
@@ -176,7 +171,7 @@ export default function Home() {
                 you and grow your business on your terms. No resources required
                 from us—just your skills and dedication.
               </p>
-              <div className="flex gap-5 items-center mt-5 lg:mt-10">
+              <div className="flex flex-col lg:flex-row gap-3 lg:gap-5 lg:items-center items-start mt-5 lg:mt-10">
                 <a href="" className="btn !bg-theme2  !text-primary">Get Started </a>
                 <a href="" className="border-b-2  border-black pb-1">Already have an account? Sign in</a>
               </div>
@@ -184,7 +179,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="f2" className="pb-5 lg:pb-10">
+      <section id="f2" className="pb-10 lg:pb-10">
         <div className="container">
           <div className="grid items-center lg:gap-20 lg:grid-cols-5 gap-10">
             <img className="lg:order-2 lg:col-span-2" src="/img/f2.svg" alt="" />
@@ -195,7 +190,7 @@ export default function Home() {
               <p className="mt-5 text-base text-neutral-800">
                 From grocery runs to bill payments ,help your community while earning extra income.Join HelpRush today and get paid for making life easier in Kashmir.
               </p>
-              <div className="flex gap-5 items-center mt-5 lg:mt-10">
+              <div className="flex flex-col lg:flex-row gap-3 lg:gap-5 lg:items-center items-start mt-5 lg:mt-10">
                 <a href="" className="btn !bg-theme2  !text-primary">Get Started </a>
                 <a href="" className="border-b-2  border-black pb-1">Already have an account? Sign in</a>
               </div>
@@ -214,7 +209,7 @@ export default function Home() {
               <p className="mt-5 text-base text-neutral-800">
                 HelpRush is built with businesses in mind, offering a platform where you can connect with thousands of new customers while seamlessly managing your teams, boosting productivity, and organizing work. With smart data insights to drive growth and social benefits for your team, HelpRush empowers your business to thrive.
               </p>
-              <div className="flex gap-5 items-center mt-5 lg:mt-10">
+              <div className="flex flex-col lg:flex-row gap-3 lg:gap-5 lg:items-center items-start mt-5 lg:mt-10">
                 <a href="" className="btn !bg-theme2  !text-primary">Get Started </a>
                 <a href="" className="border-b-2  border-black pb-1">Already have an account? Sign in</a>
               </div>
@@ -224,21 +219,22 @@ export default function Home() {
       </section>
       <section id="appSection" className="py-10  lg:py-20 bg-neutral-50">
         <div className="container">
-          <div className="grid items-center lg:grid-cols-8 lg:gap-20 gap-10 mx-auto max-w-4xl">
-            <div className="lg:col-span-3">
-              <img src="/img/appscreen.png" alt="" />
+          <h3>
+            It’s easier in the apps
+          </h3>
+          <div className="grid lg:grid-cols-2">
+            <div className="flex  items-center mt-10  flex-col lg:flex-row gap-5">
+              <img src="/img/qr1.png" className="w-36" alt="" />
+              <div>
+                <h5 className="font-semibold text-center lg:text-left text-xl  lg:text-2xl">Download HelpRush app </h5>
+                <a href="#" className="text-theme justify-center lg:justify-start text-lg flex items-center mt-1 lg:mt-2 gap-2">Scan to download <Icon className="text-xl" icon="humbleicons:arrow-right" /></a>
+              </div>
             </div>
-            <div className="lg:col-span-5 capitalize">
-              <h3>
-                Get HelpRush on your phone
-              </h3>
-              <p>
-                {/* des */}
-                Download the HelpRush app and get help with your everyday tasks, anytime, anywhere.
-              </p>
-              <div className="flex gap-5 mt-8">
-                <a href="" className="hover:scale-105"><img src="/img/playstore.png" alt="" /></a>
-                <a href="" className="hover:scale-105"><img src="/img/appstore.png" alt="" /></a>
+            <div className="flex items-center mt-10  flex-col lg:flex-row gap-5">
+              <img src="/img/qr2.png" className="w-36" alt="" />
+              <div>
+                <h5 className="font-semibold text-center lg:text-left text-xl  lg:text-2xl">Download Provider app  </h5>
+                <a href="#" className="text-theme justify-center lg:justify-start text-lg flex items-center mt-1 lg:mt-2 gap-2">Scan to download <Icon className="text-xl" icon="humbleicons:arrow-right" /></a>
               </div>
             </div>
           </div>
