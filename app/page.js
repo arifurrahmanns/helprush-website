@@ -58,7 +58,7 @@ export default function Home() {
       >
         {/* Add a marker as an example */}
         <Marker position={currentLocation} />
-      </GoogleMap> : <div className="heroWrap">
+      </GoogleMap> : <div className="heroMap overflow-hidden">
         <Skeleton count={1} height={450} />
       </div>
     );
