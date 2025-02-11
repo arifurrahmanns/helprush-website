@@ -3,9 +3,10 @@ import Categories from "@/components/home/Categories";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react";
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker, useJsApiLoader } from '@react-google-maps/api';
 import { useCallback, useEffect, useState } from "react";
-
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function Home() {
 
@@ -23,38 +24,43 @@ export default function Home() {
       fullscreenControl: false // Hide fullscreen control
     };
     const [currentLocation, setCurrentLocation] = useState(null);
+    const { isLoaded } = useJsApiLoader({
+      id: 'google-map-script',
+      googleMapsApiKey: 'AIzaSyDVmLxJagzx2MGSJ58SPiL3WXD-x4QPtf4',
+      libraries: ['geometry', 'drawing'],
+    });
     useEffect(() => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
           (position) => {
             const { latitude, longitude } = position.coords;
             setCurrentLocation({ lat: latitude, lng: longitude });
-            setIsLoaded(true); // Mark the map as loaded
+            // setIsLoaded(true); // Mark the map as loaded
           },
           (error) => {
             console.error(error);
-            setIsLoaded(true); // Still set isLoaded to true to stop the spinner
+            // setIsLoaded(true); // Still set isLoaded to true to stop the spinner
           }
         );
       } else {
         console.error('Geolocation is not supported by this browser.');
-        currentLocation({ lat: 20.5937, lng: 78.9629 });
-        setIsLoaded(true); // Set to true even if geolocation is not supported
+        setCurrentLocation({ lat: 20.5937, lng: 78.9629 });
+        // setIsLoaded(true); // Set to true even if geolocation is not supported
       }
     }, []);
 
     return (
-      <LoadScript googleMapsApiKey="AIzaSyDVmLxJagzx2MGSJ58SPiL3WXD-x4QPtf4">
-        <GoogleMap
-          mapContainerClassName="heroMap"
-          center={currentLocation}
-          zoom={12}
-          options={mapOptions}
-        >
-          {/* Add a marker as an example */}
-          <Marker position={currentLocation} />
-        </GoogleMap>
-      </LoadScript>
+      isLoaded ? <GoogleMap
+        mapContainerClassName="heroMap"
+        center={currentLocation}
+        zoom={12}
+        options={mapOptions}
+      >
+        {/* Add a marker as an example */}
+        <Marker position={currentLocation} />
+      </GoogleMap> : <div className="heroWrap">
+        <Skeleton count={1} height={450} />
+      </div>
     );
   };
   return (
