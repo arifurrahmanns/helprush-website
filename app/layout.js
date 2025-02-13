@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./app.scss";
+import "./style.css"
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import NavMenu from "@/components/ui/NavMenu";

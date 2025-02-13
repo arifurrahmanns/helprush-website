@@ -28,7 +28,7 @@ function NavMenu() {
                         <Link href="/login">Login</Link>
                     </li>
                     <li className="block lg:hidden">
-                        <Link className="bg-theme !text-white text-primary py-0.5 px-3  rounded-full " href="/sign-up">Signup</Link>
+                        <Link className="bg-theme !text-white text-primary py-0.5 px-3  rounded-full " href="/signup">Sign Up</Link>
                     </li>
                 </ul>
                 <ul className="controls ml-auto flex gap-4">
@@ -45,7 +45,7 @@ function NavMenu() {
                         <Link href="/login">Login</Link>
                     </li>
                     <li className="hidden lg:block">
-                        <Link className="bg-white !text-theme py-0.5 px-2 rounded-full " href="/sign-up">Signup</Link>
+                        <Link className="bg-white !text-theme py-0.5 px-2 rounded-full " href="/signup">Sign Up</Link>
                     </li>
                 </ul>
             </nav>

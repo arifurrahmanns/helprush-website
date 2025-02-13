@@ -11,8 +11,8 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-        theme:'#006D5B',
-        theme2:"#FFCC00",
+  			theme: '#006D5B',
+  			theme2: '#FFCC00',
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'

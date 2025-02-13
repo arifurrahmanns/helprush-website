@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 $primary: #006d5b;
 $secondary: #ffcc00;
 body {
@@ -38,6 +36,11 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
+    &:disabled{
+      background: lighten($primary, 25%);
+      color: lighten(#fff, 25%);
+      cursor: not-allowed;
+    }
     &:hover {
       background: darken($primary, 5%);
     }
@@ -112,18 +115,18 @@ body {
     }
   }
 .formElement{
-  input{
-    outline: none;
-    border: 2px solid lighten($primary, 25%);
-    padding: 8px 15px;
-    border-radius: 10px;
-    color: $primary;
-    background: #fff;
-    display: block;
-    &:focus{
-      border-color: $primary;
-    }
-  }
+  // input , select{
+  //   outline: none;
+  //   border: 2px solid lighten($primary, 25%);
+  //   padding: 8px 15px;
+  //   border-radius: 10px;
+  //   color: $primary;
+  //   background: #fff;
+  //   display: block;
+  //   &:focus{
+  //     border-color: $primary;
+  //   }
+  // }
 }
   @media screen and (max-width: 991px) {
     #mainHeader {
