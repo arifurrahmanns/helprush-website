@@ -131,6 +131,11 @@ function page() {
                             </div>
                         </form>}
                 </div>
+                <div className="mt-20 lg:mt-40 max-w-4xl">
+                    <p>
+                    HelpRush is built with businesses in mind, offering a platform where you can connect with thousands of new customers while seamlessly managing your teams, boosting productivity, and organizing work. With smart data insights to drive growth and social benefits for your team, HelpRush empowers your business to thrive.
+                    </p>
+                </div>
             </div>
 
 
