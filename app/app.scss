@@ -1,4 +1,3 @@
-
 $primary: #006d5b;
 $secondary: #ffcc00;
 body {
@@ -10,20 +9,68 @@ body {
     color: $primary;
   }
   #mainHeader {
+    &.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      .menuPopup{
+        display: block;
+      }
+    }
     .logo {
-      font-size: 25px;
-      font-weight: 600;
+      font-size: 24px;
+      font-weight: 500;
       display: inline-block;
-      color: $secondary;
+      color: #fff;
       img {
         width: 60px;
       }
     }
+    .menuPopup {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      z-index: 999;
+      display: none;
+      .inner {
+        min-height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        .closeBtn{
+          position: absolute;
+          top: 10px;
+          font-size: 30px;
+          margin-left: auto;
+          color: $primary;
+          cursor: pointer;
+          right: 0;
+        }
+        .btn-lg{
+          color: #000;
+        }
+      }
+    }
     .navMenu {
       li {
+        a:not(.hdrbtn),
+        button {
+          font-weight: 400;
+          font-size: 14px;
+          padding: 1px 10px;
+          border-radius: 25px;
+          display: flex;
+          &:hover {
+            background: #ffffff13;
+          }
+        }
         a {
-          font-weight: 500;
-          font-size: 16px;
+          font-size: 14px;
         }
       }
     }
@@ -36,7 +83,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
-    &:disabled{
+    &:disabled {
       background: lighten($primary, 25%);
       color: lighten(#fff, 25%);
       cursor: not-allowed;
@@ -99,10 +146,10 @@ body {
   }
   #footer {
     .footerLogo {
-      font-size: 25px;
-      font-weight: 600;
+      font-size: 24px;
+      font-weight: 500;
       display: block;
-      color: $secondary;
+      color: #fff;
       img {
         width: 60px;
       }
@@ -114,23 +161,35 @@ body {
       }
     }
   }
-.formElement{
-  // input , select{
-  //   outline: none;
-  //   border: 2px solid lighten($primary, 25%);
-  //   padding: 8px 15px;
-  //   border-radius: 10px;
-  //   color: $primary;
-  //   background: #fff;
-  //   display: block;
-  //   &:focus{
-  //     border-color: $primary;
-  //   }
-  // }
-}
+  .formElement {
+    // input , select{
+    //   outline: none;
+    //   border: 2px solid lighten($primary, 25%);
+    //   padding: 8px 15px;
+    //   border-radius: 10px;
+    //   color: $primary;
+    //   background: #fff;
+    //   display: block;
+    //   &:focus{
+    //     border-color: $primary;
+    //   }
+    // }
+  }
   @media screen and (max-width: 991px) {
     #mainHeader {
       position: relative;
+      &.active{
+        .loginBtn{
+          display: block !important;
+        }
+        .menuPopup{
+         top: 0;
+          left: 0;
+          .inner{
+          height: 100vh;
+          }
+        }
+      }
       .navtoggle {
         font-size: 30px;
       }
@@ -160,12 +219,12 @@ body {
       h2 {
         font-size: 30px;
       }
-      .heroMap{
+      .heroMap {
         height: 300px;
       }
     }
     #appSection {
-      h3{
+      h3 {
         font-size: 30px;
         text-align: center;
       }

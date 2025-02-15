@@ -49,10 +49,10 @@ const verifyOtp = async (prevState, formData) => {
 
         code: z.string({
             message: 'OTP is required'
-        }).min(6, {
-            message: 'OTP must be 6 digits'
-        }).max(6, {
-            message: 'OTP must be 6 digits'
+        }).min(4, {
+            message: 'OTP must be 4 digits'
+        }).max(4, {
+            message: 'OTP must be 4 digits'
         }),
         pin: z.string({
             message: "Pin is required"
@@ -91,7 +91,10 @@ const verifyOtp = async (prevState, formData) => {
             }
         }
     } catch (error) {
-        console.log(error.response)
+        return {
+            error: true,
+            message: error.response.data.message
+        }
     }
 }
 

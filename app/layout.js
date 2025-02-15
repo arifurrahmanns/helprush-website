@@ -19,24 +19,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   var currentYear = new Date().getFullYear();
+
   return (
     <html lang="en">
       <body
         className={`${inter.variable}  antialiased`}
       >
-        <header id="mainHeader" className="bg-theme py-5 text-white">
-          <div className="container">
-            <div className="flex  items-center">
-              <Link href="/" className="logo">
-                <div className="flex items-center">
-                  <img src="/img/Outlook-waxceeoc.png" alt="" />
-                  HelpRush
-                </div>
-              </Link>
-              <NavMenu />
-            </div>
-          </div>
-        </header>
+        <NavMenu />
         {children}
 
         <footer id="footer" className="bg-theme pt-10 lg:pt-20 text-sm text-white">
@@ -45,11 +34,11 @@ export default function RootLayout({ children }) {
               <div className="col-span-2 lg:col-span-2 mb-5 lg:mb-0">
                 <Link href="/" className="footerLogo">
                   <div className="flex items-center">
-                    <img src="/img/Outlook-waxceeoc.png" alt="" />
+                   
                     HelpRush
                   </div>
                 </Link>
-                <p className="mt-2">
+                <p className="mt-3 !text-xs">
                   Banao Life Simple
                 </p>
               </div>
