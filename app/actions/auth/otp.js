@@ -1,5 +1,6 @@
 'use server'
 import axiosInstance from '@/lib/axiosinstance'
+import { phoneCode } from '@/lib/utils'
 import { z } from 'zod'
 
 
@@ -27,7 +28,7 @@ const sendOtp = async (prevState, formData) => {
     }
     try {
         const response = await axiosInstance.post('/pin/send', {
-            "contact_number": "91" + formData.get('phone')
+            "contact_number": phoneCode() + formData.get('phone')
         })
         console.log(response.data)
         if (response.data?.pin) {
@@ -44,15 +45,15 @@ const sendOtp = async (prevState, formData) => {
 }
 
 const verifyOtp = async (prevState, formData) => {
-  
+
     const schema = z.object({
 
         code: z.string({
             message: 'OTP is required'
-        }).min(4, {
-            message: 'OTP must be 4 digits'
-        }).max(4, {
-            message: 'OTP must be 4 digits'
+        }).min(6, {
+            message: 'OTP must be 6 digits'
+        }).max(6, {
+            message: 'OTP must be 6 digits'
         }),
         pin: z.string({
             message: "Pin is required"
@@ -80,13 +81,14 @@ const verifyOtp = async (prevState, formData) => {
     }
     try {
         const response = await axiosInstance.post('/pin/verify', {
-            "contact_number": "91" + formData.get('phone'),
+            "contact_number": phoneCode() + formData.get('phone'),
             "pin": formData.get('pin'),
             "code": formData.get('otp')
         })
         if (response.data?.status.length > 0) {
             return {
                 success: true,
+                data: response.data,
                 message: 'OTP verified successfully'
             }
         }

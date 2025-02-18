@@ -9,13 +9,23 @@ body {
     color: $primary;
   }
   #mainHeader {
-    &.active {
+    &.loginActive {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 999;
-      .menuPopup{
+      .menuPopup.login {
+        display: block;
+      }
+    }
+    &.signupActive {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      .menuPopup.signup {
         display: block;
       }
     }
@@ -42,7 +52,7 @@ body {
         flex-direction: column;
         justify-content: center;
         position: relative;
-        .closeBtn{
+        .closeBtn {
           position: absolute;
           top: 10px;
           font-size: 30px;
@@ -51,7 +61,7 @@ body {
           cursor: pointer;
           right: 0;
         }
-        .btn-lg{
+        .btn-lg {
           color: #000;
         }
       }
@@ -178,15 +188,27 @@ body {
   @media screen and (max-width: 991px) {
     #mainHeader {
       position: relative;
-      &.active{
-        .loginBtn{
+      &.loginActive {
+        .loginBtn {
           display: block !important;
         }
-        .menuPopup{
-         top: 0;
+        .menuPopup.login {
+          top: 0;
           left: 0;
-          .inner{
-          height: 100vh;
+          .inner {
+            height: 100vh;
+          }
+        }
+      }
+      &.signupActive {
+        .signupBtn {
+          display: block !important;
+        }
+        .menuPopup.signup {
+          top: 0;
+          left: 0;
+          .inner {
+            height: 100vh;
           }
         }
       }

@@ -2,99 +2,156 @@
 import AnimatedGridPattern from '@/components/ui/animated-grid-pattern'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useActionState, useEffect, useState } from 'react'
 import { Country, State, City } from 'country-state-city';
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { sendOtp } from '../actions/auth/otp'
+import { Button } from '@/components/ui/button'
+import Otpverification from '@/components/auth/otpverification'
+import ErrorTxt from '@/components/ui/errortxt'
+import { Icon } from '@iconify/react'
+import { register } from '../actions/auth/signup'
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 
 
 function page() {
-    const [state, setState] = useState(null)
+    const [step, setStep] = useState(1);
+    const [error, setError] = useState(null);
+    const [values, setValues] = useState({
+        phone: '',
+        f_name: '',
+        l_name: '',
+        email: '',
+
+    });
+
+    const [errors, setErrors] = useState([]);
+    const [success, setSuccess] = useState(false);
+
+    const [state, formAction, pending] = useActionState(register, null)
+    // add more fields to the form action
+    useEffect(() => {
+        if (state?.error) {
+            setErrors([state.message])
+        }
+        if (state?.success) {
+            setStep(4)
+        }
+    }, [state])
+
     return (
         <main className='relative overflow-hidden py-10 lg:py-20'>
             <div className="container relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-20">
-                    <div className="flex flex-col lg:col-span-3 justify-center">
-                        <h1 className="text-3xl lg:text-5xl font-bold text-neutral-900">
-                            Register Now
-                        </h1>
-                        <p className="mt-3 lg:mt-5 text-lg lg:text-xl text-neutral-700">
-                            Sign up for a new account
-                        </p>
-                    </div>
-                    <div className="flex lg:col-span-2 formElement flex-col gap-5 border bg-white p-5  lg:p-10 rounded shadow-sm">
-                        <div className="grid lg:grid-cols-2 gap-3">
-                            <div className="flex flex-col gap-3">
-                                <label htmlFor="fname" className="text-neutral-700">First Name</label>
-                                <Input type="text" id="fname" className="input" />
+                <div className="max-w-md">
+
+                    {step === 1 && <>
+                        <Otpverification callBack={(data) => {
+                            if (!data.user && !data.token) {
+                                setStep(2)
+                                setValues({
+                                    ...values,
+                                    phone: data.phone
+                                })
+                            } else {
+                                setError("The phone number is already registered, please login to continue")
+                            }
+                        }} />
+                        {error && <ErrorTxt>
+                            {error}
+                        </ErrorTxt>}
+                    </>}
+
+                    <form action={formAction} method='post'>
+                        <input type="hidden" name='phone' value={values.phone} />
+                        <input type="hidden" name='type' value={"customer"} />
+
+                        <div className={cn("flex-col gap-3", step === 2 ? 'flex' : 'hidden')}>
+
+
+                            <div>
+                                <label className="text-black block mb-5 font-semibold !leading-snug text-xl lg:text-4xl">What is your name?</label>
+                                <div className='grid lg:grid-cols-2 gap-3'>
+                                    <div>
+                                        <Input name="f_name" value={values.f_name} onChange={(e) => {
+                                            setValues({
+                                                ...values,
+                                                f_name: e.target.value
+                                            })
+                                        }} className="h-14  md:text-lg" size="lg" placeholder="First Name" />
+                                    </div>
+                                    <div>
+                                        <Input name="l_name" value={values.l_name} onChange={(e) => {
+                                            setValues({
+                                                ...values,
+                                                l_name: e.target.value
+                                            })
+                                        }} className="h-14  md:text-lg" size="lg" placeholder="Last Name" />
+                                    </div>
+                                </div>
                             </div>
-                            <div className="flex flex-col gap-3">
-                                <label htmlFor="lname" className="text-neutral-700">Last Name</label>
-                                <Input type="text" id="lname" className="input" />
+                            <div className="flex justify-between items-center gap-4">
+                                <button type='button' onClick={() => { setStep(1) }} >
+                                    {/* prev */}
+                                    <Icon icon="akar-icons:arrow-left" width="30" height="30" />
+                                </button>
+                                <Button type="button" size={"xl"} disabled={values.f_name?.length <= 0 || values.l_name?.length <= 0} onClick={() => {
+                                    setStep(3)
+                                }}> Next</Button>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div className={cn("flex-col gap-3", step === 3 ? 'flex' : 'hidden')}>
+                            <div>
+                                <label className="text-black block mb-5 font-semibold !leading-snug text-xl lg:text-4xl">What is your email?</label>
+                                <Input name="email" value={values.email} type="email" onChange={(e) => {
+                                    setValues({
+                                        ...values,
+                                        email: e.target.value
+                                    })
+                                }} className="h-14  md:text-lg" size="lg" placeholder="Email" />
+                            </div>
+
+                            <div className="-mt-3">
+                                {errors.map((error, index) => {
+                                    return <ErrorTxt key={index}>{error}</ErrorTxt>
+                                }
+                                )}
+                            </div>
+                            <div className="flex justify-between items-center gap-4">
+                                <button type='button' onClick={() => { setStep(2) }} >
+                                    {/* prev */}
+                                    <Icon icon="akar-icons:arrow-left" width="30" height="30" />
+                                </button>
+                                <Button size={"xl"} loading={pending}> Next</Button>
                             </div>
                         </div>
 
-                        {/* email */}
-                        <div className="flex flex-col gap-3">
-                            <label htmlFor="email" className="text-neutral-700">Email</label>
-                            <Input type="email" id="email" className="input" />
-                        </div>
 
-                        {/* phone */}
+                        {step === 4 && <div>
+                            <Alert >
+                                <Icon icon="material-symbols:check-circle-outline" className=' h-5 w-5' />
+                                <AlertTitle>
+                                    Congratulations! You successfully registered
+                                </AlertTitle>
+                                <AlertDescription>
+                                    Please <Link className='underline' href={"/login"}>login </Link> to continue
+                                </AlertDescription>
+                            </Alert>
+                        </div>}
 
-                        <div className="flex flex-col gap-3">
-                            <label htmlFor="phone" className="text-neutral-700">Phone</label>
-                            <Input type="tel" id="phone" className="input" />
-                        </div>
-
-                        {/* address line 1 */}
-                        <div className="flex flex-col gap-3">
-                            <label htmlFor="address1" className="text-neutral-700">Address</label>
-                            <Input type="text" id="address1" className="input" />
-                        </div>
+                    </form>
 
 
-
-                        {/* state */}
-                        <div className="flex flex-col gap-3">
-                            <label htmlFor="state" className="text-neutral-700">State</label>
-                           
-                            <Select>
-                                <SelectTrigger className="w-full">
-                                    <SelectValue placeholder="Select state" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    {State.getStatesOfCountry('IN').map((state) => (
-
-                                        <SelectItem value={state.isoCode}>{state.name}</SelectItem>
-                                    ))}
-                                </SelectContent>
-                            </Select>
-                        </div>
-                        {/* city */}
-                        <div className="flex flex-col gap-3">
-                            <label htmlFor="city" className="text-neutral-700">City</label>
-                            <Select>
-                                <SelectTrigger className="w-full">
-                                    <SelectValue placeholder="Select city" />
-                                </SelectTrigger>
-                                <SelectContent>
-
-                                    {state && City.getCitiesOfState('IN', state).map((city) => (
-                                        <SelectItem value={city.name}>{city.name}</SelectItem>
-                                    ))}
-                                </SelectContent>
-                            </Select>
-
-                        </div>
-
-                        {/* post code */}
-                        <div className="flex flex-col gap-3">
-                            <label htmlFor="postcode" className="text-neutral-700">Post Code</label>
-                            <Input type="text" id="postcode" className="input" />
-                        </div>
-                        <button className="btn btn-primary">Sign Up</button>
-                    </div>
+                </div>
+                <div className="mt-20 lg:mt-40 max-w-4xl">
+                    <p>
+                        HelpRush is built with businesses in mind, offering a platform where you can connect with thousands of new customers while seamlessly managing your teams, boosting productivity, and organizing work. With smart data insights to drive growth and social benefits for your team, HelpRush empowers your business to thrive.
+                    </p>
                 </div>
             </div>
 
