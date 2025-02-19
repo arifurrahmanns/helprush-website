@@ -38,6 +38,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     pages: {
         signIn: "/login",
     },
+    trustHost: true,
+
     callbacks: {
         async session({ session, user, token }) {
             // Store only name and email in the session

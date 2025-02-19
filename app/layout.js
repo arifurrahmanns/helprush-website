@@ -28,7 +28,7 @@ export default async function RootLayout({ children }) {
       <body
         className={`${inter.variable}  antialiased`}
       >
-        <SessionProvider>
+        <SessionProvider >
           <NextTopLoader color="#ff5555" showSpinner={false} />
           <NavMenu loggedIn={session ? true : false} />
           {children}

@@ -1,14 +1,41 @@
 'use client'
 import { cn } from '@/lib/utils'
 import { Icon } from '@iconify/react'
+import { getSession, useSession } from 'next-auth/react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-function NavMenu({ loggedIn }) {
-    console.log(loggedIn)
+function NavMenu(props) {
+    // console.log(loggedIn)
+    const [loggedIn, setLoggedIn] = useState(props.loggedIn)
     const [opend, seOpened] = useState(false)
     const [loginOpenend, setLoginOpened] = useState(false)
     const [signupOpenend, setSignupOpened] = useState(false)
+    const { status, update } = useSession()
+
+    useEffect( () => {
+        (async() => {
+            // const session = await getSession();
+     
+            if (status == "authenticated") {
+                setLoggedIn(true);
+                console.log('logged in')
+                return;
+            }
+            if (status == "unauthenticated") {
+                setLoggedIn(false);
+                console.log('logged out')
+                return;
+            }
+
+        })()
+        // checkSession();
+    }, [status]);
+
+
+
+
+
     return (
         <header id="mainHeader" className={cn("bg-theme  py-3 text-white", loginOpenend && 'loginActive', signupOpenend && 'signupActive')}>
             <div className="container">
@@ -20,7 +47,7 @@ function NavMenu({ loggedIn }) {
                         </div>
                     </Link>
                     <nav className="lg:ml-10  navMenu flex  flex-1">
-                        <ul className="flex flex-col gap-3 lg:gap-5 navs " style={{ display: opend ? 'flex' : 'none' }}>
+                        <ul className="lg:!flex lg:flex-row flex-col gap-3 lg:gap-5 navs " style={{ display: opend ? 'flex' : 'none' }}>
                             <li>
                                 <Link href="/about">Hire</Link>
                             </li>
@@ -43,6 +70,9 @@ function NavMenu({ loggedIn }) {
                                 <button onClick={() => {
                                     setSignupOpened(true)
                                 }} className="bg-theme !text-white text-primary py-0.5 px-3 !inline-block rounded-full " >Sign Up</button>
+                            </li>}
+                            {loggedIn && <li className="block lg:hidden">
+                                <Link href="/dashboard">Profile</Link>
                             </li>}
                         </ul>
                         <ul className="controls ml-auto flex gap-2">

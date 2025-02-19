@@ -1,20 +1,16 @@
 'use client'
 import AnimatedGridPattern from '@/components/ui/animated-grid-pattern'
-import { Input } from '@/components/ui/input'
 import { cn, foratPhone } from '@/lib/utils'
-import Link from 'next/link'
 import React, { useActionState, useEffect, useRef, useState } from 'react'
-import { sendOtp, verifyOtp } from '@/app/actions/auth/otp'
-import ErrorTxt from '@/components/ui/errortxt'
-import { Button } from '@/components/ui/button'
-import { Icon } from '@iconify/react'
-import { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot } from '@/components/ui/input-otp'
+
 import Otpverification from '@/components/auth/otpverification'
-import { signIn } from '@/auth'
+
 import { login } from '../actions/auth/login'
+import { getSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
 
 function page() {
-
+    const router = useRouter()
     return (
         <main className='relative overflow-hidden py-10 lg:py-20'>
             <div className="container relative z-10">
@@ -30,7 +26,14 @@ function page() {
                     </p>
                 </div>
             </div>
-            return <button onClick={() => login()}>Sign In</button>
+            return <button onClick={async () => {
+                const response = await login();
+                if (response) {
+                    await getSession();
+                    router.push('/')
+                }
+
+            }}>Sign In</button>
             <AnimatedGridPattern
                 numSquares={300}
                 maxOpacity={0.1}
