@@ -26,7 +26,7 @@ export default function Home() {
     const [currentLocation, setCurrentLocation] = useState(null);
     const { isLoaded } = useJsApiLoader({
       id: 'google-map-script',
-      googleMapsApiKey: 'AIzaSyDVmLxJagzx2MGSJ58SPiL3WXD-x4QPtf4',
+      googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
       libraries: ['geometry', 'drawing'],
     });
     useEffect(() => {

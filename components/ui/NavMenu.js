@@ -3,20 +3,22 @@ import { cn } from '@/lib/utils'
 import { Icon } from '@iconify/react'
 import { getSession, useSession } from 'next-auth/react'
 import Link from 'next/link'
+import { useRouter, useSelectedLayoutSegment } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
 function NavMenu(props) {
     // console.log(loggedIn)
     const [loggedIn, setLoggedIn] = useState(props.loggedIn)
-    const [opend, seOpened] = useState(false)
+    const [opend, setOpened] = useState(false)
     const [loginOpenend, setLoginOpened] = useState(false)
     const [signupOpenend, setSignupOpened] = useState(false)
     const { status, update } = useSession()
+    const roactiveSegment = useSelectedLayoutSegment();
 
-    useEffect( () => {
-        (async() => {
+    useEffect(() => {
+        (async () => {
             // const session = await getSession();
-     
+
             if (status == "authenticated") {
                 setLoggedIn(true);
                 console.log('logged in')
@@ -32,6 +34,14 @@ function NavMenu(props) {
         // checkSession();
     }, [status]);
 
+    const routeClicked = () => {
+        setLoginOpened(false)
+        setSignupOpened(false)
+        setOpened(false)
+    }
+    useEffect(() => {
+
+    }, [roactiveSegment])
 
 
 
@@ -40,7 +50,7 @@ function NavMenu(props) {
         <header id="mainHeader" className={cn("bg-theme  py-3 text-white", loginOpenend && 'loginActive', signupOpenend && 'signupActive')}>
             <div className="container">
                 <div className="flex  items-center">
-                    <Link href="/" className="logo">
+                    <Link onClick={routeClicked} href="/" className="logo">
                         <div className="flex items-center">
 
                             HelpRush
@@ -49,30 +59,34 @@ function NavMenu(props) {
                     <nav className="lg:ml-10  navMenu flex  flex-1">
                         <ul className="lg:!flex lg:flex-row flex-col gap-3 lg:gap-5 navs " style={{ display: opend ? 'flex' : 'none' }}>
                             <li>
-                                <Link href="/about">Hire</Link>
+                                <Link onClick={routeClicked} href="/about">Hire</Link>
                             </li>
                             <li>
-                                <Link href="/contact">Serve</Link>
+                                <Link onClick={routeClicked} href="/contact">Serve</Link>
                             </li>
                             <li>
-                                <Link href="/contact">Business</Link>
+                                <Link onClick={routeClicked} href="/contact">Business</Link>
                             </li>
                             <li>
-                                <Link href="/contact">About</Link>
+                                <Link onClick={routeClicked} href="/contact">About</Link>
                             </li>
                             <li className="block lg:hidden">
-                                <Link href="/help">Help</Link>
+                                <Link onClick={routeClicked} href="/help">Help</Link>
                             </li>
                             {!loggedIn && <li className="block lg:hidden">
-                                <button className='text-[#006d5b]' onClick={() => { setLoginOpened(true) }}>Login</button>
+                                <button className='text-[#006d5b]' onClick={() => {
+                                    setLoginOpened(true)
+                                    setOpened(false)
+                                }}>Login</button>
                             </li>}
                             {!loggedIn && <li className="block lg:hidden">
                                 <button onClick={() => {
                                     setSignupOpened(true)
+                                    setOpened(false)
                                 }} className="bg-theme !text-white text-primary py-0.5 px-3 !inline-block rounded-full " >Sign Up</button>
                             </li>}
                             {loggedIn && <li className="block lg:hidden">
-                                <Link href="/dashboard">Profile</Link>
+                                <Link onClick={routeClicked} href="/dashboard">Profile</Link>
                             </li>}
                         </ul>
                         <ul className="controls ml-auto flex gap-2">
@@ -83,10 +97,13 @@ function NavMenu(props) {
                                 </Link>
                             </li>
                             <li className="hidden lg:block">
-                                <Link href="/help">Help</Link>
+                                <Link onClick={routeClicked} href="/help">Help</Link>
                             </li>
                             {!loggedIn && <li className="hidden loginBtn lg:block">
-                                <button onClick={() => { setLoginOpened(true) }} >Login</button>
+                                <button onClick={() => {
+                                    setLoginOpened(true)
+                                    setOpened(false)
+                                }} >Login</button>
 
                                 <div className="menuPopup login">
                                     <div className="container">
@@ -132,7 +149,10 @@ function NavMenu(props) {
                                 </div>
                             </li>}
                             {!loggedIn && <li className="hidden signupBtn lg:block">
-                                <button onClick={() => { setSignupOpened(true) }} className="!bg-white !text-black py-2  px-3 rounded-full hdrbtn " >Sign Up</button>
+                                <button onClick={() => {
+                                    setSignupOpened(true)
+                                    setOpened(false)
+                                }} className="!bg-white !text-black py-2  px-3 rounded-full hdrbtn " >Sign Up</button>
 
                                 <div className="menuPopup signup">
                                     <div className="container">
@@ -178,12 +198,12 @@ function NavMenu(props) {
                                 </div>
                             </li>}
                             {loggedIn && <li className="hidden lg:block">
-                                <Link href="/dashboard">Profile</Link>
+                                <Link onClick={routeClicked}  href="/dashboard">Profile</Link>
                             </li>}
                         </ul>
                     </nav>
 
-                    <button onClick={() => { seOpened(!opend) }} className="ml-3 lg:hidden navtoggle">
+                    <button onClick={() => { setOpened(!opend) }} className="ml-3 lg:hidden navtoggle">
                         <Icon icon="material-symbols:menu-rounded" style={{
                             display: opend ? 'none' : 'block'
                         }} />

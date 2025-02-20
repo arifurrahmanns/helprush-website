@@ -8,11 +8,11 @@ async function page() {
   // const { data: session } = useSession()
   const session = await auth()
 
-
+console.log(session)
   return (
     <div className="py-10 lg:py-20">
       <div className="container">
-        {session ? <h1>Welcome {session.user.name}</h1> : <h1>Not signed in</h1>}
+        {session ? <h1>Welcome {session.user.first_name}</h1> : <h1>Not signed in</h1>}
 
         {/* <form
   action={async () => {

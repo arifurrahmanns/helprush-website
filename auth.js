@@ -14,12 +14,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 let user = null
 
                 user = {
-                    id: 1,
-                    name: "Test User2",
-                    email: "test@email.com",
-                    phone: "1234567890",
+                   ...credentials
                 }
-
                 if (!user) {
                     // No user found, so this is their first attempt to login
                     // Optionally, this is also the place you could do a user registration
@@ -42,24 +38,31 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
     callbacks: {
         async session({ session, user, token }) {
-            // Store only name and email in the session
+         
             return {
                 ...session,
                 user: {
-                    id: token.id,
-                    name: token.name,
+                    first_name: token.first_name,
+                    last_name: token.last_name,
                     email: token.email,
-                    phone: token.phone
+                    contact_number: token.contact_number,
+                    type: token.type,
+                    user_id: token.user_id,
+                    token:token.token
                 },
             };
         },
         async jwt({ token, user }) {
             if (user) {
                 
-                token.id = user.id;
-                token.name = user.name;
+                token.first_name = user.first_name;
+                token.last_name = user.last_name;
                 token.email = user.email;
-                token.phone = user.phone;
+                token.contact_number = user.contact_number;
+                token.type = user.type;
+                token.user_id = user.user_id;
+                token.token = user.token
+
 
             }
             return token;

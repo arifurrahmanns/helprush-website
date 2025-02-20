@@ -133,15 +133,11 @@ function page() {
 
 
                         {step === 4 && <div>
-                            <Alert >
-                                <Icon icon="material-symbols:check-circle-outline" className=' h-5 w-5' />
-                                <AlertTitle>
-                                    Congratulations! You successfully registered
-                                </AlertTitle>
-                                <AlertDescription>
-                                    Please <Link className='underline' href={"/login"}>login </Link> to continue
-                                </AlertDescription>
-                            </Alert>
+                            <label className="text-black block mb-5 font-semibold !leading-snug text-xl lg:text-4xl"> Congratulations🎉 You successfully registered</label>
+                            <p className='text-lg'>
+                            Please <Link className='underline  text-indigo-700' href={"/login"}>login</Link>  to continue
+                            </p>
+                         
                         </div>}
 
                     </form>

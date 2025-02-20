@@ -8,17 +8,44 @@ import Otpverification from '@/components/auth/otpverification'
 import { login } from '../actions/auth/login'
 import { getSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
+import ErrorTxt from '@/components/ui/errortxt'
 
 function page() {
-    const router = useRouter()
+    const router = useRouter();
+    const [err, setErr] = useState(null)
     return (
         <main className='relative overflow-hidden py-10 lg:py-20'>
             <div className="container relative z-10">
                 <div className="max-w-md">
 
-                    <Otpverification callBack={(data) => {
-                        console.log(data)
+                    <Otpverification callBack={async (data) => {
+                        if (data.user) {
+                            const user = {
+                                first_name: data.user.first_name,
+                                last_name: data.user.last_name,
+                                email: data.user.email,
+                                contact_number: data.user.contact_number,
+                                type: data.user.type,
+                                user_id: data.user.id,
+
+                            }
+                            const response = await login(
+                                {
+                                    user,
+                                    token: data.token
+                                }
+                            );
+                            if (response) {
+                                await getSession();
+                                router.push('/')
+                            }
+                            return;
+                        }
+
                     }} />
+                    {err && <ErrorTxt>
+                        {err}
+                    </ErrorTxt>}
                 </div>
                 <div className="mt-20 lg:mt-40 max-w-4xl">
                     <p>
@@ -26,14 +53,7 @@ function page() {
                     </p>
                 </div>
             </div>
-            return <button onClick={async () => {
-                const response = await login();
-                if (response) {
-                    await getSession();
-                    router.push('/')
-                }
 
-            }}>Sign In</button>
             <AnimatedGridPattern
                 numSquares={300}
                 maxOpacity={0.1}
