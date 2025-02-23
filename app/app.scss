@@ -2,11 +2,14 @@ $primary: #006d5b;
 $secondary: #ffcc00;
 body {
   background: #fff;
-  font-family: var(--font-inter);
+  font-family: var(--font-onest);
   .secttl {
     font-size: 25px;
     font-weight: 600;
     color: $primary;
+  }
+  .arrSlider{
+    width: calc(100% - 4.5rem);
   }
   #mainHeader {
     &.loginActive {

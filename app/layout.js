@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Onest} from "next/font/google";
 import "./app.scss";
 import "./style.css"
 import Link from "next/link";
@@ -7,10 +7,11 @@ import NavMenu from "@/components/ui/NavMenu";
 import NextTopLoader from "nextjs-toploader";
 import { SessionProvider } from "next-auth/react"
 import { auth } from "../auth";
-const inter = Inter({
-  variable: "--font-inter",
+const onest = Onest({
+  variable: "--font-onest",
   subsets: ["latin"],
 });
+
 
 
 
@@ -26,7 +27,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable}  antialiased`}
+        className={`${onest.variable}  antialiased`}
       >
         <SessionProvider >
           <NextTopLoader color="#ff5555" showSpinner={false} />

@@ -72,7 +72,7 @@ export default function Home() {
             <div className="lg:col-span-3">
               <h2 className="text-4xl lg:text-6xl text-neutral-700 font-bold">
                 Get Help Anytime, Anywhere with
-                <span className="relative text-theme2 z-10">  HelpRush </span>
+                <span className="relative text-theme z-10">  HelpRush </span>
 
               </h2>
               <form action="#" className="searchForm mt-8 max-w-md flex gap-2">
@@ -113,7 +113,7 @@ export default function Home() {
             Suggestions
           </h2>
           <div className="grid mt-5 lg:mt-8 lg:grid-cols-3 gap-5">
-            <div className="rounded-md border  p-4">
+            <div className="rounded-xl border  p-4">
               <div className="grid grid-cols-7">
                 <div className="col-span-5">
                   <h3 className="font-semibold text-black text-lg">
@@ -129,7 +129,7 @@ export default function Home() {
                 <img className="col-span-2" src="/img/12144979_Wavy_Bus-44_Single-01.svg" alt="" />
               </div>
             </div>
-            <div className="rounded-md border  p-4">
+            <div className="rounded-xl border  p-4">
               <div className="grid grid-cols-7">
                 <div className="col-span-5">
                   <h3 className="font-semibold text-black text-lg">
@@ -145,7 +145,7 @@ export default function Home() {
                 <img className="col-span-2" src="/img/7119384_3394894.svg" alt="" />
               </div>
             </div>
-            <div className="rounded-md border  p-4">
+            <div className="rounded-xl border  p-4">
               <div className="grid grid-cols-7">
                 <div className="col-span-5">
                   <h3 className="font-semibold text-black text-lg">
