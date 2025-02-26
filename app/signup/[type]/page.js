@@ -6,13 +6,14 @@ import React, { useActionState, useEffect, useState } from 'react'
 import { Country, State, City } from 'country-state-city';
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { sendOtp } from '../actions/auth/otp'
+import { sendOtp } from '@/app/actions/auth/otp'
 import { Button } from '@/components/ui/button'
 import Otpverification from '@/components/auth/otpverification'
 import ErrorTxt from '@/components/ui/errortxt'
 import { Icon } from '@iconify/react'
-import { register } from '../actions/auth/signup'
+import { register } from '@/app/actions/auth/signup'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
+import { useLayoutData } from '@/app/providers/UseLayoutData'
 
 
 function page() {
@@ -30,6 +31,9 @@ function page() {
     const [success, setSuccess] = useState(false);
 
     const [state, formAction, pending] = useActionState(register, null)
+
+    const usertype = useLayoutData();
+
     // add more fields to the form action
     useEffect(() => {
         if (state?.error) {
@@ -64,7 +68,7 @@ function page() {
 
                     <form action={formAction} method='post'>
                         <input type="hidden" name='phone' value={values.phone} />
-                        <input type="hidden" name='type' value={"customer"} />
+                        <input type="hidden" name='type' value={usertype} />
 
                         <div className={cn("flex-col gap-3", step === 2 ? 'flex' : 'hidden')}>
 

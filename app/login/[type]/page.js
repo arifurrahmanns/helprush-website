@@ -5,14 +5,18 @@ import React, { useActionState, useEffect, useRef, useState } from 'react'
 
 import Otpverification from '@/components/auth/otpverification'
 
-import { login } from '../actions/auth/login'
+import { login } from '@/app/actions/auth/login'
 import { getSession } from 'next-auth/react'
-import { useRouter } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 import ErrorTxt from '@/components/ui/errortxt'
 
 function page() {
+    const params = useParams();
+
+    
     const router = useRouter();
-    const [err, setErr] = useState(null)
+    const [err, setErr] = useState(null);
+
     return (
         <main className='relative overflow-hidden py-10 lg:py-20'>
             <div className="container relative z-10">
