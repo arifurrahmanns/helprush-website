@@ -116,7 +116,7 @@ function NavMenu(props) {
                                                 <div>
                                                     <Link onClick={() => {
                                                         setLoginOpened(false)
-                                                    }} className='!text-2xl lg:!pb-16 !border-black !rounded-none !pb-10 border-b text-black hover:text-neutral-700 lg:!text-4xl !font-medium' href="/login/provider">
+                                                    }} className='!text-2xl lg:!pb-16 !border-black !rounded-none !pb-10 border-b text-black hover:text-neutral-700 lg:!text-4xl !font-medium' href="/login">
                                                         <div className="flex items-end gap-2">
                                                             Login to Offer Services
                                                             <Icon icon="akar-icons:arrow-right" />
@@ -126,7 +126,7 @@ function NavMenu(props) {
                                                 <div>
                                                     <Link onClick={() => {
                                                         setLoginOpened(false)
-                                                    }} className='!text-2xl lg:!pb-16 !border-black !rounded-none !pb-10 border-b text-black hover:text-neutral-700 lg:!text-4xl !font-medium' href="/login/customer">
+                                                    }} className='!text-2xl lg:!pb-16 !border-black !rounded-none !pb-10 border-b text-black hover:text-neutral-700 lg:!text-4xl !font-medium' href="/login">
                                                         <div className="flex items-end gap-2">
                                                             Login to Book Services
                                                             <Icon icon="akar-icons:arrow-right" />
