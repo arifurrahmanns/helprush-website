@@ -5,7 +5,7 @@ import React, { useActionState, useEffect, useState } from 'react'
 
 import { useLayoutData } from '@/app/providers/UseLayoutData'
 import CustomerSignupForm from '@/components/ui/customer-signup-form'
-import ProviderSignupForm from '@/components/ui/provider-signup-form copy'
+import ProviderSignupForm from '@/components/ui/provider-signup-form'
 
 
 function page() {

@@ -1,5 +1,4 @@
 import { cn } from '@/lib/utils'
-import Link from 'next/link'
 import React, { useActionState, useEffect, useState } from 'react'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
@@ -7,12 +6,11 @@ import ErrorTxt from '@/components/ui/errortxt'
 import { Icon } from '@iconify/react'
 import { register } from '@/app/actions/auth/signup'
 import { useLayoutData } from '@/app/providers/UseLayoutData'
-import Otpverification from '../auth/otpverification'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './select'
+import Otpverification from '@/components/auth/otpverification'
 import { City } from 'country-state-city';
-import { Label } from './label'
-import RadioSegments from './radioSegments'
-import SelectSegments from './selectSegments'
+import { Label } from '@/components/ui/label'
+import RadioSegments from '@/components/ui/radioSegments'
+import SelectSegments from '@/components/ui/selectSegments'
 
 
 function ProviderSignupForm() {
