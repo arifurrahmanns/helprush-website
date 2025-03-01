@@ -202,7 +202,7 @@ export default async function RootLayout({ children }) {
                         <Link href="/help">Help Center</Link>
                       </li>
                       <li>
-                        <Link href="/help/faqs">FAQs</Link>
+                        <Link href="/help/faq">FAQs</Link>
                       </li>
                       <li>
                         <a href="#">Provider Onboarding Guide </a>
