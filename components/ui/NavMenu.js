@@ -59,16 +59,16 @@ function NavMenu(props) {
                     <nav className="lg:ml-10  navMenu flex  flex-1">
                         <ul className="lg:!flex lg:flex-row flex-col gap-3 lg:gap-5 navs " style={{ display: opend ? 'flex' : 'none' }}>
                             <li>
-                                <Link onClick={routeClicked} href="/about">Hire</Link>
+                                <Link onClick={routeClicked} href="/signup/customer">Hire</Link>
                             </li>
                             <li>
-                                <Link onClick={routeClicked} href="/contact">Serve</Link>
+                                <Link onClick={routeClicked} href="/signup/provider">Serve</Link>
                             </li>
                             <li>
-                                <Link onClick={routeClicked} href="/contact">Business</Link>
+                                <Link onClick={routeClicked} href="#">Business</Link>
                             </li>
                             <li>
-                                <Link onClick={routeClicked} href="/contact">About</Link>
+                                <Link onClick={routeClicked} href="#">About</Link>
                             </li>
                             <li className="block lg:hidden">
                                 <Link onClick={routeClicked} href="/help">Help</Link>
