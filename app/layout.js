@@ -1,4 +1,4 @@
-import { Onest} from "next/font/google";
+import { Onest } from "next/font/google";
 import "./app.scss";
 import "./style.css"
 import Link from "next/link";
@@ -37,7 +37,7 @@ export default async function RootLayout({ children }) {
           <footer id="footer" className="bg-theme pt-10 lg:pt-20 text-sm text-white">
             <div className="container">
               <div className="grid grid-cols-2 lg:grid-cols-5">
-                <div className="col-span-2 lg:col-span-2 mb-5 lg:mb-0">
+                <div className="mb-5 lg:mb-0">
                   <Link href="/" className="footerLogo">
                     <div className="flex items-center">
 
@@ -74,10 +74,10 @@ export default async function RootLayout({ children }) {
                   </h3>
                   <ul className="mt-2 flex flex-col gap-2">
                     <li>
-                      <a href="#">Hire</a>
+                      <Link href="/login">Hire</Link>
                     </li>
                     <li>
-                      <a href="#">Serve</a>
+                      <Link href="/login">Serve</Link>
                     </li>
                     <li>
                       <a href="#">HelpRush for Business</a>
@@ -93,36 +93,82 @@ export default async function RootLayout({ children }) {
                   </h3>
                   <ul className="mt-2 flex flex-col gap-2">
                     <li>
-                      <a href="#">Terms & conditions</a>
+                      <a href="">Terms & conditions</a>
                     </li>
                     <li>
-                      <a href="#">Privacy Policy</a>
+                      <Link href="/general/privacy-policy">Privacy Policy</Link>
                     </li>
                     <li>
-                      <a href="#">Anti-discrimination Policy</a>
+                      <Link href="/general/anti-discrimination-policy">Anti-discrimination Policy</Link>
                     </li>
                     <li>
-                      <a href="#">Refund & Cancellation Policy</a>
+                      <Link href="/general/cancellation-and-refund-policy">Refund & Cancellation Policy</Link>
                     </li>
                     <li>
-                      <a href="#">Provider Agreement</a>
+                      <Link href="/general/dispute-resolution">
+                        Dispute Resolution Policy
+                      </Link>
                     </li>
+                    <li>
+                      <Link href="/general/intellectual-property-rights">
+                        Intellectual Property Rights
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/general/service-professional-agreement">
+                        Service Professional Agreement
+                      </Link>
+                    </li>
+
                   </ul>
                   <h3 className="text-lg mt-8 font-semibold">
                     Resources
                   </h3>
                   <ul className="mt-2 flex flex-col gap-2">
                     <li>
-                      <a href="#">How it works </a>
+                      <Link href="/resources/how-its-works">How it works </Link>
                     </li>
                     <li>
-                      <a href="#">Pricing & Fees</a>
+                      <Link href="/resources/pricing-and-fee">Pricing & Fees</Link>
                     </li>
                     <li>
-                      <a href="#">Provider Levels </a>
+                      <Link href="/resources/provider-levels">Provider Levels </Link>
                     </li>
 
                   </ul>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold">
+                    Customer
+                  </h3>
+                  <ul className="mt-2 flex flex-col gap-2">
+                    <li>
+                      <Link href="/customer/code-of-conduct">
+                        Code of Conduct
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/customer/terms-and-conditions">
+                        Terms & Conditions
+                      </Link>
+                    </li>
+                  </ul>
+                  <h3 className="text-lg mt-8 font-semibold">
+                    Provider
+                  </h3>
+                  <ul className="mt-2 flex flex-col gap-2">
+                    <li>
+                      <Link href="/provider/code-of-conduct">
+                        Code of Conduct
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/provider/provider-agreement">
+                        Provider Agreement
+                      </Link>
+                    </li>
+                  </ul>
+                 
                 </div>
                 <div className="grid col-span-2 lg:col-span-1 mt-8 lg:mt-0 grid-cols-2 lg:block">
                   <div>
@@ -131,19 +177,19 @@ export default async function RootLayout({ children }) {
                     </h3>
                     <ul className="mt-2 flex flex-col gap-2">
                       <li>
-                        <a href="#" className="flex gap-1 items-center"><Icon icon="mingcute:linkedin-fill" width="24" height="24" />Linkedin</a>
+                        <a href="https://www.linkedin.com/company/helprush/" target="_blank" className="flex gap-1 items-center"><Icon icon="mingcute:linkedin-fill" width="24" height="24" />Linkedin</a>
                       </li>
                       <li>
-                        <a href="#" className="flex gap-1 items-center"><Icon icon="mingcute:social-x-fill" width="24" height="24" /> X</a>
+                        <a href="https://twitter.com/HelprushIN" target="_blank" className="flex gap-1 items-center"><Icon icon="mingcute:social-x-fill" width="24" height="24" /> X</a>
                       </li>
                       <li>
-                        <a href="#" className="flex gap-1 items-center"><Icon icon="mingcute:instagram-line" width="24" height="24" /> Instagram</a>
+                        <a href="https://www.instagram.com/helprush/" target="_blank" className="flex gap-1 items-center"><Icon icon="mingcute:instagram-line" width="24" height="24" /> Instagram</a>
                       </li>
                       <li>
-                        <a href="#" className="flex gap-1 items-center"><Icon icon="qlementine-icons:facebook-fill-16" width="22" height="22" /> Facebook</a>
+                        <a href="https://www.facebook.com/Helprush" target="_blank" className="flex gap-1 items-center"><Icon icon="qlementine-icons:facebook-fill-16" width="22" height="22" /> Facebook</a>
                       </li>
                       <li>
-                        <a href="#" className="flex gap-1 items-center"><Icon icon="line-md:youtube-filled" width="24" height="24" />YouTube</a>
+                        <a href="https://www.youtube.com/@HelpRush" target="_blank" className="flex gap-1 items-center"><Icon icon="line-md:youtube-filled" width="24" height="24" />YouTube</a>
                       </li>
                     </ul>
                   </div>
@@ -153,10 +199,10 @@ export default async function RootLayout({ children }) {
                     </h3>
                     <ul className="mt-2 flex flex-col gap-2">
                       <li>
-                        <a href="#">Help Center</a>
+                        <Link href="/help">Help Center</Link>
                       </li>
                       <li>
-                        <a href="#">FAQs</a>
+                        <Link href="/help/faqs">FAQs</Link>
                       </li>
                       <li>
                         <a href="#">Provider Onboarding Guide </a>
@@ -177,8 +223,7 @@ export default async function RootLayout({ children }) {
                     &copy; {currentYear} HelpRush. All  Rights Reserved.
                   </p>
                   <div className="flex gap-5">
-                    <a href="#">Accessibility </a>
-                    <a href="#">Website use policy</a>
+                    <Link href="/accessibility">Accessibility & Website use policy</Link>
                   </div>
                 </div>
               </div>

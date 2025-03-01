@@ -3,6 +3,11 @@ $secondary: #ffcc00;
 body {
   background: #fff;
   font-family: var(--font-onest);
+  .txt{
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+  }
   .secttl {
     font-size: 25px;
     font-weight: 600;
@@ -88,6 +93,7 @@ body {
       }
     }
   }
+  
   .btn {
     background: $primary;
     color: #fff;
@@ -169,8 +175,10 @@ body {
     }
 
     a:not(.footerLogo) {
+      transition: all 0.2s;
       &:hover {
-        color: #f0f0f0;
+        color: #b9b9b9;
+
       }
     }
   }

@@ -50,6 +50,16 @@ const Button = React.forwardRef(
     ref
   ) => {
     const Comp = asChild ? Slot : "button";
+
+    // add an item of loading to the children
+    if (loading && !asChild) {
+      children = (
+        <>
+          <Icon className="animated-spin" icon="vaadin:spinner-third" />
+          {children}
+        </>
+      );
+    }
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
@@ -57,7 +67,6 @@ const Button = React.forwardRef(
         disabled={loading || props.disabled}
         {...props} 
       >
-        {loading && <Icon className="animated-spin" icon="vaadin:spinner-third" />}
         {children}
       </Comp>
     );
