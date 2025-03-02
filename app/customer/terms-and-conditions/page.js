@@ -11,8 +11,21 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">HELPUSH CUSTOMER TERMS & CONDITIONS</h1>
-            <p>By accessing or using the HelpRush Platform ("Platform"), you agree to be bound by these Customer Terms & Conditions ("Terms & Conditions"). The Platform is a product of Horfay Taqnia Private Limited ("Horfay Taqnia"). Please read these Terms carefully before using the Platform. If you do not agree, you may not use the Platform.</p>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-20">
+
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        HelpRush Customer Terms & Conditions
+                    </h1>
+                    <p className='text'>
+                        By accessing or using the HelpRush Platform ("Platform"), you agree to be bound by these Customer Terms & Conditions ("Terms & Conditions"). The Platform is a product of Horfay Taqnia Private Limited ("Horfay Taqnia"). Please read these Terms carefully before using the Platform. If you do not agree, you may not use the Platform.                    </p>
+
+                </div>
+                <div>
+                    <img src="/img/2147801296.jpg" alt="" />
+                </div>
+            </div>
+
 
             <h2 className="text-xl font-bold mt-4 mb-2">1. Use of the Platform</h2>
 

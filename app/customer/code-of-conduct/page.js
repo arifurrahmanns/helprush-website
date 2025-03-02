@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import React from 'react'
 
 export const generateMetadata = async () => {
@@ -9,66 +10,129 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">HelpRush Customer Code of Conduct</h1>
 
-            <h2 className="text-xl font-semibold mt-4">Our Commitment</h2>
-            <p>At HelpRush, we are dedicated to fostering a respectful and professional community where customers and service professionals interact with integrity and fairness. Our platform operates on the principles of mutual respect, reliability, and accountability. Your conduct as a customer is crucial in shaping a positive experience for everyone.</p>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
 
-            <h2 className="text-xl font-semibold mt-4">Our Vision</h2>
-            <p>HelpRush aims to revolutionize service procurement by seamlessly connecting customers with skilled professionals. We envision a community built on trust, respect, and excellence.</p>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        HelpRush Customer Code of Conduct
+                    </h1>
+                    <p className='text'>
+                        At HelpRush, we are dedicated to fostering a respectful and professional community where customers and service professionals interact with integrity and fairness. Our platform operates on the principles of mutual respect, reliability, and accountability. Your conduct as a customer is crucial in shaping a positive experience for everyone.
+                    </p>
 
-            <h2 className="text-xl font-semibold mt-4">Purpose of This Document</h2>
-            <p>This Code of Conduct defines the expectations, responsibilities, and ethical standards for every customer using HelpRush. It is designed to:</p>
-            <ul className="list-disc pl-6">
-                <li>Ensure a safe, respectful, and inclusive environment for interactions with service providers.</li>
-                <li>Set clear behavioral expectations for customers to facilitate smooth service experiences.</li>
-                <li>Uphold HelpRush’s commitment to quality, fairness, and customer satisfaction.</li>
-            </ul>
+                    <p className='mt-2 text'>HelpRush aims to revolutionize service procurement by seamlessly connecting customers with skilled professionals. We envision a community built on trust, respect, and excellence.</p>
 
-            <h2 className="text-xl font-semibold mt-4">Your Responsibilities</h2>
-            <p>By using HelpRush, you agree to uphold these standards and contribute to a professional and positive ecosystem. Please take the time to review and follow these guidelines.</p>
+                </div>
+                <div>
+                    <img src="/img/3667.jpg" alt="" />
+                </div>
+            </div>
 
-            <h2 className="text-xl font-semibold mt-4">Key Guidelines</h2>
 
-            <h3 className="text-lg font-medium mt-3">1. Respectful Conduct</h3>
-            <p>Courteous Behavior: Customers must engage with service providers respectfully, using polite language and appropriate behavior at all times.</p>
-            <p>Privacy and Boundaries: Service providers' privacy should be respected, including their personal information and workspaces.</p>
-            <p>Non-Discrimination: Any form of discrimination, harassment, or abuse based on race, gender, religion, disability, or any other protected characteristic is strictly prohibited.</p>
 
-            <h3 className="text-lg font-medium mt-3">2. Honesty and Transparent Communication</h3>
-            <p>Accurate Service Requests: Provide clear, truthful, and complete details about your service requirements.</p>
-            <p>Timely Responses: Communicate promptly and respond to messages or calls related to your booking.</p>
-            <p>Payment Integrity: All transactions must be conducted through the HelpRush platform. Direct payments to providers outside the platform are strictly prohibited.</p>
 
-            <h3 className="text-lg font-medium mt-3">3. Fair and Respectful Dispute Resolution</h3>
-            <p>Respectful Resolution: In the event of a dispute, remain calm and follow HelpRush’s dispute resolution procedures.</p>
-            <p>Reporting Issues: If a problem arises, report it through the platform instead of engaging in verbal abuse or threats against service providers.</p>
+            <div className="py-10 lg:py-20">
+                <h2 className="text-xl font-semibold mt-5">Purpose of This Document</h2>
+                <p className="txt">
+                    This Code of Conduct defines the expectations, responsibilities, and ethical standards for every customer using HelpRush. It is designed to:
+                </p>
+                <div className='grid grid-cols-2 mb-5 lg:mb-10 lg:grid-cols-3 gap-4 mt-5'>
+                    <div className='text-theme  font-medium'>
+                        <Icon icon="mdi:environment-outline" className='text-5xl mb-2 c_icon' />
+                        Ensure a safe, respectful, and inclusive environment for interactions with service providers.
+                    </div>
+                    <div className='text-theme  font-medium'>
+                        <Icon icon="material-symbols-light:handshake-outline" className='text-5xl mb-2 c_icon' />
+                        Set clear behavioral expectations for customers to facilitate smooth service experiences.
+                    </div>
+                    <div className='text-theme  font-medium'>
+                        <Icon icon="la:hands-helping" className='text-5xl mb-2' />Uphold HelpRush’s commitment to quality, fairness, and customer satisfaction.
+                    </div>
 
-            <h3 className="text-lg font-medium mt-3">4. Responsibility and Collaboration</h3>
-            <p>Property Care: Ensure a safe and suitable work environment for service providers. Take necessary precautions to prevent damage to your property.</p>
-            <p>Punctuality: Be available at the scheduled time or provide advance notice if rescheduling is required.</p>
-            <p>Cancellations: Avoid last-minute cancellations unless necessary and follow HelpRush’s cancellation policy.</p>
+                </div>
+                <p>This Code of Conduct defines the expectations, responsibilities, and ethical standards for every customer using HelpRush. It is designed to:</p>
 
-            <h3 className="text-lg font-medium mt-3">5. Adherence to HelpRush Policies</h3>
-            <p>Compliance with Policies: Customers must follow all HelpRush policies, including rules regarding cancellations, refunds, and prohibited activities.</p>
-            <p>No Solicitation of Personal Services: Customers must not request providers to perform services outside the platform.</p>
-            <p>Prohibition of Unethical Behavior: Threatening, bribing, or coercing service providers for discounts, refunds, or unpaid services is not allowed.</p>
+            </div>
 
-            <h3 className="text-lg font-medium mt-3">6. Continuous Improvement and Feedback</h3>
-            <p>Constructive Feedback: Provide fair and honest feedback to help improve service quality.</p>
-            <p>Ratings and Reviews: Leave accurate and reasonable reviews based on genuine service experiences.</p>
 
-            <h3 className="text-lg font-medium mt-3">7. Safety and Well-being</h3>
-            <p>Safe Environment: Ensure that service providers have a safe and non-hostile working environment.</p>
-            <p>No Smoking or Alcohol: Service providers should not be exposed to unsafe conditions, including smoking or alcohol consumption in their work environment.</p>
+            <div className="pb-10 lg:pb-20">
+                <h2 className="text-xl font-semibold mt-4">Your Responsibilities</h2>
+                <p>By using HelpRush, you agree to uphold these standards and contribute to a professional and positive ecosystem. Please take the time to review and follow these guidelines.</p>
 
-            <h3 className="text-lg font-medium mt-3">8. Cooperation with HelpRush</h3>
-            <p>Compliance with Investigations: If there’s an issue or complaint, customers must cooperate with HelpRush’s resolution team.</p>
-            <p>Fair Dispute Handling: Engage in fair discussions and avoid making false claims or exaggerated complaints to seek unjustified refunds.</p>
+            </div>
+            <div className="pb-10 lg:pb-20">
+                <h2 className="text-xl font-semibold mt-4">Key Guidelines</h2>
+                <div className="grid mt-5 lg:grid-cols-3 gap-5 lg:gap-10">
 
-            <h2 className="text-xl font-semibold mt-4">Violations and Consequences</h2>
-            <p>Failure to comply with this Code of Conduct may result in warnings, temporary suspensions, or permanent account restrictions. HelpRush reserves the right to take necessary actions, including legal recourse, for severe violations.</p>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">1. Respectful Conduct</h3>
+                        <p>Courteous Behavior: Customers must engage with service providers respectfully, using polite language and appropriate behavior at all times.</p>
+                        <p>Privacy and Boundaries: Service providers' privacy should be respected, including their personal information and workspaces.</p>
+                        <p>Non-Discrimination: Any form of discrimination, harassment, or abuse based on race, gender, religion, disability, or any other protected characteristic is strictly prohibited.</p>
 
+                    </div>
+
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">2. Honesty and Transparent Communication</h3>
+                        <p>Accurate Service Requests: Provide clear, truthful, and complete details about your service requirements.</p>
+                        <p>Timely Responses: Communicate promptly and respond to messages or calls related to your booking.</p>
+                        <p>Payment Integrity: All transactions must be conducted through the HelpRush platform. Direct payments to providers outside the platform are strictly prohibited.</p>
+                    </div>
+
+
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">3. Fair and Respectful Dispute Resolution</h3>
+                        <p>Respectful Resolution: In the event of a dispute, remain calm and follow HelpRush’s dispute resolution procedures.</p>
+                        <p>Reporting Issues: If a problem arises, report it through the platform instead of engaging in verbal abuse or threats against service providers.</p>
+                    </div>
+
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">4. Responsibility and Collaboration</h3>
+                        <p>Property Care: Ensure a safe and suitable work environment for service providers. Take necessary precautions to prevent damage to your property.</p>
+                        <p>Punctuality: Be available at the scheduled time or provide advance notice if rescheduling is required.</p>
+                        <p>Cancellations: Avoid last-minute cancellations unless necessary and follow HelpRush’s cancellation policy.</p>
+                    </div>
+
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">5. Adherence to HelpRush Policies</h3>
+                        <p>Compliance with Policies: Customers must follow all HelpRush policies, including rules regarding cancellations, refunds, and prohibited activities.</p>
+                        <p>No Solicitation of Personal Services: Customers must not request providers to perform services outside the platform.</p>
+                        <p>Prohibition of Unethical Behavior: Threatening, bribing, or coercing service providers for discounts, refunds, or unpaid services is not allowed.</p>
+
+                    </div>
+
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">6. Continuous Improvement and Feedback</h3>
+                        <p>Constructive Feedback: Provide fair and honest feedback to help improve service quality.</p>
+                        <p>Ratings and Reviews: Leave accurate and reasonable reviews based on genuine service experiences.</p>
+
+                    </div>
+
+
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">7. Safety and Well-being</h3>
+                        <p>Safe Environment: Ensure that service providers have a safe and non-hostile working environment.</p>
+                        <p>No Smoking or Alcohol: Service providers should not be exposed to unsafe conditions, including smoking or alcohol consumption in their work environment.</p>
+                    </div>
+
+                    <div className='border shadow p-5 rounded'>
+                        <h3 className="text-lg font-medium mt-3">8. Cooperation with HelpRush</h3>
+                        <p>Compliance with Investigations: If there’s an issue or complaint, customers must cooperate with HelpRush’s resolution team.</p>
+                        <p>Fair Dispute Handling: Engage in fair discussions and avoid making false claims or exaggerated complaints to seek unjustified refunds.</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div className="pb-10 lg:pb-20">
+                <h2 className="text-xl font-semibold mt-4">Violations and Consequences</h2>
+                <p>Failure to comply with this Code of Conduct may result in warnings, temporary suspensions, or permanent account restrictions. HelpRush reserves the right to take necessary actions, including legal recourse, for severe violations.</p>
+
+
+            </div>
             <h2 className="text-xl font-semibold mt-4">Final Note</h2>
             <p>By adhering to these guidelines, you help create a trusted and efficient service marketplace. Thank you for being a responsible member of the HelpRush community and contributing to a respectful and professional environment.</p>
         </div>

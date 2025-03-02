@@ -3,7 +3,7 @@ import React from 'react'
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-6">HelpRush Accessibility Statement</h1>
+            <h1 className="text-3xl lg:text-5xl font-bold mb-6">HelpRush Accessibility Statement</h1>
             <p className="mb-4">
                 At HelpRush, we are committed to ensuring that our platform is accessible to everyone, including individuals with disabilities. We strive to provide an inclusive and seamless experience across our website and mobile applications, aligning with global accessibility standards and best practices.
             </p>

@@ -205,7 +205,7 @@ export default async function RootLayout({ children }) {
                         <Link href="/help/faq">FAQs</Link>
                       </li>
                       <li>
-                        <a href="#">Provider Onboarding Guide </a>
+                        <a href="/provider/onboarding-guide">Provider Onboarding Guide </a>
                       </li>
                       <li>
                         <a href="#">Contact Support</a>
