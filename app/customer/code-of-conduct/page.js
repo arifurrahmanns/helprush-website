@@ -51,7 +51,6 @@ function page() {
                     </div>
 
                 </div>
-                <p>This Code of Conduct defines the expectations, responsibilities, and ethical standards for every customer using HelpRush. It is designed to:</p>
 
             </div>
 

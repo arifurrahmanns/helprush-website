@@ -9,12 +9,25 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">HelpRush Service Provider Agreement</h1>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-20">
 
-            <h2 className="text-xl font-bold mt-4 mb-2">1. Introduction</h2>
-            <p>By using the HelpRush Platform, you enter a binding agreement with Horfay Taqnia Private Limited, the legal entity operating HelpRush, governing its use across websites, mobile apps, and related services (collectively the "HelpRush Platform").</p>
-            <p>Your personal data usage is regulated by our Privacy Policy. Your continued use indicates acknowledgment and acceptance of this policy. Your consent and ongoing use of HelpRush signify agreement with this Service Provider Agreement, Privacy Policy, and our Service Provider Code of Conduct. Any future changes are deemed accepted unless explicitly objected to by deactivating your account.</p>
-            <p>Non-acceptance of this Agreement prohibits HelpRush Platform usage. By using HelpRush, you expressly agree to be bound by this Agreement, the Code of Conduct, and Privacy Policy, including any applicable dispute resolution terms.</p>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        HelpRush Service Provider Agreement
+
+                    </h1>
+                    <p className='text'>
+                        By using the HelpRush Platform, you enter a binding agreement with Horfay Taqnia Private Limited, the legal entity operating HelpRush, governing its use across websites, mobile apps, and related services (collectively the "HelpRush Platform").
+                        <br />
+                        Your personal data usage is regulated by our Privacy Policy. Your continued use indicates acknowledgment and acceptance of this policy. Your consent and ongoing use of HelpRush signify agreement with this Service Provider Agreement, Privacy Policy, and our Service Provider Code of Conduct. Any future changes are deemed accepted unless explicitly objected to by deactivating your account.
+                        <br />
+                        Non-acceptance of this Agreement prohibits HelpRush Platform usage. By using HelpRush, you expressly agree to be bound by this Agreement, the Code of Conduct, and Privacy Policy, including any applicable dispute resolution terms.</p>
+
+                </div>
+                <div>
+                    <img src="/img/2147801296.jpg" alt="" />
+                </div>
+            </div>
 
             <h2 className="text-xl font-bold mt-4 mb-2">2. Independent Relationship</h2>
             <p>The Service Provider acknowledges and agrees to operate as an independent business owner. HelpRush does not employ, partner with, or represent the Service Provider. By utilizing HelpRush's platform, the Service Provider connects with clients seeking services. HelpRush does not guarantee job availability, fixed earnings, or continued engagement.</p>

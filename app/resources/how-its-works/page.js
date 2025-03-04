@@ -1,3 +1,4 @@
+import Timeline from '@/components/ui/timeline';
 import React from 'react'
 
 export const generateMetadata = async () => {
@@ -9,42 +10,78 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold  mb-6">How HelpRush Works</h1>
 
-            <section className="mb-10">
-                <h2 className="text-2xl font-semibold mb-4">For Customers</h2>
-                <h3 className="font-semibold text-lg">1. Find the Right Expert</h3>
-                <p>Browse through a wide range of services—from home repairs to professional consultations. Use filters to find the best-rated providers near you.</p>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-20">
 
-                <h3 className="font-semibold text-lg">2. Instant Booking or Scheduled Service</h3>
-                <p>Need help right away? Use RushHour to book an available expert in real time. Prefer a later time? Schedule your service at your convenience.</p>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        How HelpRush Works
+                    </h1>
 
-                <h3 className="font-semibold text-lg">3. Transparent Pricing & Comparisons</h3>
-                <p>Compare multiple providers based on price, experience, and reviews. No hidden fees—what you see is what you pay!</p>
 
-                <h3 className="font-semibold text-lg">4. Secure & Hassle-Free Payments</h3>
-                <p>Pay securely through the HelpRush platform using your preferred payment method. We ensure seamless transactions and invoice generation for every service.</p>
+                </div>
+                <div>
+                    <img src="/img/15185.jpg" alt="" />
+                </div>
+            </div>
+            <section className="pb-10 lg:pb-20">
+                <h2 className="text-2xl font-semibold mb-5">For Customers</h2>
+                <Timeline
+                    items={[
+                        {
+                            title: "1. Find the Right Expert",
+                            content: "Browse through a wide range of services—from home repairs to professional consultations. Use filters to find the best-rated providers near you."
+                        },
 
-                <h3 className="font-semibold text-lg">5. Service Completion & Review</h3>
-                <p>Once the service is completed, provide feedback to help maintain quality standards. Ratings help others make informed choices!</p>
+                        {
+                            title: "2. Instant Booking or Scheduled Service",
+                            content: "Need help right away? Use RushHour to book an available expert in real time. Prefer a later time? Schedule your service at your convenience."
+                        },
+                        {
+                            title: "3. Transparent Pricing & Comparisons",
+                            content: "Compare multiple providers based on price, experience, and reviews. No hidden fees—what you see is what you pay!"
+                        },
+                        {
+                            title: "4. Secure & Hassle-Free Payments",
+                            content: "Pay securely through the HelpRush platform using your preferred payment method. We ensure seamless transactions and invoice generation for every service."
+                        },
+                        {
+                            title: "5. Service Completion & Review",
+                            content: "Once the service is completed, provide feedback to help maintain quality standards. Ratings help others make informed choices!"
+                        }
+                    ]}
+
+                />
             </section>
 
-            <section className="mb-10">
+            <section className="pb-10 lg:pb-20">
                 <h2 className="text-2xl font-semibold mb-4">For Service Providers</h2>
-                <h3 className="font-semibold text-lg">1. Sign Up & Get Verified</h3>
-                <p>Join HelpRush by creating a provider profile. Complete KYC, skill verification, and digital onboarding to start receiving bookings.</p>
 
-                <h3 className="font-semibold text-lg">2. Offer Services & Set Your Pricing</h3>
-                <p>List the services you offer and set competitive pricing. Your profile will be visible to thousands of potential customers.</p>
+                <Timeline items={[
+                    {
+                        title: "1. Sign Up & Get Verified",
+                        content: "Join HelpRush by creating a provider profile. Complete KYC, skill verification, and digital onboarding to start receiving bookings."
+                    },
 
-                <h3 className="font-semibold text-lg">3. Receive & Manage Bookings</h3>
-                <p>Accept requests in real-time or schedule services at your convenience. Customers can reach out via in-app chat for coordination.</p>
+                    {
+                        title: "2. Offer Services & Set Your Pricing",
+                        content: "List the services you offer and set competitive pricing. Your profile will be visible to thousands of potential customers."
+                    },
+                    {
+                        title: "3. Receive & Manage Bookings",
+                        content: "Accept requests in real-time or schedule services at your convenience. Customers can reach out via in-app chat for coordination."
+                    },
+                    {
+                        title: "4. Earn & Build Your Reputation",
+                        content: "Deliver high-quality service, earn positive reviews, and move up HelpRush’s Provider Levels for better visibility and rewards."
+                    },
+                    {
+                        title: "5. Secure Payments & Growth Opportunities",
+                        content: "Receive payments directly through the platform. Access benefits like insurance, training, and exclusive business tools to grow your service."
 
-                <h3 className="font-semibold text-lg">4. Earn & Build Your Reputation</h3>
-                <p>Deliver high-quality service, earn positive reviews, and move up HelpRush’s Provider Levels for better visibility and rewards.</p>
-
-                <h3 className="font-semibold text-lg">5. Secure Payments & Growth Opportunities</h3>
-                <p>Receive payments directly through the platform. Access benefits like insurance, training, and exclusive business tools to grow your service.</p>
+                    }
+                ]} />
+               
             </section>
 
             <section className="">

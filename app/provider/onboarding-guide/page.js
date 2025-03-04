@@ -10,63 +10,84 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">Provider Onboarding Guide - HelpRush</h1>
-            <p>Welcome to HelpRush! We are excited to have you on board as a service provider. This guide will walk you through the step-by-step process of getting started on our platform, ensuring a seamless experience for both you and your customers.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Step 1: Sign Up & Registration</h2>
-            <ol className="list-decimal list-inside">
-                <li><strong>Download the HelpRush Provider App</strong> from the Google Play Store or Apple App Store.</li>
-                <li><strong>Create an Account</strong> using your mobile number and verify it via OTP.</li>
-                <li><strong>Enter Basic Information:</strong>
-                    <ul className="list-disc list-inside ml-6">
-                        <li>Full Name</li>
-                        <li>Business Name (if applicable)</li>
-                        <li>Service Category</li>
-                        <li>Location</li>
-                        <li>Preferred Service Areas</li>
-                    </ul>
-                </li>
-                <li><strong>Proceed for Identity Verification:</strong>
-                    <ul className="list-disc list-inside ml-6">
-                        <li>Click on Take a selfie</li>
-                        <li>Click on “Verify with digilocker”</li>
-                        <li>Follow the instructions on Digilocker portal</li>
-                        <li>If all the details are correct, your identity verification will be confirmed</li>
-                    </ul>
-                </li>
-                <li><strong>Proceed for Skill Verification (Optional):</strong>
-                    <ul className="list-disc list-inside ml-6">
-                        <li>Pick a nearest Hub</li>
-                        <li>Pick a day & Slot</li>
-                    </ul>
-                </li>
-                <li><strong>Agree to Terms & Conditions</strong>, including the Service Provider Agreement and Privacy Policy.</li>
-            </ol>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-20">
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Step 2: Profile Setup</h2>
-            <ol className="list-decimal list-inside">
-                <li><strong>Complete Your Profile</strong> by adding details and a short bio.</li>
-                <li><strong>List Your Services</strong> under the appropriate categories and set your pricing.</li>
-                <li><strong>Upload Work Portfolio</strong> (if applicable) to showcase your previous work.</li>
-                <li><strong>Enable Availability & Working Hours</strong> to define when you are available for bookings.</li>
-            </ol>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        Provider Onboarding Guide - HelpRush
+                    </h1>
+                    <p className='text'>
+                        Welcome to HelpRush! We are excited to have you on board as a service provider. This guide will walk you through the step-by-step process of getting started on our platform, ensuring a seamless experience for both you and your customers.
+                    </p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Step 3: Verification & Approval</h2>
-            <ol className="list-decimal list-inside">
-                <li>HelpRush conducts a background check and verifies your documents.</li>
-                <li>Our team may schedule an interview or a skill assessment (if required).</li>
-                <li>Upon approval, your profile will be activated, and you will receive a confirmation notification.</li>
-            </ol>
+                </div>
+                <div>
+                    <img src="/img/2148825865.jpg" alt="" />
+                </div>
+            </div>
+
+
+            <div className="pb-10 lg:pb-20">
+                <h2 className="text-xl font-bold mt-4 mb-2">Step 1: Sign Up & Registration</h2>
+                <ol className="list-decimal list-inside flex flex-col gap-2">
+                    <li><strong>Download the HelpRush Provider App</strong> from the Google Play Store or Apple App Store.</li>
+                    <li><strong>Create an Account</strong> using your mobile number and verify it via OTP.</li>
+                    <li><strong>Enter Basic Information:</strong>
+                        <ul className="list-disc list-inside ml-6">
+                            <li>Full Name</li>
+                            <li>Business Name (if applicable)</li>
+                            <li>Service Category</li>
+                            <li>Location</li>
+                            <li>Preferred Service Areas</li>
+                        </ul>
+                    </li>
+                    <li><strong>Proceed for Identity Verification:</strong>
+                        <ul className="list-disc list-inside ml-6">
+                            <li>Click on Take a selfie</li>
+                            <li>Click on “Verify with digilocker”</li>
+                            <li>Follow the instructions on Digilocker portal</li>
+                            <li>If all the details are correct, your identity verification will be confirmed</li>
+                        </ul>
+                    </li>
+                    <li><strong>Proceed for Skill Verification (Optional):</strong>
+                        <ul className="list-disc list-inside ml-6">
+                            <li>Pick a nearest Hub</li>
+                            <li>Pick a day & Slot</li>
+                        </ul>
+                    </li>
+                    <li><strong>Agree to Terms & Conditions</strong>, including the Service Provider Agreement and Privacy Policy.</li>
+                </ol>
+            </div>
+
+            <div className="pb-10 lg:pb-20">
+                <h2 className="text-xl font-bold mt-4 mb-2">Step 2: Profile Setup</h2>
+                <ol className="list-decimal list-inside flex flex-col gap-2">
+                    <li><strong>Complete Your Profile</strong> by adding details and a short bio.</li>
+                    <li><strong>List Your Services</strong> under the appropriate categories and set your pricing.</li>
+                    <li><strong>Upload Work Portfolio</strong> (if applicable) to showcase your previous work.</li>
+                    <li><strong>Enable Availability & Working Hours</strong> to define when you are available for bookings.</li>
+                </ol>
+
+            </div>
+            <div className="pb-10 lg:pb-20">
+                <h2 className="text-xl font-bold mt-4 mb-2">Step 3: Verification & Approval</h2>
+                <ol className="list-decimal list-inside flex flex-col gap-2">
+                    <li>HelpRush conducts a background check and verifies your documents.</li>
+                    <li>Our team may schedule an interview or a skill assessment (if required).</li>
+                    <li>Upon approval, your profile will be activated, and you will receive a confirmation notification.</li>
+                </ol>
+            </div>
 
             <h2 className="text-xl font-bold mt-4 mb-2">Step 4: Training & Guidelines</h2>
-            <ol className="list-decimal list-inside">
+            <ol className="list-decimal list-inside flex flex-col gap-2">
                 <li><strong>Attend Orientation</strong> to understand the HelpRush platform, policies, and best practices.</li>
                 <li><strong>Complete Mandatory Training</strong> on service quality, customer interaction, safety measures, and app usage.</li>
                 <li><strong>Learn About Provider Levels</strong> and how you can progress for better earnings and benefits.</li>
             </ol>
 
             <h2 className="text-xl font-bold mt-4 mb-2">Step 5: Start Accepting Bookings</h2>
-            <ol className="list-decimal list-inside">
+            <ol className="list-decimal list-inside flex flex-col gap-2">
                 <li><strong>Receive Booking Requests</strong> from customers in your preferred service area.</li>
                 <li><strong>Accept or Decline Requests</strong> based on your availability.</li>
                 <li><strong>Communicate with Customers</strong> through in-app chat or call (without sharing personal numbers).</li>
@@ -74,14 +95,14 @@ function page() {
             </ol>
 
             <h2 className="text-xl font-bold mt-4 mb-2">Step 6: Payments & Earnings</h2>
-            <ol className="list-decimal list-inside">
+            <ol className="list-decimal list-inside flex flex-col gap-2">
                 <li>Payments are processed securely via HelpRush’s platform.</li>
                 <li>Earnings are transferred to your registered bank account as per the payout cycle.</li>
                 <li><strong>Track Your Earnings</strong> via the HelpRush Provider App.</li>
             </ol>
 
             <h2 className="text-xl font-bold mt-4 mb-2">Step 7: Reviews & Growth</h2>
-            <ol className="list-decimal list-inside">
+            <ol className="list-decimal list-inside flex flex-col gap-2">
                 <li><strong>Encourage customers to rate and review your services.</strong></li>
                 <li>Higher ratings improve your visibility and booking chances.</li>
                 <li><strong>Maintain professional conduct</strong> to move up the Provider Levels, unlocking better incentives and exclusive benefits.</li>
@@ -89,13 +110,13 @@ function page() {
 
             <h2 className="text-xl font-bold mt-4 mb-2">Support & Assistance</h2>
             <p>If you need any help, reach out to:</p>
-            <ul className="list-disc list-inside ml-6">
+            <ul className="list-disc list-inside ml-6 flex flex-col gap-2">
                 <li><strong>HelpRush Support Team</strong> via the app</li>
                 <li><strong>Email:</strong> support@helprush.in</li>
                 <li><strong>Helpline:</strong> +91-8899200543</li>
             </ul>
 
-            <p>Welcome to HelpRush! We look forward to your success on our platform.</p>
+            <p className='mt-4'>Welcome to HelpRush! We look forward to your success on our platform.</p>
         </div>
     )
 }

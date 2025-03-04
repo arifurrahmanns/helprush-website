@@ -5,7 +5,14 @@ import { getSession, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import { useRouter, useSelectedLayoutSegment } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
-
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 function NavMenu(props) {
     // console.log(loggedIn)
     const [loggedIn, setLoggedIn] = useState(props.loggedIn)
@@ -68,7 +75,19 @@ function NavMenu(props) {
                                 <Link onClick={routeClicked} href="#">Business</Link>
                             </li>
                             <li>
-                                <Link onClick={routeClicked} href="#">About</Link>
+                              
+                                <DropdownMenu>
+                                    <DropdownMenuTrigger>About</DropdownMenuTrigger>
+                                    <DropdownMenuContent>
+                                      
+                                        <DropdownMenuItem>
+                                            <Link onClick={routeClicked} href="#">HelpRush for Business</Link>
+                                        </DropdownMenuItem>
+                                        <DropdownMenuItem>
+                                            <Link onClick={routeClicked} href="#">Become a partner</Link>
+                                        </DropdownMenuItem>
+                                    </DropdownMenuContent>
+                                </DropdownMenu>
                             </li>
                             <li className="block lg:hidden">
                                 <Link onClick={routeClicked} href="/help">Help</Link>
@@ -198,7 +217,7 @@ function NavMenu(props) {
                                 </div>
                             </li>}
                             {loggedIn && <li className="hidden lg:block">
-                                <Link onClick={routeClicked}  href="/dashboard">Profile</Link>
+                                <Link onClick={routeClicked} href="/dashboard">Profile</Link>
                             </li>}
                         </ul>
                     </nav>

@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import React from 'react'
 
 export const generateMetadata = async () => {
@@ -9,85 +10,142 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">HelpRush Code of Conduct</h1>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Our Commitment</h2>
-            <p>At HelpRush, we are committed to fostering a positive, inclusive, and professional environment for all Service Professionals. Your dedication, professionalism, and adherence to our guidelines ensure a seamless experience for both you and the customers you serve.</p>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Our Vision</h2>
-            <p>HelpRush is dedicated to transforming the service industry by connecting skilled professionals with customers seeking reliable, high-quality solutions. We believe in building a community rooted in mutual respect, professionalism, and excellence.</p>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        HelpRush Provider Code of Conduct
+                    </h1>
+                    <p className='text'>
+                        At HelpRush, we are committed to fostering a positive, inclusive, and professional environment for all Service Professionals. Your dedication, professionalism, and adherence to our guidelines ensure a seamless experience for both you and the customers you serve.</p>
+                    <p className="txt mt-2">
+                        HelpRush is dedicated to transforming the service industry by connecting skilled professionals with customers seeking reliable, high-quality solutions. We believe in building a community rooted in mutual respect, professionalism, and excellence.
+                    </p>
+                </div>
+                <div>
+                    <img src="/img/6567.jpg" alt="" />
+                </div>
+            </div>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Purpose of This Document</h2>
-            <p>This Code of Conduct outlines the expectations, responsibilities, and standards of behavior required from every Service Professional associated with HelpRush. These guidelines are designed to:</p>
-            <ul className="list-disc list-inside">
-                <li>Ensure a safe, respectful, and inclusive environment for all interactions.</li>
-                <li>Define the professional standards expected from Service Professionals.</li>
-                <li>Uphold HelpRush's commitment to quality, ethics, and customer satisfaction.</li>
-            </ul>
+            <div className="py-10 lg:py-20">
+                <h2 className="text-xl font-semibold mt-5">Purpose of This Document</h2>
+                <p className="txt">
+                    This Code of Conduct outlines the expectations, responsibilities, and standards of behavior required from every Service Professional associated with HelpRush. These guidelines are designed to:
+                </p>
+                <div className='grid grid-cols-2 mb-5 lg:mb-10 lg:grid-cols-3 gap-4 mt-5'>
+                    <div className='text-theme  font-medium'>
+                        <Icon icon="mdi:environment-outline" className='text-5xl mb-2 c_icon' />
+                        Ensure a safe, respectful, and inclusive environment for all interactions.
+                    </div>
+                    <div className='text-theme  font-medium'>
+                        <Icon icon="material-symbols-light:handshake-outline" className='text-5xl mb-2 c_icon' />
+                        Define the professional standards expected from Service Professionals.
+                    </div>
+                    <div className='text-theme  font-medium'>
+                        <Icon icon="la:hands-helping" className='text-5xl mb-2' />Uphold HelpRush's commitment to quality, ethics, and customer satisfaction.
+                    </div>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Your Role</h2>
-            <p>As a valued Service Professional on HelpRush, your adherence to these guidelines is crucial. These standards reflect our collective commitment to professionalism, uphold our platform's reputation, and ensure a positive experience for all parties involved. We encourage you to familiarize yourself with these guidelines and uphold them as the foundation of your engagement with HelpRush.</p>
+                </div>
+                <p>This Code of Conduct defines the expectations, responsibilities, and ethical standards for every customer using HelpRush. It is designed to:</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Key Guidelines</h2>
+            </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">1. Courtesy and Professional Behavior</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>Professional Conduct:</strong> Maintain a courteous and respectful demeanor in all interactions, both verbal and non-verbal.</li>
-                <li><strong>Respect for Privacy:</strong> Seek permission before entering a customer's home and confine yourself to assigned areas only.</li>
-                <li><strong>Punctuality & Reliability:</strong> Be on time for scheduled appointments and notify customers in advance of any delays.</li>
-            </ul>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">2. Customer Comfort and Transparency</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>Comfort for Vulnerable Groups:</strong> Take extra measures to ensure the comfort of elderly individuals, children, and people with disabilities.</li>
-                <li><strong>Honest Communication:</strong> Provide clear, complete, and accurate information about the job, ensuring transparency in service details and pricing.</li>
-            </ul>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">3. Professionalism and Dispute Resolution</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>Dress Code:</strong> Adhere to regional cultural norms by dressing professionally and appropriately for the service being performed.</li>
-                <li><strong>Non-Offensive Conduct:</strong> Avoid using offensive language, gestures, or actions under any circumstances.</li>
-                <li><strong>Conflict Resolution:</strong> If disputes arise, follow HelpRush's dispute resolution procedures and escalate to the HelpRush Happiness Team if necessary.</li>
-            </ul>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">4. Responsibility and Accountability</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>Damage Prevention:</strong> Exercise care when handling customer property. If damage occurs, take full responsibility and follow HelpRush’s resolution protocols.</li>
-                <li><strong>Health & Beauty Services:</strong> For health and beauty services, follow best practices to prevent adverse reactions and be prepared to handle any such incidents professionally.</li>
-            </ul>
+            <div className="pb-10 lg:pb-20">
+                <h2 className="text-xl font-bold mt-4 mb-2">Your Role</h2>
+                <p>As a valued Service Professional on HelpRush, your adherence to these guidelines is crucial. These standards reflect our collective commitment to professionalism, uphold our platform's reputation, and ensure a positive experience for all parties involved. We encourage you to familiarize yourself with these guidelines and uphold them as the foundation of your engagement with HelpRush.</p>
+            </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">5. Policy Compliance and Non-Discrimination</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>No Smoking or Drinking:</strong> Smoking, drinking, or being under the influence of substances while on a service call is strictly prohibited.</li>
-                <li><strong>Non-Discrimination:</strong> Treat all customers with fairness and respect. Discrimination based on race, religion, caste, disability, gender, or any other protected characteristic is strictly prohibited.</li>
-            </ul>
+            <div className="pb-10 lg:pb-20">
+                <h2 className="text-xl font-semibold mt-4">Key Guidelines</h2>
+                <div className="grid mt-5 lg:grid-cols-3 gap-5 lg:gap-10">
 
-            <h3 className="text-lg font-bold mt-2 mb-1">6. Continuous Professional Development</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>Commitment to Learning:</strong> Stay updated with industry trends, best practices, and new skills to provide high-quality services.</li>
-                <li><strong>Skill Enhancement:</strong> Participate in training programs and mentorship opportunities to improve service quality and customer satisfaction.</li>
-            </ul>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">1. Courtesy and Professional Behavior</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>Professional Conduct:</strong> Maintain a courteous and respectful demeanor in all interactions, both verbal and non-verbal.</li>
+                            <li><strong>Respect for Privacy:</strong> Seek permission before entering a customer's home and confine yourself to assigned areas only.</li>
+                            <li><strong>Punctuality & Reliability:</strong> Be on time for scheduled appointments and notify customers in advance of any delays.</li>
+                        </ul>
+                    </div>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">2. Customer Comfort and Transparency</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>Comfort for Vulnerable Groups:</strong> Take extra measures to ensure the comfort of elderly individuals, children, and people with disabilities.</li>
+                            <li><strong>Honest Communication:</strong> Provide clear, complete, and accurate information about the job, ensuring transparency in service details and pricing.</li>
+                        </ul>
+                    </div>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">3. Professionalism and Dispute Resolution</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>Dress Code:</strong> Adhere to regional cultural norms by dressing professionally and appropriately for the service being performed.</li>
+                            <li><strong>Non-Offensive Conduct:</strong> Avoid using offensive language, gestures, or actions under any circumstances.</li>
+                            <li><strong>Conflict Resolution:</strong> If disputes arise, follow HelpRush's dispute resolution procedures and escalate to the HelpRush Happiness Team if necessary.</li>
+                        </ul>
+                    </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">7. Safety, Security, and Health Standards</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>Safe Work Practices:</strong> Use necessary protective gear and follow safety guidelines appropriate to your profession.</li>
-                <li><strong>Responsible Driving:</strong> If commuting to a service location, drive responsibly and adhere to traffic laws.</li>
-                <li><strong>Health & Well-being:</strong> Follow health guidelines, take necessary rest when unwell, and comply with vaccination mandates where applicable.</li>
-                <li><strong>Insurance Coverage:</strong> Maintain insurance for accident protection, especially for high-risk professions like handymen.</li>
-            </ul>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">4. Responsibility and Accountability</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>Damage Prevention:</strong> Exercise care when handling customer property. If damage occurs, take full responsibility and follow HelpRush’s resolution protocols.</li>
+                            <li><strong>Health & Beauty Services:</strong> For health and beauty services, follow best practices to prevent adverse reactions and be prepared to handle any such incidents professionally.</li>
+                        </ul>
+                    </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">8. Identity Verification and Trust</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>Authorized Personnel Only:</strong> Ensure that only listed and verified personnel provide services on behalf of your profile.</li>
-                <li><strong>Identity Disclosure:</strong> Be prepared to verify your identity when requested by customers or HelpRush for security purposes.</li>
-            </ul>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">5. Policy Compliance and Non-Discrimination</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>No Smoking or Drinking:</strong> Smoking, drinking, or being under the influence of substances while on a service call is strictly prohibited.</li>
+                            <li><strong>Non-Discrimination:</strong> Treat all customers with fairness and respect. Discrimination based on race, religion, caste, disability, gender, or any other protected characteristic is strictly prohibited.</li>
+                        </ul>
+                    </div>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">6. Continuous Professional Development</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>Commitment to Learning:</strong> Stay updated with industry trends, best practices, and new skills to provide high-quality services.</li>
+                            <li><strong>Skill Enhancement:</strong> Participate in training programs and mentorship opportunities to improve service quality and customer satisfaction.</li>
+                        </ul>
+                    </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">9. Complaint Resolution and Refunds</h3>
-            <ul className="list-disc list-inside">
-                <li><strong>Handling Complaints:</strong> Address customer complaints professionally and in accordance with HelpRush's resolution process.</li>
-                <li><strong>Redoing Jobs:</strong> If a service is unsatisfactory, be willing to redo it at no extra charge if deemed necessary by HelpRush.</li>
-                <li><strong>Refund Policy:</strong> Issue refunds if the service is deemed irreparable by the HelpRush Happiness Team.</li>
-            </ul>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">7. Safety, Security, and Health Standards</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>Safe Work Practices:</strong> Use necessary protective gear and follow safety guidelines appropriate to your profession.</li>
+                            <li><strong>Responsible Driving:</strong> If commuting to a service location, drive responsibly and adhere to traffic laws.</li>
+                            <li><strong>Health & Well-being:</strong> Follow health guidelines, take necessary rest when unwell, and comply with vaccination mandates where applicable.</li>
+                            <li><strong>Insurance Coverage:</strong> Maintain insurance for accident protection, especially for high-risk professions like handymen.</li>
+                        </ul>
+                    </div>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">8. Identity Verification and Trust</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>Authorized Personnel Only:</strong> Ensure that only listed and verified personnel provide services on behalf of your profile.</li>
+                            <li><strong>Identity Disclosure:</strong> Be prepared to verify your identity when requested by customers or HelpRush for security purposes.</li>
+                        </ul>
+                    </div>
+                    <div className="border shadow p-5 rounded">
+                        <h3 className="text-lg font-medium mb-3">9. Complaint Resolution and Refunds</h3>
+                        <ul className="list-disc list-inside">
+                            <li><strong>Handling Complaints:</strong> Address customer complaints professionally and in accordance with HelpRush's resolution process.</li>
+                            <li><strong>Redoing Jobs:</strong> If a service is unsatisfactory, be willing to redo it at no extra charge if deemed necessary by HelpRush.</li>
+                            <li><strong>Refund Policy:</strong> Issue refunds if the service is deemed irreparable by the HelpRush Happiness Team.</li>
+                        </ul>
+                    </div>
+                
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
 
             <h2 className="text-xl font-bold mt-4 mb-2">Conclusion</h2>
             <p>By adhering to these guidelines, you contribute to making HelpRush a trusted and professional marketplace. We appreciate your dedication and commitment to excellence. Thank you for being a valued part of the HelpRush community!</p>
