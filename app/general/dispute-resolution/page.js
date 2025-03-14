@@ -9,62 +9,81 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">Dispute Resolution Document</h1>
-            <p>Welcome to HelpRush, where we connect customers with service providers in a seamless and efficient manner. To foster a positive and productive environment, we have established this Dispute Resolution Document to address and resolve disputes that may arise between customers and service providers.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">What is a Dispute?</h2>
-            <p>A dispute, in the context of HelpRush, is defined as any disagreement or conflict between a customer and a service provider or a customer and a service professional (Service Pro) on our platform. Disputes may arise from various situations, including but not limited to issues related to services rendered, payment disputes, or any other matter affecting the parties involved in a transaction.</p>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
 
-            <p>Our goal is to provide a fair and transparent process for resolving disputes, ensuring that both customers and service providers understand the steps involved and the mechanisms in place for resolution. This document outlines the procedures and timelines for resolving disputes, emphasizing informal resolution, mediation, and escalation to HelpRush. Additionally, it clarifies user responsibilities and HelpRush's limitations in certain scenarios, particularly regarding service-related issues.</p>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        Dispute Resolution Document
+                    </h1>
+                    <p className='txt'>Welcome to HelpRush, where we connect customers with service providers in a seamless and efficient manner. To foster a positive and productive environment, we have established this Dispute Resolution Document to address and resolve disputes that may arise between customers and service providers.</p>
 
-            <p>We encourage all users of the HelpRush platform to familiarize themselves with this document, as it serves as a guide to maintaining a harmonious and reliable community. Our commitment is to facilitate efficient and fair resolutions that benefit all parties involved.</p>
+                </div>
+                <div>
+                    <img src="/img/5685767_54785.jpg" alt="" />
+                </div>
+            </div>
 
-            <p>Thank you for being part of the HelpRush community, where connecting customers with service providers is our priority, and resolving disputes is approached with fairness and transparency.</p>
+            <div className="py-10 lg:py-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">What is a Dispute?</h2>
+                <p>A dispute, in the context of HelpRush, is defined as any disagreement or conflict between a customer and a service provider or a customer and a service professional (Service Pro) on our platform. Disputes may arise from various situations, including but not limited to issues related to services rendered, payment disputes, or any other matter affecting the parties involved in a transaction.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Types of Disputes:</h2>
-            <ul className="list-disc list-inside">
-                <li>Disputes between customers and service providers or customers and Service Pros.</li>
-                <li>Disputes between users and HelpRush.</li>
-                <li>Disputes between Service Providers & HelpRush.</li>
-                <li>Disputes between Service providers & Service Pros.</li>
-                <li>Nature of Dispute: Financial (Related to transaction, money, pricing, stipend, charges, etc.), Professional (Related to service/job), Conduct & behavior (Related to behavior), Privacy (Related to Privacy), Damage (Related to loss of property or damage to premises), or any other reason.</li>
-            </ul>
+                <p>Our goal is to provide a fair and transparent process for resolving disputes, ensuring that both customers and service providers understand the steps involved and the mechanisms in place for resolution. This document outlines the procedures and timelines for resolving disputes, emphasizing informal resolution, mediation, and escalation to HelpRush. Additionally, it clarifies user responsibilities and HelpRush's limitations in certain scenarios, particularly regarding service-related issues.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">HelpRush’s Role:</h2>
-            <p>HelpRush is an online services aggregator and only offers an online marketplace for providers and users to transact. HelpRush doesn't provide services directly to users through its employees or associates, hence is not legally a party to any dispute involving service providers and customers. Providers are independent contractors and are fully responsible for their service, conduct, job, etc. Our role is to facilitate connections and transactions between customers and providers, promoting a reliable and efficient platform. While we strive to ensure a positive experience, any disputes regarding the actual services provided should be directed to the responsible service provider.</p>
+                <p>We encourage all users of the HelpRush platform to familiarize themselves with this document, as it serves as a guide to maintaining a harmonious and reliable community. Our commitment is to facilitate efficient and fair resolutions that benefit all parties involved.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Disputes involving Providers & Users or Pros & Users:</h2>
-            <h3 className="text-lg font-bold mt-2 mb-1">Informal Resolution:</h3>
-            <ul className="list-disc list-inside">
-                <li>Timeline: Disputes should be resolved informally within 3 days of being reported.</li>
-                <li>Process: Parties involved are encouraged to engage in open communication to reach an amicable resolution. If unresolved, the dispute may proceed to formal mediation.</li>
-            </ul>
+                <p>Thank you for being part of the HelpRush community, where connecting customers with service providers is our priority, and resolving disputes is approached with fairness and transparency.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">Mediation:</h3>
-            <ul className="list-disc list-inside">
-                <li>Timeline: If informal resolution is unsuccessful, the dispute will be submitted for mediation within 7 days.</li>
-                <li>Process: A neutral third party, agreed upon by both the customer and the service provider, will facilitate the mediation process.</li>
-            </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">Types of Disputes:</h2>
+                <ul className="list-disc list-inside">
+                    <li>Disputes between customers and service providers or customers and Service Pros.</li>
+                    <li>Disputes between users and HelpRush.</li>
+                    <li>Disputes between Service Providers & HelpRush.</li>
+                    <li>Disputes between Service providers & Service Pros.</li>
+                    <li>Nature of Dispute: Financial (Related to transaction, money, pricing, stipend, charges, etc.), Professional (Related to service/job), Conduct & behavior (Related to behavior), Privacy (Related to Privacy), Damage (Related to loss of property or damage to premises), or any other reason.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">HelpRush’s Role:</h2>
+                <p>HelpRush is an online services aggregator and only offers an online marketplace for providers and users to transact. HelpRush doesn't provide services directly to users through its employees or associates, hence is not legally a party to any dispute involving service providers and customers. Providers are independent contractors and are fully responsible for their service, conduct, job, etc. Our role is to facilitate connections and transactions between customers and providers, promoting a reliable and efficient platform. While we strive to ensure a positive experience, any disputes regarding the actual services provided should be directed to the responsible service provider.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">Disputes involving Providers & Users or Pros & Users:</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">Informal Resolution:</h3>
+                <ul className="list-disc list-inside">
+                    <li>Timeline: Disputes should be resolved informally within 3 days of being reported.</li>
+                    <li>Process: Parties involved are encouraged to engage in open communication to reach an amicable resolution. If unresolved, the dispute may proceed to formal mediation.</li>
+                </ul>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">Escalation to HelpRush:</h3>
-            <ul className="list-disc list-inside">
-                <li>If mediation does not result in resolution within the specified timeframe, the dispute may be escalated to the HelpRush platform.</li>
-                <li>HelpRush will appoint a representative to review the case, gather relevant information, and propose a resolution.</li>
-                <li>The decision made by HelpRush will be final and binding on both parties.</li>
-            </ul>
+                <h3 className="text-lg font-bold mt-2 mb-1">Mediation:</h3>
+                <ul className="list-disc list-inside">
+                    <li>Timeline: If informal resolution is unsuccessful, the dispute will be submitted for mediation within 7 days.</li>
+                    <li>Process: A neutral third party, agreed upon by both the customer and the service provider, will facilitate the mediation process.</li>
+                </ul>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Disputes between Users and HelpRush:</h2>
-            <ul className="list-disc list-inside">
-                <li>Users will approach our Happiness department through email or phone to lodge a formal complaint.</li>
-                <li>Within 24 hours of lodging a complaint, a Happiness executive will be assigned to resolve the complaint.</li>
-                <li>If not resolved amicably, users can escalate the issue to Tier Two as per the information shared on our website and application. A happiness manager will take over to resolve the issue within a maximum of 3 days.</li>
-                <li>If a user complaint remains unresolved, or the user is not satisfied, the complaint can be escalated to the third and final level. A Happiness Rusher will make the last-ditch effort to resolve the complaint within seven days to the satisfaction of the user.</li>
-            </ul>
-            <p>Methods of arbitration and mediation remain the same for all kinds of disputes.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">Escalation to HelpRush:</h3>
+                <ul className="list-disc list-inside">
+                    <li>If mediation does not result in resolution within the specified timeframe, the dispute may be escalated to the HelpRush platform.</li>
+                    <li>HelpRush will appoint a representative to review the case, gather relevant information, and propose a resolution.</li>
+                    <li>The decision made by HelpRush will be final and binding on both parties.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">Disputes between Users and HelpRush:</h2>
+                <ul className="list-disc list-inside">
+                    <li>Users will approach our Happiness department through email or phone to lodge a formal complaint.</li>
+                    <li>Within 24 hours of lodging a complaint, a Happiness executive will be assigned to resolve the complaint.</li>
+                    <li>If not resolved amicably, users can escalate the issue to Tier Two as per the information shared on our website and application. A happiness manager will take over to resolve the issue within a maximum of 3 days.</li>
+                    <li>If a user complaint remains unresolved, or the user is not satisfied, the complaint can be escalated to the third and final level. A Happiness Rusher will make the last-ditch effort to resolve the complaint within seven days to the satisfaction of the user.</li>
+                </ul>
+                <p>Methods of arbitration and mediation remain the same for all kinds of disputes.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Payment Disputes:</h2>
-            <p>If the dispute relates to payment claims on HelpRush, it will be handled separately. HelpRush will conduct an investigation, and a resolution will be proposed within 10 days.</p>
-
+                <h2 className="text-xl font-bold mt-4 mb-2">Payment Disputes:</h2>
+                <p>If the dispute relates to payment claims on HelpRush, it will be handled separately. HelpRush will conduct an investigation, and a resolution will be proposed within 10 days.</p>
+            </div>
+            
             <h2 className="text-xl font-bold mt-4 mb-2">Documentation:</h2>
             <p>Both customers and service providers are encouraged to keep detailed records of all communication, transactions, and relevant information related to the dispute. These records may be requested during the resolution process.</p>
 

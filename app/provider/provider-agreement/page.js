@@ -28,113 +28,142 @@ function page() {
                     <img src="/img/2147801296.jpg" alt="" />
                 </div>
             </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">2. Independent Relationship</h2>
+                <p>The Service Provider acknowledges and agrees to operate as an independent business owner. HelpRush does not employ, partner with, or represent the Service Provider. By utilizing HelpRush's platform, the Service Provider connects with clients seeking services. HelpRush does not guarantee job availability, fixed earnings, or continued engagement.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">3. Conditions of Service</h2>
+                <p>By entering this Agreement, the Service Provider asserts and confirms the following:</p>
+                <ul className="list-disc list-inside">
+                    <li><strong>Legal Capacity:</strong> The Service Provider is of legal age in their jurisdiction and is capable of entering binding contracts.</li>
+                    <li><strong>Right and Authority:</strong> The Service Provider possesses the right, authority, and capacity to abide by this Agreement's terms and conditions.</li>
+                    <li><strong>Agreement Adherence:</strong> The Service Provider has read, comprehends, and agrees to comply with the Terms of Service, Privacy Policy, and applicable regional regulations where services are performed.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">4. Service Conduct</h2>
+                <p>The Service Provider shall:</p>
+                <ul className="list-disc list-inside">
+                    <li>Perform services only in regions where HelpRush operates.</li>
+                    <li>Respect privacy, property, and data protection rights of users and shall not record any service or interaction without prior written consent.</li>
+                    <li>Fulfill commitments, communicate promptly, use approved payment methods, and maintain professionalism in all interactions with users.</li>
+                    <li>Adhere to local, state, provincial, national, or international laws and act in good faith when using the HelpRush platform.</li>
+                </ul>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">2. Independent Relationship</h2>
-            <p>The Service Provider acknowledges and agrees to operate as an independent business owner. HelpRush does not employ, partner with, or represent the Service Provider. By utilizing HelpRush's platform, the Service Provider connects with clients seeking services. HelpRush does not guarantee job availability, fixed earnings, or continued engagement.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">5. Representations and Warranties</h2>
+                <p>The Service Provider represents and warrants that:</p>
+                <ul className="list-disc list-inside">
+                    <li>When representing an entity, they have the authority to bind that entity to this Agreement.</li>
+                    <li>They do not hold any undisclosed motivations or interests related to the HelpRush platform.</li>
+                    <li>They operate as a business entity and comply with all legal requirements, including necessary licenses, insurance, and permits.</li>
+                    <li>They have the necessary skills, expertise, and legal permissions to offer and perform services.</li>
+                </ul>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">3. Conditions of Service</h2>
-            <p>By entering this Agreement, the Service Provider asserts and confirms the following:</p>
-            <ul className="list-disc list-inside">
-                <li><strong>Legal Capacity:</strong> The Service Provider is of legal age in their jurisdiction and is capable of entering binding contracts.</li>
-                <li><strong>Right and Authority:</strong> The Service Provider possesses the right, authority, and capacity to abide by this Agreement's terms and conditions.</li>
-                <li><strong>Agreement Adherence:</strong> The Service Provider has read, comprehends, and agrees to comply with the Terms of Service, Privacy Policy, and applicable regional regulations where services are performed.</li>
-            </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">6. Limitation of Liability</h2>
+                <p>The Service Provider acknowledges that HelpRush, operated by Horfay Taqnia Private Limited, and its affiliates are not liable for the actions or conduct of users on the platform and releases HelpRush and its affiliates from any liability or claims arising from such interactions.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">4. Service Conduct</h2>
-            <p>The Service Provider shall:</p>
-            <ul className="list-disc list-inside">
-                <li>Perform services only in regions where HelpRush operates.</li>
-                <li>Respect privacy, property, and data protection rights of users and shall not record any service or interaction without prior written consent.</li>
-                <li>Fulfill commitments, communicate promptly, use approved payment methods, and maintain professionalism in all interactions with users.</li>
-                <li>Adhere to local, state, provincial, national, or international laws and act in good faith when using the HelpRush platform.</li>
-            </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">7. Guidelines and Prohibited Actions</h2>
+                <p>The Service Provider acknowledges and agrees to adhere to the following guidelines:</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">Prohibited Purposes:</h3>
+                <ul className="list-disc list-inside">
+                    <li>Service Providers shall not use the HelpRush platform for:</li>
+                    <li>Defaming, abusing, harassing, stalking, intimidating, or violating the rights of others.</li>
+                    <li>Publishing or distributing profane, defamatory, infringing, or unlawful content.</li>
+                    <li>Uploading files that violate intellectual property rights or contain harmful software.</li>
+                    <li>Engaging in commercial activities unrelated to services.</li>
+                    <li>Performing or posting services that involve illegal or unsafe activities as deemed inappropriate by HelpRush.</li>
+                    <li>Conducting surveys, contests, pyramid schemes, or chain letters.</li>
+                </ul>
+                <h3 className="text-lg font-bold mt-2 mb-1">Platform Usage Restrictions:</h3>
+                <ul className="list-disc list-inside">
+                    <li>The Service Provider shall not:</li>
+                    <li>Use automated processes to collect or redistribute platform data.</li>
+                    <li>Interfere with or hack the HelpRush platform or its networks.</li>
+                    <li>Imply endorsement by HelpRush without prior written consent.</li>
+                    <li>Attempt to circumvent the platform's payment system or service charges.</li>
+                    <li>Register under false identities or after account suspension or termination.</li>
+                </ul>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">5. Representations and Warranties</h2>
-            <p>The Service Provider represents and warrants that:</p>
-            <ul className="list-disc list-inside">
-                <li>When representing an entity, they have the authority to bind that entity to this Agreement.</li>
-                <li>They do not hold any undisclosed motivations or interests related to the HelpRush platform.</li>
-                <li>They operate as a business entity and comply with all legal requirements, including necessary licenses, insurance, and permits.</li>
-                <li>They have the necessary skills, expertise, and legal permissions to offer and perform services.</li>
-            </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">8. Contractual Agreements between Customers and Service Providers</h2>
+                <p>A legally binding contract, termed the "Service Agreement," is established upon agreement of terms between the Service Provider and the Customer.</p>
+                <p>Upon prior approval by the Customer, the Service Provider may engage subcontractors ("Service Pros") to fulfill the service. Service Pros must be registered through HelpRush's platform.</p>
+                <p>The Service Provider is accountable for Service Pros' acts and omissions, their compensation, benefits, expenses, and tax withholdings.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">6. Limitation of Liability</h2>
-            <p>The Service Provider acknowledges that HelpRush, operated by Horfay Taqnia Private Limited, and its affiliates are not liable for the actions or conduct of users on the platform and releases HelpRush and its affiliates from any liability or claims arising from such interactions.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">9. Tax and Reporting</h2>
+                <p>Service Providers are responsible for any taxes or charges related to services performed under this Agreement. HelpRush may issue receipts or documentation for accurate tax reporting where applicable.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">7. Guidelines and Prohibited Actions</h2>
-            <p>The Service Provider acknowledges and agrees to adhere to the following guidelines:</p>
-            <h3 className="text-lg font-bold mt-2 mb-1">Prohibited Purposes:</h3>
-            <ul className="list-disc list-inside">
-                <li>Service Providers shall not use the HelpRush platform for:</li>
-                <li>Defaming, abusing, harassing, stalking, intimidating, or violating the rights of others.</li>
-                <li>Publishing or distributing profane, defamatory, infringing, or unlawful content.</li>
-                <li>Uploading files that violate intellectual property rights or contain harmful software.</li>
-                <li>Engaging in commercial activities unrelated to services.</li>
-                <li>Performing or posting services that involve illegal or unsafe activities as deemed inappropriate by HelpRush.</li>
-                <li>Conducting surveys, contests, pyramid schemes, or chain letters.</li>
-            </ul>
-            <h3 className="text-lg font-bold mt-2 mb-1">Platform Usage Restrictions:</h3>
-            <ul className="list-disc list-inside">
-                <li>The Service Provider shall not:</li>
-                <li>Use automated processes to collect or redistribute platform data.</li>
-                <li>Interfere with or hack the HelpRush platform or its networks.</li>
-                <li>Imply endorsement by HelpRush without prior written consent.</li>
-                <li>Attempt to circumvent the platform's payment system or service charges.</li>
-                <li>Register under false identities or after account suspension or termination.</li>
-            </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">10. Public Areas & Acceptable Use</h2>
+                <p>HelpRush hosts Public Areas such as message boards, forums, and chat areas for user interactions.</p>
+                <p>Users should not share personal contact information in these community spaces.</p>
+                <p>Users must not engage in spamming, advertising unrelated goods or services, impersonating others, or posting offensive content.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">8. Contractual Agreements between Customers and Service Providers</h2>
-            <p>A legally binding contract, termed the "Service Agreement," is established upon agreement of terms between the Service Provider and the Customer.</p>
-            <p>Upon prior approval by the Customer, the Service Provider may engage subcontractors ("Service Pros") to fulfill the service. Service Pros must be registered through HelpRush's platform.</p>
-            <p>The Service Provider is accountable for Service Pros' acts and omissions, their compensation, benefits, expenses, and tax withholdings.</p>
+                <h2 className="text-xl font-bold mt-4 mb-2">11. Mobile App Updates and Upgrades</h2>
+                <p>By installing the HelpRush App, Users consent to its installation and updates.</p>
+                <p>The App may communicate with HelpRush servers for functionality and data collection as per the Privacy Policy.</p>
+                <p>Users can uninstall the App at any time.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">9. Tax and Reporting</h2>
-            <p>Service Providers are responsible for any taxes or charges related to services performed under this Agreement. HelpRush may issue receipts or documentation for accurate tax reporting where applicable.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">12. Deactivation and Suspension</h2>
+                <p>HelpRush reserves the right to suspend or deactivate a Service Provider's account for breaches of this Agreement.</p>
+                <p>Upon deactivation, the Service Provider may not create a new account under a different name.</p>
+                <p>Service Providers can appeal suspensions by contacting policies@helprush.com within 14 days of receiving notice.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">10. Public Areas & Acceptable Use</h2>
-            <p>HelpRush hosts Public Areas such as message boards, forums, and chat areas for user interactions.</p>
-            <p>Users should not share personal contact information in these community spaces.</p>
-            <p>Users must not engage in spamming, advertising unrelated goods or services, impersonating others, or posting offensive content.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">13. Account, Password, Security, and Telephone Communications</h2>
+                <p>Service Providers are responsible for maintaining the confidentiality of their login credentials.</p>
+                <p>Unauthorized account use must be reported to HelpRush immediately.</p>
+                <p>HelpRush may monitor or record calls for quality control and training purposes.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">11. Mobile App Updates and Upgrades</h2>
-            <p>By installing the HelpRush App, Users consent to its installation and updates.</p>
-            <p>The App may communicate with HelpRush servers for functionality and data collection as per the Privacy Policy.</p>
-            <p>Users can uninstall the App at any time.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">14. Links to Third-Party Websites</h2>
+                <p>HelpRush may include links to third-party websites for reference.</p>
+                <p>HelpRush does not control these sites and is not liable for their content, products, or services.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">12. Deactivation and Suspension</h2>
-            <p>HelpRush reserves the right to suspend or deactivate a Service Provider's account for breaches of this Agreement.</p>
-            <p>Upon deactivation, the Service Provider may not create a new account under a different name.</p>
-            <p>Service Providers can appeal suspensions by contacting policies@helprush.com within 14 days of receiving notice.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">15. HelpRush Operates as an Online Marketplace</h2>
+                <p>HelpRush, operated by Horfay Taqnia Private Limited, acts solely as a platform connecting Customers with Service Providers.</p>
+                <p>HelpRush does not perform services or employ Service Providers.</p>
+                <p>Service Providers operate independently and set their rates without deductions by HelpRush.</p>
+                <p>HelpRush is not an employment agency and does not guarantee service requests or earnings.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">13. Account, Password, Security, and Telephone Communications</h2>
-            <p>Service Providers are responsible for maintaining the confidentiality of their login credentials.</p>
-            <p>Unauthorized account use must be reported to HelpRush immediately.</p>
-            <p>HelpRush may monitor or record calls for quality control and training purposes.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">16. Dispute Resolution</h2>
+                <p>Service Providers agree to resolve disputes with Customers amicably.</p>
+                <p>If unresolved, HelpRush may facilitate discussions but is not liable for resolution outcomes.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">14. Links to Third-Party Websites</h2>
-            <p>HelpRush may include links to third-party websites for reference.</p>
-            <p>HelpRush does not control these sites and is not liable for their content, products, or services.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">17. Governing Law and Jurisdiction</h2>
+                <p>This Agreement shall be governed by and construed under the laws of India.</p>
+                <p>Disputes shall be subject to the exclusive jurisdiction of the courts in Srinagar, Jammu and Kashmir, India.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">15. HelpRush Operates as an Online Marketplace</h2>
-            <p>HelpRush, operated by Horfay Taqnia Private Limited, acts solely as a platform connecting Customers with Service Providers.</p>
-            <p>HelpRush does not perform services or employ Service Providers.</p>
-            <p>Service Providers operate independently and set their rates without deductions by HelpRush.</p>
-            <p>HelpRush is not an employment agency and does not guarantee service requests or earnings.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">18. Agreement Termination</h2>
+                <p>Service Providers may terminate this Agreement at any time by ceasing Platform use.</p>
+                <p>Termination does not absolve obligations incurred prior to termination.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">16. Dispute Resolution</h2>
-            <p>Service Providers agree to resolve disputes with Customers amicably.</p>
-            <p>If unresolved, HelpRush may facilitate discussions but is not liable for resolution outcomes.</p>
+                <p>By accepting this Agreement, you acknowledge and accept all terms outlined above. Failure to comply may result in account suspension or legal action.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">17. Governing Law and Jurisdiction</h2>
-            <p>This Agreement shall be governed by and construed under the laws of India.</p>
-            <p>Disputes shall be subject to the exclusive jurisdiction of the courts in Srinagar, Jammu and Kashmir, India.</p>
-
-            <h2 className="text-xl font-bold mt-4 mb-2">18. Agreement Termination</h2>
-            <p>Service Providers may terminate this Agreement at any time by ceasing Platform use.</p>
-            <p>Termination does not absolve obligations incurred prior to termination.</p>
-
-            <p>By accepting this Agreement, you acknowledge and accept all terms outlined above. Failure to comply may result in account suspension or legal action.</p>
-        </div>
+            </div></div>
     )
 }
 

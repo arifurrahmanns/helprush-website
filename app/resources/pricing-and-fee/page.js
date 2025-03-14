@@ -10,32 +10,46 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">Pricing & Fee</h1>
-            <p className="mb-4">
-                At HelpRush, we believe in transparent pricing with no hidden charges. Our platform ensures fair compensation for service providers while keeping costs reasonable for customers. Below is a breakdown of how pricing and fees work on HelpRush.
-            </p>
 
-            <h2 className="text-2xl font-semibold mt-6 mb-3">For Customers</h2>
-            <h3 className="text-xl font-medium mt-3 mb-2">1. Service Pricing</h3>
-            <ul className="list-inside list-disc ml-6">
-                <li>Each service has a base price, which may vary based on factors like location, time, and provider experience.</li>
-                <li>Some services have fixed pricing, while others may require a quote from the provider.</li>
-                <li>The final price will be shown before confirmation, ensuring full transparency.</li>
-            </ul>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
 
-            <h3 className="text-xl font-medium mt-3 mb-2">2. Additional Charges</h3>
-            <ul className="list-inside list-disc ml-6">
-                <li><b>RushHour Pricing:</b> If you book an urgent service, a small priority fee may apply.</li>
-                <li><b>Location-Based Charges:</b> For remote or high-demand areas, providers may charge extra.</li>
-                <li><b>Material Costs:</b> If the service requires additional materials, the cost will be included in the final bill.</li>
-            </ul>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        Pricing & Fee
+                    </h1>
+                    <p className='text'>
+                        At HelpRush, we believe in transparent pricing with no hidden charges. Our platform ensures fair compensation for service providers while keeping costs reasonable for customers. Below is a breakdown of how pricing and fees work on HelpRush.
+                    </p>
+                </div>
+                <div>
+                    <img src="/img/pricing-2.jpg" alt="" />
+                </div>
+            </div>
 
-            <h3 className="text-xl font-medium mt-3 mb-2">3. Cancellation & Refund Fees</h3>
-            <ul className="list-inside list-disc ml-6">
-                <li><b>Before Provider Confirmation:</b> Free cancellation.</li>
-                <li><b>After Provider Confirmation:</b> Cancellation fees apply based on the time before service (up to 70%).</li>
-                <li><b>Refunds:</b> Processed within 7 business days for eligible cancellations.</li>
-            </ul>
+
+            <div className="py-10 lg:py-20">
+                <h2 className="text-2xl font-semibold mt-6 mb-3">For Customers</h2>
+                <h3 className="text-xl font-medium mt-3 mb-2">1. Service Pricing</h3>
+                <ul className="list-inside list-disc ml-6">
+                    <li>Each service has a base price, which may vary based on factors like location, time, and provider experience.</li>
+                    <li>Some services have fixed pricing, while others may require a quote from the provider.</li>
+                    <li>The final price will be shown before confirmation, ensuring full transparency.</li>
+                </ul>
+
+                <h3 className="text-xl font-medium mt-3 mb-2">2. Additional Charges</h3>
+                <ul className="list-inside list-disc ml-6">
+                    <li><b>RushHour Pricing:</b> If you book an urgent service, a small priority fee may apply.</li>
+                    <li><b>Location-Based Charges:</b> For remote or high-demand areas, providers may charge extra.</li>
+                    <li><b>Material Costs:</b> If the service requires additional materials, the cost will be included in the final bill.</li>
+                </ul>
+
+                <h3 className="text-xl font-medium mt-3 mb-2">3. Cancellation & Refund Fees</h3>
+                <ul className="list-inside list-disc ml-6">
+                    <li><b>Before Provider Confirmation:</b> Free cancellation.</li>
+                    <li><b>After Provider Confirmation:</b> Cancellation fees apply based on the time before service (up to 70%).</li>
+                    <li><b>Refunds:</b> Processed within 7 business days for eligible cancellations.</li>
+                </ul>
+            </div>
 
             <h2 className="text-2xl font-semibold mt-6 mb-3">For Providers</h2>
             <h3 className="text-xl font-medium mt-3 mb-2">1. Platform Fee</h3>

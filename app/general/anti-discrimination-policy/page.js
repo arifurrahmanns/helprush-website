@@ -9,68 +9,93 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">HelpRush Anti-Discrimination Policy</h1>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">1. Introduction</h2>
-            <p>HelpRush is committed to fostering an inclusive, respectful, and discrimination-free environment for all users, including service professionals, customers, employees, and stakeholders. Rooted in Sufi principles of equality, respect, and universal brotherhood, we uphold the dignity of every individual, irrespective of their background.
-                This policy aligns with Indian legal frameworks, such as the Constitution of India, the Equal Remuneration Act, 1976, the Rights of Persons with Disabilities Act, 2016, and global standards, including the Universal Declaration of Human Rights (UDHR), the International Labour Organization (ILO) conventions, and the General Data Protection Regulation (GDPR).</p>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
 
-            <h2 className="text-xl font-bold mt-4 mb-2">2. Scope</h2>
-            <p>This policy applies to:</p>
-            <ul className="list-disc list-inside">
-                <li>All registered service providers, customers, and users of the HelpRush platform.</li>
-                <li>Employees, contractors, vendors, and partners associated with HelpRush.</li>
-                <li>All interactions, transactions, and engagements on our platform, website, apps, and affiliated services.</li>
-            </ul>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        HelpRush Anti-Discrimination Policy
+                    </h1>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">3. Prohibited Discrimination</h2>
-            <p>HelpRush strictly prohibits discrimination, harassment, or bias based on the following protected characteristics:</p>
-            <ul className="list-disc list-inside">
-                <li>Race, ethnicity, nationality, or caste</li>
-                <li>Religion, belief, or spiritual orientation</li>
-                <li>Gender identity, sexual orientation, or marital status</li>
-                <li>Age, disability, or health condition</li>
-                <li>Economic background or social status</li>
-                <li>Language or regional identity</li>
-                <li>Any other characteristic protected under Indian and international laws</li>
-            </ul>
-            <p>Harassment, derogatory remarks, hate speech, intimidation, or exclusionary practices against any individual based on these characteristics will not be tolerated.</p>
+                </div>
+                <div>
+                    <img src="/img/adp.jpg" alt="" />
+                </div>
+            </div>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">4. Principles Inspired by Humanism</h2>
-            <p>HelpRush embraces Humanistic values in shaping our anti-discrimination approach:</p>
-            <ul className="list-disc list-inside">
-                <li>Unity & Brotherhood: Every individual is valued equally in our ecosystem.</li>
-                <li>Compassion & Respect: We foster kindness in all interactions.</li>
-                <li>Justice & Fairness: All disputes and complaints are handled impartially.</li>
-                <li>Diversity & Inclusion: A space where everyone belongs, regardless of differences.</li>
-            </ul>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">5. Equal Opportunity and Fair Treatment</h2>
-            <p>Service Allocation: Customers cannot refuse service based on discrimination. Similarly, providers cannot reject service requests due to bias.</p>
-            <p>Employment & Compensation: HelpRush ensures fair hiring, training, promotion, and wages for all employees and providers.</p>
-            <p>AI & Algorithmic Fairness: HelpRush’s matching algorithms are designed to prevent bias and ensure impartiality.</p>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">1. Introduction</h2>
+                <p>HelpRush is committed to fostering an inclusive, respectful, and discrimination-free environment for all users, including service professionals, customers, employees, and stakeholders. Rooted in Sufi principles of equality, respect, and universal brotherhood, we uphold the dignity of every individual, irrespective of their background.
+                    This policy aligns with Indian legal frameworks, such as the Constitution of India, the Equal Remuneration Act, 1976, the Rights of Persons with Disabilities Act, 2016, and global standards, including the Universal Declaration of Human Rights (UDHR), the International Labour Organization (ILO) conventions, and the General Data Protection Regulation (GDPR).</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">6. Complaint and Redressal Mechanism</h2>
-            <p>HelpRush provides a structured grievance mechanism for reporting discrimination:</p>
-            <ul className="list-disc list-inside">
-                <li>Reporting Discrimination: Users, employees, or providers facing discrimination can report it via the HelpRush app, website, or email.</li>
-                <li>Anonymous Complaints: Users may report concerns anonymously if they fear retaliation.</li>
-                <li>Fair Investigation: A neutral Anti-Discrimination Committee will investigate cases within 10 business days.</li>
-                <li>Actions Taken: HelpRush may impose penalties, suspensions, or legal actions based on findings.</li>
-            </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">2. Scope</h2>
+                <p>This policy applies to:</p>
+                <ul className="list-disc list-inside">
+                    <li>All registered service providers, customers, and users of the HelpRush platform.</li>
+                    <li>Employees, contractors, vendors, and partners associated with HelpRush.</li>
+                    <li>All interactions, transactions, and engagements on our platform, website, apps, and affiliated services.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
 
-            <h2 className="text-xl font-bold mt-4 mb-2">7. Non-Retaliation Policy</h2>
-            <p>HelpRush strictly prohibits retaliation against individuals who report discrimination or participate in investigations. Any retaliatory action will result in disciplinary measures.</p>
+                <h2 className="text-xl font-bold mt-4 mb-2">3. Prohibited Discrimination</h2>
+                <p>HelpRush strictly prohibits discrimination, harassment, or bias based on the following protected characteristics:</p>
+                <ul className="list-disc list-inside">
+                    <li>Race, ethnicity, nationality, or caste</li>
+                    <li>Religion, belief, or spiritual orientation</li>
+                    <li>Gender identity, sexual orientation, or marital status</li>
+                    <li>Age, disability, or health condition</li>
+                    <li>Economic background or social status</li>
+                    <li>Language or regional identity</li>
+                    <li>Any other characteristic protected under Indian and international laws</li>
+                </ul>
+                <p>Harassment, derogatory remarks, hate speech, intimidation, or exclusionary practices against any individual based on these characteristics will not be tolerated.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">4. Principles Inspired by Humanism</h2>
+                <p>HelpRush embraces Humanistic values in shaping our anti-discrimination approach:</p>
+                <ul className="list-disc list-inside">
+                    <li>Unity & Brotherhood: Every individual is valued equally in our ecosystem.</li>
+                    <li>Compassion & Respect: We foster kindness in all interactions.</li>
+                    <li>Justice & Fairness: All disputes and complaints are handled impartially.</li>
+                    <li>Diversity & Inclusion: A space where everyone belongs, regardless of differences.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
 
-            <h2 className="text-xl font-bold mt-4 mb-2">8. Compliance & Training</h2>
-            <p>Legal Compliance: HelpRush complies with Indian constitutional provisions on equality, the IT Act, 2000, and global anti-discrimination regulations.</p>
-            <p>Training Programs: We conduct mandatory anti-discrimination training for all employees and service providers.</p>
-            <p>Ongoing Monitoring: We assess and refine our policies regularly to ensure continued compliance and fairness.</p>
-
-            <h2 className="text-xl font-bold mt-4 mb-2">9. Policy Enforcement & Amendments</h2>
-            <p>HelpRush reserves the right to update or modify this policy as per legal and ethical requirements. All users must comply with the policy, and failure to do so may lead to penalties or removal from the platform.</p>
-            <p>For any questions or to report an issue, contact our HelpRush Anti-Discrimination Committee at <a href="mailto:support@helprush.in" className="text-blue-600">support@helprush.in</a>.</p>
-
+                <h2 className="text-xl font-bold mt-4 mb-2">5. Equal Opportunity and Fair Treatment</h2>
+                <p>Service Allocation: Customers cannot refuse service based on discrimination. Similarly, providers cannot reject service requests due to bias.</p>
+                <p>Employment & Compensation: HelpRush ensures fair hiring, training, promotion, and wages for all employees and providers.</p>
+                <p>AI & Algorithmic Fairness: HelpRush’s matching algorithms are designed to prevent bias and ensure impartiality.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">6. Complaint and Redressal Mechanism</h2>
+                <p>HelpRush provides a structured grievance mechanism for reporting discrimination:</p>
+                <ul className="list-disc list-inside">
+                    <li>Reporting Discrimination: Users, employees, or providers facing discrimination can report it via the HelpRush app, website, or email.</li>
+                    <li>Anonymous Complaints: Users may report concerns anonymously if they fear retaliation.</li>
+                    <li>Fair Investigation: A neutral Anti-Discrimination Committee will investigate cases within 10 business days.</li>
+                    <li>Actions Taken: HelpRush may impose penalties, suspensions, or legal actions based on findings.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">7. Non-Retaliation Policy</h2>
+                <p>HelpRush strictly prohibits retaliation against individuals who report discrimination or participate in investigations. Any retaliatory action will result in disciplinary measures.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">8. Compliance & Training</h2>
+                <p>Legal Compliance: HelpRush complies with Indian constitutional provisions on equality, the IT Act, 2000, and global anti-discrimination regulations.</p>
+                <p>Training Programs: We conduct mandatory anti-discrimination training for all employees and service providers.</p>
+                <p>Ongoing Monitoring: We assess and refine our policies regularly to ensure continued compliance and fairness.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">9. Policy Enforcement & Amendments</h2>
+                <p>HelpRush reserves the right to update or modify this policy as per legal and ethical requirements. All users must comply with the policy, and failure to do so may lead to penalties or removal from the platform.</p>
+                <p>For any questions or to report an issue, contact our HelpRush Anti-Discrimination Committee at <a href="mailto:support@helprush.in" className="text-blue-600">support@helprush.in</a>.</p>
+            </div>
             <blockquote className="mt-4 p-4 bg-gray-100 border-l-4 border-gray-500 italic">
                 "At HelpRush, we believe in an inclusive world where everyone is treated with dignity, kindness, and respect—because true service knows no barriers."
             </blockquote>

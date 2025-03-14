@@ -9,85 +9,117 @@ export const generateMetadata = async () => {
 function page() {
     return (
         <div className="container py-10 lg:py-20">
-            <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
-            <p>Effective Date: [Insert Date]</p>
-            <p>Last Updated: [Insert Date]</p>
-            <p>Horfay Taqnia Private Limited ("HelpRush," "we," "our," or "us") operates the HelpRush platform, which connects customers with service professionals ("Providers" and "Pros"). We value your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our website, mobile applications, and services (collectively, the "Platform").</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">1. Information We Collect</h2>
-            <p>We collect the following types of information to provide and improve our services:</p>
-            <h3 className="text-lg font-bold mt-2 mb-1">a) Personal Information</h3>
-            <ul className="list-disc list-inside">
-                <li>Name, email, phone number, address, and profile details.</li>
-                <li>Identity verification documents (e.g., Aadhaar, PAN, passport, or business registration documents).</li>
-                <li>Payment details, including UPI, bank details, and transaction history.</li>
-            </ul>
-            <h3 className="text-lg font-bold mt-2 mb-1">b) Service-Related Information</h3>
-            <ul className="list-disc list-inside">
-                <li>Booking details, preferences, service history, and provider ratings.</li>
-                <li>Communication records between customers, providers, and HelpRush support.</li>
-            </ul>
-            <h3 className="text-lg font-bold mt-2 mb-1">c) Device and Usage Information</h3>
-            <ul className="list-disc list-inside">
-                <li>IP address, device type, browser type, operating system, and app usage data.</li>
-                <li>Location data (with consent) to match users with nearby providers.</li>
-                <li>Cookies and similar tracking technologies (refer to our Cookies Policy for details).</li>
-            </ul>
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
 
-            <h2 className="text-xl font-bold mt-4 mb-2">2. How We Use Your Information</h2>
-            <p>We use collected information for the following purposes:</p>
-            <ul className="list-disc list-inside">
-                <li>Providing Services: Matching customers with providers, processing transactions, and enabling service fulfillment.</li>
-                <li>Account Management: Creating, maintaining, and verifying accounts for customers and providers.</li>
-                <li>Security & Compliance: Identity verification, fraud prevention, and compliance with legal obligations.</li>
-                <li>Communication: Sending notifications, confirmations, updates, and marketing content (with opt-out options).</li>
-                <li>Platform Enhancement: Improving user experience, conducting analytics, and addressing technical issues.</li>
-            </ul>
+                <div>
+                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
+                        Privacy Policy
+                    </h1>
+                    <p className='txt'>Effective Date: [Insert Date]</p>
+                    <p className='txt'>Last Updated: [Insert Date]</p>
+                    <p className='txt'>Horfay Taqnia Private Limited ("HelpRush," "we," "our," or "us") operates the HelpRush platform, which connects customers with service professionals ("Providers" and "Pros"). We value your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our website, mobile applications, and services (collectively, the "Platform").</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">3. Sharing & Disclosure of Information</h2>
-            <p>We do not sell personal data. However, we may share your information in the following cases:</p>
-            <ul className="list-disc list-inside">
-                <li>With Service Providers: Your details may be shared with Pros and Providers for booking purposes.</li>
-                <li>With Third-Party Vendors: Payment processors, analytics providers, insurers, or background verification agencies.</li>
-                <li>Legal Compliance: When required by law, court orders, law enforcement agencies, or regulatory authorities.</li>
-                <li>Business Transfers: In case of mergers, acquisitions, or restructuring, data may be transferred to a new entity.</li>
-            </ul>
+                </div>
+                <div>
+                    <img src="/img/2147801296.jpg" alt="" />
+                </div>
+            </div>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">4. Data Security & Retention</h2>
-            <ul className="list-disc list-inside">
-                <li>We implement industry-standard encryption, access controls, and secure storage methods.</li>
-                <li>Your data is retained as long as necessary for operational and legal compliance purposes.</li>
-                <li>You may request data deletion subject to legal and contractual obligations.</li>
-            </ul>
+            <div className="py-10 lg:py-20">
+                <h2 className="text-xl font-bold mt-4 mb-2">1. Information We Collect</h2>
+                <p>We collect the following types of information to provide and improve our services:</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">a) Personal Information</h3>
+                <ul className="list-disc list-inside">
+                    <li>Name, email, phone number, address, and profile details.</li>
+                    <li>Identity verification documents (e.g., Aadhaar, PAN, passport, or business registration documents).</li>
+                    <li>Payment details, including UPI, bank details, and transaction history.</li>
+                </ul>
+                <h3 className="text-lg font-bold mt-2 mb-1">b) Service-Related Information</h3>
+                <ul className="list-disc list-inside">
+                    <li>Booking details, preferences, service history, and provider ratings.</li>
+                    <li>Communication records between customers, providers, and HelpRush support.</li>
+                </ul>
+                <h3 className="text-lg font-bold mt-2 mb-1">c) Device and Usage Information</h3>
+                <ul className="list-disc list-inside">
+                    <li>IP address, device type, browser type, operating system, and app usage data.</li>
+                    <li>Location data (with consent) to match users with nearby providers.</li>
+                    <li>Cookies and similar tracking technologies (refer to our Cookies Policy for details).</li>
+                </ul>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">5. User Rights & Choices</h2>
-            <p>Under applicable laws (including GDPR and India’s IT Act, 2000), you have rights over your data:</p>
-            <ul className="list-disc list-inside">
-                <li>Access & Correction: You can review and update your personal information.</li>
-                <li>Data Portability: You can request a copy of your data in a machine-readable format.</li>
-                <li>Right to Withdraw Consent: You can opt out of marketing communications at any time.</li>
-                <li>Account Deletion: You may request the deletion of your account, subject to regulatory and legal obligations.</li>
-            </ul>
-            <p>For any data-related requests, email <a href="mailto:privacy@helprush.in" className="text-blue-600">privacy@helprush.in</a>.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">2. How We Use Your Information</h2>
+                <p>We use collected information for the following purposes:</p>
+                <ul className="list-disc list-inside">
+                    <li>Providing Services: Matching customers with providers, processing transactions, and enabling service fulfillment.</li>
+                    <li>Account Management: Creating, maintaining, and verifying accounts for customers and providers.</li>
+                    <li>Security & Compliance: Identity verification, fraud prevention, and compliance with legal obligations.</li>
+                    <li>Communication: Sending notifications, confirmations, updates, and marketing content (with opt-out options).</li>
+                    <li>Platform Enhancement: Improving user experience, conducting analytics, and addressing technical issues.</li>
+                </ul>
+            </div>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">6. Children’s Privacy</h2>
-            <p>Our services are intended for users above 18 years of age. We do not knowingly collect data from children. If you believe a child has provided us with personal data, contact us immediately.</p>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">3. Sharing & Disclosure of Information</h2>
+                <p>We do not sell personal data. However, we may share your information in the following cases:</p>
+                <ul className="list-disc list-inside">
+                    <li>With Service Providers: Your details may be shared with Pros and Providers for booking purposes.</li>
+                    <li>With Third-Party Vendors: Payment processors, analytics providers, insurers, or background verification agencies.</li>
+                    <li>Legal Compliance: When required by law, court orders, law enforcement agencies, or regulatory authorities.</li>
+                    <li>Business Transfers: In case of mergers, acquisitions, or restructuring, data may be transferred to a new entity.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
 
-            <h2 className="text-xl font-bold mt-4 mb-2">7. International Data Transfers</h2>
-            <p>If you access HelpRush from outside India, your information may be transferred to and stored in India. By using our services, you consent to this transfer.</p>
+                <h2 className="text-xl font-bold mt-4 mb-2">4. Data Security & Retention</h2>
+                <ul className="list-disc list-inside">
+                    <li>We implement industry-standard encryption, access controls, and secure storage methods.</li>
+                    <li>Your data is retained as long as necessary for operational and legal compliance purposes.</li>
+                    <li>You may request data deletion subject to legal and contractual obligations.</li>
+                </ul>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">8. Cookies & Tracking Technologies</h2>
-            <p>We use cookies to enhance user experience. You can manage cookie settings through your browser or opt-out features within the app. Read our Cookies Policy for more details.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">5. User Rights & Choices</h2>
+                <p>Under applicable laws (including GDPR and India’s IT Act, 2000), you have rights over your data:</p>
+                <ul className="list-disc list-inside">
+                    <li>Access & Correction: You can review and update your personal information.</li>
+                    <li>Data Portability: You can request a copy of your data in a machine-readable format.</li>
+                    <li>Right to Withdraw Consent: You can opt out of marketing communications at any time.</li>
+                    <li>Account Deletion: You may request the deletion of your account, subject to regulatory and legal obligations.</li>
+                </ul>
+                <p>For any data-related requests, email <a href="mailto:privacy@helprush.in" className="text-blue-600">privacy@helprush.in</a>.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">9. Third-Party Links</h2>
-            <p>Our platform may contain links to third-party sites. We are not responsible for their privacy practices, and we encourage you to review their policies before engaging with them.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">6. Children’s Privacy</h2>
+                <p>Our services are intended for users above 18 years of age. We do not knowingly collect data from children. If you believe a child has provided us with personal data, contact us immediately.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">10. Grievance Redressal & Contact Information</h2>
-            <p>If you have concerns regarding your privacy, you can reach out to our Grievance Officer:</p>
-            <p>Grievance Officer: Ms Iflah F. <br />
-                Email: <a href="mailto:privacy@helprush.in" className="text-blue-600">privacy@helprush.in</a> <br />
-                Address: Horfay Taqnia Pvt Ltd, Floor 2nd, Block A, STPI, Rangreth, Srinagar, JK 191132</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">7. International Data Transfers</h2>
+                <p>If you access HelpRush from outside India, your information may be transferred to and stored in India. By using our services, you consent to this transfer.</p>
 
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">8. Cookies & Tracking Technologies</h2>
+                <p>We use cookies to enhance user experience. You can manage cookie settings through your browser or opt-out features within the app. Read our Cookies Policy for more details.</p>
+
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">9. Third-Party Links</h2>
+                <p>Our platform may contain links to third-party sites. We are not responsible for their privacy practices, and we encourage you to review their policies before engaging with them.</p>
+
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">10. Grievance Redressal & Contact Information</h2>
+                <p>If you have concerns regarding your privacy, you can reach out to our Grievance Officer:</p>
+                <p>Grievance Officer: Ms Iflah F. <br />
+                    Email: <a href="mailto:privacy@helprush.in" className="text-blue-600">privacy@helprush.in</a> <br />
+                    Address: Horfay Taqnia Pvt Ltd, Floor 2nd, Block A, STPI, Rangreth, Srinagar, JK 191132</p>
+
+            </div>
             <h2 className="text-xl font-bold mt-4 mb-2">11. Changes to This Privacy Policy</h2>
             <p>We may update this policy from time to time. Any changes will be communicated via email or app notifications. Continued use of HelpRush after such updates constitutes acceptance of the revised policy.</p>
 

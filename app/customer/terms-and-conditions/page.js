@@ -26,154 +26,171 @@ function page() {
                 </div>
             </div>
 
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">1. Use of the Platform</h2>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">1. Use of the Platform</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">1.1 Acceptance of Terms</h3>
+                <p>Your use of the HelpRush Platform is subject to these Terms & Conditions, the Privacy Policy, and the Service Provider Code of Conduct. Continuing to use the Platform indicates your acceptance of these terms and any future amendments.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">1.1 Acceptance of Terms</h3>
-            <p>Your use of the HelpRush Platform is subject to these Terms & Conditions, the Privacy Policy, and the Service Provider Code of Conduct. Continuing to use the Platform indicates your acceptance of these terms and any future amendments.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">1.2 Compliance with Laws</h3>
+                <p>You must comply with all applicable laws and regulations while using the Platform. Failure to do so may result in suspension or termination of your account.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">1.2 Compliance with Laws</h3>
-            <p>You must comply with all applicable laws and regulations while using the Platform. Failure to do so may result in suspension or termination of your account.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">1.3 Age Requirement</h3>
+                <p>You must be at least 18 years old to use the Platform. By using the Platform, you confirm that you meet this requirement.</p>
+            </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">1.3 Age Requirement</h3>
-            <p>You must be at least 18 years old to use the Platform. By using the Platform, you confirm that you meet this requirement.</p>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">2. Relationship with Service Providers</h2>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">2. Relationship with Service Providers</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">2.1 Independent Contractors</h3>
+                <p>Service Providers on the Platform operate as independent business owners. HelpRush does not employ or represent them but acts as a facilitator connecting customers with providers.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">2.1 Independent Contractors</h3>
-            <p>Service Providers on the Platform operate as independent business owners. HelpRush does not employ or represent them but acts as a facilitator connecting customers with providers.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">2.2 Service Provider Obligations</h3>
+                <p>By engaging a Service Provider, you acknowledge that:</p>
+                <ul className="list-disc list-inside">
+                    <li>The Service Provider is an independent entity responsible for their services.</li>
+                    <li>Service Providers have the necessary skills and legal authority to fulfill their obligations.</li>
+                </ul>
+            </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">2.2 Service Provider Obligations</h3>
-            <p>By engaging a Service Provider, you acknowledge that:</p>
-            <ul className="list-disc list-inside">
-                <li>The Service Provider is an independent entity responsible for their services.</li>
-                <li>Service Providers have the necessary skills and legal authority to fulfill their obligations.</li>
-            </ul>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">3. Using HelpRush Services</h2>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">3. Using HelpRush Services</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">3.1 Service Engagement</h3>
+                <p>By booking a service through HelpRush, you agree to:</p>
+                <ul className="list-disc list-inside">
+                    <li>Engage services only in operational regions.</li>
+                    <li>Respect the privacy and data protection rights of Service Providers.</li>
+                    <li>Make payments using approved methods.</li>
+                    <li>Follow all applicable laws while using the Platform.</li>
+                </ul>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">3.1 Service Engagement</h3>
-            <p>By booking a service through HelpRush, you agree to:</p>
-            <ul className="list-disc list-inside">
-                <li>Engage services only in operational regions.</li>
-                <li>Respect the privacy and data protection rights of Service Providers.</li>
-                <li>Make payments using approved methods.</li>
-                <li>Follow all applicable laws while using the Platform.</li>
-            </ul>
+                <h3 className="text-lg font-bold mt-2 mb-1">3.2 Non-Circumvention</h3>
+                <p>You agree not to bypass the Platform to engage with Service Providers directly. Violations may result in account suspension, penalties, or legal action.</p>
+            </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">3.2 Non-Circumvention</h3>
-            <p>You agree not to bypass the Platform to engage with Service Providers directly. Violations may result in account suspension, penalties, or legal action.</p>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">4. Customer Warranties</h2>
+                <p>By using the Platform, you warrant that:</p>
+                <ul className="list-disc list-inside">
+                    <li>You will engage Service Providers in good faith and follow all Platform policies.</li>
+                    <li>You will not use the Platform for unlawful or unauthorized activities.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">5. Limitation of Liability</h2>
+                <p>HelpRush is not liable for the actions or conduct of users and disclaims responsibility for services rendered by Providers. The Platform solely facilitates connections.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">6. Prohibited Conduct</h2>
+                <p>You may not use the Platform to:</p>
+                <ul className="list-disc list-inside">
+                    <li>Defame, harass, or intimidate others.</li>
+                    <li>Publish unlawful, infringing, or harmful content.</li>
+                    <li>Upload harmful software or violate intellectual property rights.</li>
+                    <li>Engage in unauthorized commercial activities.</li>
+                    <li>Facilitate illegal activities.</li>
+                </ul>
+                <p>Further, you must not:</p>
+                <ul className="list-disc list-inside">
+                    <li>Violate any laws.</li>
+                    <li>Upload unauthorized content.</li>
+                    <li>Engage in spamming or data collection.</li>
+                    <li>Misrepresent HelpRush's endorsement.</li>
+                    <li>Disrupt Platform functionality.</li>
+                    <li>Alter HelpRush's trademarks.</li>
+                </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">7. Customer-Service Provider Agreement</h2>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">4. Customer Warranties</h2>
-            <p>By using the Platform, you warrant that:</p>
-            <ul className="list-disc list-inside">
-                <li>You will engage Service Providers in good faith and follow all Platform policies.</li>
-                <li>You will not use the Platform for unlawful or unauthorized activities.</li>
-            </ul>
+                <h3 className="text-lg font-bold mt-2 mb-1">7.1 Binding Agreements</h3>
+                <p>A "Service Agreement" is established when a Customer and Service Provider agree to service terms. This includes:</p>
+                <ul className="list-disc list-inside">
+                    <li>These Terms & Conditions.</li>
+                    <li>Any terms proposed and accepted on the Platform.</li>
+                    <li>Additional contractual terms mutually agreed upon.</li>
+                </ul>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">5. Limitation of Liability</h2>
-            <p>HelpRush is not liable for the actions or conduct of users and disclaims responsibility for services rendered by Providers. The Platform solely facilitates connections.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">7.2 Service Execution</h3>
+                <p>Service Providers may engage registered assistants ("Service Pros") with prior Customer approval. Providers are responsible for their Service Pros' conduct and payments.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">8. Taxes and Reporting</h2>
+                <p>Customers and Service Providers may be responsible for applicable taxes. HelpRush may issue receipts or documentation for tax reporting purposes.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">9. Mobile App Updates</h2>
+                <p>By installing HelpRush’s App(s), you consent to automatic updates and data collection per the Privacy Policy. You may uninstall the App(s) at any time.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">10. Account Suspension and Termination</h2>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">6. Prohibited Conduct</h2>
-            <p>You may not use the Platform to:</p>
-            <ul className="list-disc list-inside">
-                <li>Defame, harass, or intimidate others.</li>
-                <li>Publish unlawful, infringing, or harmful content.</li>
-                <li>Upload harmful software or violate intellectual property rights.</li>
-                <li>Engage in unauthorized commercial activities.</li>
-                <li>Facilitate illegal activities.</li>
-            </ul>
-            <p>Further, you must not:</p>
-            <ul className="list-disc list-inside">
-                <li>Violate any laws.</li>
-                <li>Upload unauthorized content.</li>
-                <li>Engage in spamming or data collection.</li>
-                <li>Misrepresent HelpRush's endorsement.</li>
-                <li>Disrupt Platform functionality.</li>
-                <li>Alter HelpRush's trademarks.</li>
-            </ul>
+                <h3 className="text-lg font-bold mt-2 mb-1">10.1 Suspension or Termination</h3>
+                <p>HelpRush may suspend or terminate accounts for policy violations. Users may appeal suspensions within 14 days by contacting policies@helprush.in.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">7. Customer-Service Provider Agreement</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">10.2 Restrictions After Suspension</h3>
+                <p>After suspension or deactivation, creating a new account is prohibited. HelpRush may take legal action if necessary.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">7.1 Binding Agreements</h3>
-            <p>A "Service Agreement" is established when a Customer and Service Provider agree to service terms. This includes:</p>
-            <ul className="list-disc list-inside">
-                <li>These Terms & Conditions.</li>
-                <li>Any terms proposed and accepted on the Platform.</li>
-                <li>Additional contractual terms mutually agreed upon.</li>
-            </ul>
+                <h3 className="text-lg font-bold mt-2 mb-1">10.3 Platform Modifications</h3>
+                <p>HelpRush may modify or discontinue Platform features with notice as required by law.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">7.2 Service Execution</h3>
-            <p>Service Providers may engage registered assistants ("Service Pros") with prior Customer approval. Providers are responsible for their Service Pros' conduct and payments.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">10.4 User-Initiated Termination</h3>
+                <p>You may terminate these Terms at any time by ceasing Platform use.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">8. Taxes and Reporting</h2>
-            <p>Customers and Service Providers may be responsible for applicable taxes. HelpRush may issue receipts or documentation for tax reporting purposes.</p>
+                <h2 className="text-xl font-bold mt-4 mb-2">11. Account Security and Communications</h2>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">9. Mobile App Updates</h2>
-            <p>By installing HelpRush’s App(s), you consent to automatic updates and data collection per the Privacy Policy. You may uninstall the App(s) at any time.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">11.1 Account Responsibility</h3>
+                <p>You must maintain confidentiality of account credentials and report unauthorized access to HelpRush.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">10. Account Suspension and Termination</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">11.2 Telephone Communications</h3>
+                <p>Calls with HelpRush may be recorded for quality and training purposes.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">10.1 Suspension or Termination</h3>
-            <p>HelpRush may suspend or terminate accounts for policy violations. Users may appeal suspensions within 14 days by contacting policies@helprush.in.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">11.3 Accurate Contact Information</h3>
+                <p>You must keep your contact details up to date.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">12. Third-Party Links and Services</h2>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">10.2 Restrictions After Suspension</h3>
-            <p>After suspension or deactivation, creating a new account is prohibited. HelpRush may take legal action if necessary.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">12.1 Third-Party Links</h3>
+                <p>HelpRush may provide third-party links but does not control their content. Users access these sites at their own risk.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">10.3 Platform Modifications</h3>
-            <p>HelpRush may modify or discontinue Platform features with notice as required by law.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">12.2 Disclaimer</h3>
+                <p>HelpRush disclaims liability for third-party content or services.</p>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">13. HelpRush as a Marketplace</h2>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">10.4 User-Initiated Termination</h3>
-            <p>You may terminate these Terms at any time by ceasing Platform use.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">13.1 Platform Role</h3>
+                <p>HelpRush serves as a marketplace connecting Customers and independent Service Providers. It does not perform services or employ Providers.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">11. Account Security and Communications</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">13.2 No Employment Relationship</h3>
+                <p>Service Providers are independent contractors, not employees of HelpRush. They set their own rates and terms.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">11.1 Account Responsibility</h3>
-            <p>You must maintain confidentiality of account credentials and report unauthorized access to HelpRush.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">13.3 Customer Agents</h3>
+                <p>If you designate an agent, their actions are treated as your own.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">11.2 Telephone Communications</h3>
-            <p>Calls with HelpRush may be recorded for quality and training purposes.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">13.4 Payment and Engagement</h3>
+                <p>Customers must pay Service Providers in full via approved methods. Both parties must adhere to the Service Agreement.</p>
+            </div>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">11.3 Accurate Contact Information</h3>
-            <p>You must keep your contact details up to date.</p>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">14. User-Generated Content</h2>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">12. Third-Party Links and Services</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">14.1 Responsibility for Content</h3>
+                <p>Users are responsible for content they post. HelpRush does not monitor all content but may remove non-compliant material.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">12.1 Third-Party Links</h3>
-            <p>HelpRush may provide third-party links but does not control their content. Users access these sites at their own risk.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">14.2 Content Standards</h3>
+                <p>Content must be accurate, lawful, and non-defamatory.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">12.2 Disclaimer</h3>
-            <p>HelpRush disclaims liability for third-party content or services.</p>
+                <h3 className="text-lg font-bold mt-2 mb-1">14.3 Feedback</h3>
+                <p>User feedback represents individual opinions, not HelpRush’s, and should be constructive.</p>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">13. HelpRush as a Marketplace</h2>
+                <h3 className="text-lg font-bold mt-2 mb-1">14.4 Reporting Inappropriate Content</h3>
+                <p>Users should report objectionable content to HelpRush.</p>
 
-            <h3 className="text-lg font-bold mt-2 mb-1">13.1 Platform Role</h3>
-            <p>HelpRush serves as a marketplace connecting Customers and independent Service Providers. It does not perform services or employ Providers.</p>
-
-            <h3 className="text-lg font-bold mt-2 mb-1">13.2 No Employment Relationship</h3>
-            <p>Service Providers are independent contractors, not employees of HelpRush. They set their own rates and terms.</p>
-
-            <h3 className="text-lg font-bold mt-2 mb-1">13.3 Customer Agents</h3>
-            <p>If you designate an agent, their actions are treated as your own.</p>
-
-            <h3 className="text-lg font-bold mt-2 mb-1">13.4 Payment and Engagement</h3>
-            <p>Customers must pay Service Providers in full via approved methods. Both parties must adhere to the Service Agreement.</p>
-
-            <h2 className="text-xl font-bold mt-4 mb-2">14. User-Generated Content</h2>
-
-            <h3 className="text-lg font-bold mt-2 mb-1">14.1 Responsibility for Content</h3>
-            <p>Users are responsible for content they post. HelpRush does not monitor all content but may remove non-compliant material.</p>
-
-            <h3 className="text-lg font-bold mt-2 mb-1">14.2 Content Standards</h3>
-            <p>Content must be accurate, lawful, and non-defamatory.</p>
-
-            <h3 className="text-lg font-bold mt-2 mb-1">14.3 Feedback</h3>
-            <p>User feedback represents individual opinions, not HelpRush’s, and should be constructive.</p>
-
-            <h3 className="text-lg font-bold mt-2 mb-1">14.4 Reporting Inappropriate Content</h3>
-            <p>Users should report objectionable content to HelpRush.</p>
-
-            <p>By using the HelpRush Platform, you agree to these Terms & Conditions.</p>
+                <p>By using the HelpRush Platform, you agree to these Terms & Conditions.</p>
+            </div>
         </div>
     )
 }

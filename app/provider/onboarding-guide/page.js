@@ -11,7 +11,7 @@ function page() {
     return (
         <div className="container py-10 lg:py-20">
 
-            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-20">
+            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-14">
 
                 <div>
                     <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
@@ -28,7 +28,7 @@ function page() {
             </div>
 
 
-            <div className="pb-10 lg:pb-20">
+            <div className="pb-10 lg:pb-14">
                 <h2 className="text-xl font-bold mt-4 mb-2">Step 1: Sign Up & Registration</h2>
                 <ol className="list-decimal list-inside flex flex-col gap-2">
                     <li><strong>Download the HelpRush Provider App</strong> from the Google Play Store or Apple App Store.</li>
@@ -60,7 +60,7 @@ function page() {
                 </ol>
             </div>
 
-            <div className="pb-10 lg:pb-20">
+            <div className="pb-10 lg:pb-14">
                 <h2 className="text-xl font-bold mt-4 mb-2">Step 2: Profile Setup</h2>
                 <ol className="list-decimal list-inside flex flex-col gap-2">
                     <li><strong>Complete Your Profile</strong> by adding details and a short bio.</li>
@@ -70,7 +70,7 @@ function page() {
                 </ol>
 
             </div>
-            <div className="pb-10 lg:pb-20">
+            <div className="pb-10 lg:pb-14">
                 <h2 className="text-xl font-bold mt-4 mb-2">Step 3: Verification & Approval</h2>
                 <ol className="list-decimal list-inside flex flex-col gap-2">
                     <li>HelpRush conducts a background check and verifies your documents.</li>
@@ -79,45 +79,56 @@ function page() {
                 </ol>
             </div>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Step 4: Training & Guidelines</h2>
-            <ol className="list-decimal list-inside flex flex-col gap-2">
-                <li><strong>Attend Orientation</strong> to understand the HelpRush platform, policies, and best practices.</li>
-                <li><strong>Complete Mandatory Training</strong> on service quality, customer interaction, safety measures, and app usage.</li>
-                <li><strong>Learn About Provider Levels</strong> and how you can progress for better earnings and benefits.</li>
-            </ol>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Step 5: Start Accepting Bookings</h2>
-            <ol className="list-decimal list-inside flex flex-col gap-2">
-                <li><strong>Receive Booking Requests</strong> from customers in your preferred service area.</li>
-                <li><strong>Accept or Decline Requests</strong> based on your availability.</li>
-                <li><strong>Communicate with Customers</strong> through in-app chat or call (without sharing personal numbers).</li>
-                <li><strong>Provide High-Quality Service</strong> to ensure customer satisfaction and positive ratings.</li>
-            </ol>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">Step 4: Training & Guidelines</h2>
+                <ol className="list-decimal list-inside flex flex-col gap-2">
+                    <li><strong>Attend Orientation</strong> to understand the HelpRush platform, policies, and best practices.</li>
+                    <li><strong>Complete Mandatory Training</strong> on service quality, customer interaction, safety measures, and app usage.</li>
+                    <li><strong>Learn About Provider Levels</strong> and how you can progress for better earnings and benefits.</li>
+                </ol>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Step 6: Payments & Earnings</h2>
-            <ol className="list-decimal list-inside flex flex-col gap-2">
-                <li>Payments are processed securely via HelpRush’s platform.</li>
-                <li>Earnings are transferred to your registered bank account as per the payout cycle.</li>
-                <li><strong>Track Your Earnings</strong> via the HelpRush Provider App.</li>
-            </ol>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">Step 5: Start Accepting Bookings</h2>
+                <ol className="list-decimal list-inside flex flex-col gap-2">
+                    <li><strong>Receive Booking Requests</strong> from customers in your preferred service area.</li>
+                    <li><strong>Accept or Decline Requests</strong> based on your availability.</li>
+                    <li><strong>Communicate with Customers</strong> through in-app chat or call (without sharing personal numbers).</li>
+                    <li><strong>Provide High-Quality Service</strong> to ensure customer satisfaction and positive ratings.</li>
+                </ol>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Step 7: Reviews & Growth</h2>
-            <ol className="list-decimal list-inside flex flex-col gap-2">
-                <li><strong>Encourage customers to rate and review your services.</strong></li>
-                <li>Higher ratings improve your visibility and booking chances.</li>
-                <li><strong>Maintain professional conduct</strong> to move up the Provider Levels, unlocking better incentives and exclusive benefits.</li>
-            </ol>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">Step 6: Payments & Earnings</h2>
+                <ol className="list-decimal list-inside flex flex-col gap-2">
+                    <li>Payments are processed securely via HelpRush’s platform.</li>
+                    <li>Earnings are transferred to your registered bank account as per the payout cycle.</li>
+                    <li><strong>Track Your Earnings</strong> via the HelpRush Provider App.</li>
+                </ol>
 
-            <h2 className="text-xl font-bold mt-4 mb-2">Support & Assistance</h2>
-            <p>If you need any help, reach out to:</p>
-            <ul className="list-disc list-inside ml-6 flex flex-col gap-2">
-                <li><strong>HelpRush Support Team</strong> via the app</li>
-                <li><strong>Email:</strong> support@helprush.in</li>
-                <li><strong>Helpline:</strong> +91-8899200543</li>
-            </ul>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">Step 7: Reviews & Growth</h2>
+                <ol className="list-decimal list-inside flex flex-col gap-2">
+                    <li><strong>Encourage customers to rate and review your services.</strong></li>
+                    <li>Higher ratings improve your visibility and booking chances.</li>
+                    <li><strong>Maintain professional conduct</strong> to move up the Provider Levels, unlocking better incentives and exclusive benefits.</li>
+                </ol>
 
-            <p className='mt-4'>Welcome to HelpRush! We look forward to your success on our platform.</p>
-        </div>
+            </div>
+            <div className="pb-10 lg:pb-14">
+                <h2 className="text-xl font-bold mt-4 mb-2">Support & Assistance</h2>
+                <p>If you need any help, reach out to:</p>
+                <ul className="list-disc list-inside ml-6 flex flex-col gap-2">
+                    <li><strong>HelpRush Support Team</strong> via the app</li>
+                    <li><strong>Email:</strong> support@helprush.in</li>
+                    <li><strong>Helpline:</strong> +91-8899200543</li>
+                </ul>
+
+                <p className='mt-4'>Welcome to HelpRush! We look forward to your success on our platform.</p>
+
+            </div></div>
     )
 }
 
