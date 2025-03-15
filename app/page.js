@@ -228,15 +228,15 @@ export default function Home() {
           <h3>
             It’s easier in the apps
           </h3>
-          <div className="grid lg:grid-cols-2">
-            <div className="flex  items-center mt-10  flex-col lg:flex-row gap-5">
+          <div className="grid gap-5 lg:grid-cols-2">
+            <div className="flex p-2 rounded-lg   items-center mt-10  serviceCrd flex-col lg:flex-row gap-5">
               <img src="/img/qr1.png" className="w-36" alt="" />
               <div>
                 <h5 className="font-semibold text-center lg:text-left text-xl  lg:text-2xl">Download HelpRush app </h5>
                 <a href="#" className="text-theme justify-center lg:justify-start text-lg flex items-center mt-1 lg:mt-2 gap-2">Scan to download <Icon className="text-xl" icon="humbleicons:arrow-right" /></a>
               </div>
             </div>
-            <div className="flex items-center mt-10  flex-col lg:flex-row gap-5">
+            <div className="flex  p-2 rounded-lg items-center serviceCrd mt-10  flex-col lg:flex-row gap-5">
               <img src="/img/qr2.png" className="w-36" alt="" />
               <div>
                 <h5 className="font-semibold text-center lg:text-left text-xl  lg:text-2xl">Download Provider app  </h5>

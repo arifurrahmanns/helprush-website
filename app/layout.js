@@ -7,6 +7,7 @@ import NavMenu from "@/components/ui/NavMenu";
 import NextTopLoader from "nextjs-toploader";
 import { SessionProvider } from "next-auth/react"
 import { auth } from "../auth";
+import { Toaster } from "sonner";
 const onest = Onest({
   variable: "--font-onest",
   subsets: ["latin"],
@@ -168,7 +169,7 @@ export default async function RootLayout({ children }) {
                       </Link>
                     </li>
                   </ul>
-                 
+
                 </div>
                 <div className="grid col-span-2 lg:col-span-1 mt-8 lg:mt-0 grid-cols-2 lg:block">
                   <div>
@@ -229,6 +230,8 @@ export default async function RootLayout({ children }) {
               </div>
             </div>
           </footer>
+
+          <Toaster position="top-center" />
         </SessionProvider>
       </body>
     </html>

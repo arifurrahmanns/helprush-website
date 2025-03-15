@@ -9,11 +9,12 @@ import { login } from '@/app/actions/auth/login'
 import { getSession } from 'next-auth/react'
 import { useParams, useRouter } from 'next/navigation'
 import ErrorTxt from '@/components/ui/errortxt'
+import { toast } from 'sonner'
 
 function page() {
     const params = useParams();
 
-    
+
     const router = useRouter();
     const [err, setErr] = useState(null);
 
@@ -44,6 +45,8 @@ function page() {
                                 router.push('/')
                             }
                             return;
+                        } else {
+                            toast.error("User not found")
                         }
 
                     }} />

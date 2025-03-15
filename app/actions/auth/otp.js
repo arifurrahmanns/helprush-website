@@ -26,6 +26,7 @@ const sendOtp = async (prevState, formData) => {
             message: validatedFields.error.errors[0].message
         }
     }
+
     try {
         const response = await axiosInstance.post('/pin/send', {
             "contact_number": phoneCode() + formData.get('phone')

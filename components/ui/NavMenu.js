@@ -105,7 +105,7 @@ function NavMenu(props) {
                                 }} className="bg-theme !text-white text-primary py-0.5 px-3 !inline-block rounded-full " >Sign Up</button>
                             </li>}
                             {loggedIn && <li className="block lg:hidden">
-                                <Link onClick={routeClicked} href="/dashboard">Profile</Link>
+                                <Link onClick={routeClicked} href="/profile">Profile</Link>
                             </li>}
                         </ul>
                         <ul className="controls ml-auto flex gap-2">
@@ -217,7 +217,7 @@ function NavMenu(props) {
                                 </div>
                             </li>}
                             {loggedIn && <li className="hidden lg:block">
-                                <Link onClick={routeClicked} href="/dashboard">Profile</Link>
+                                <Link onClick={routeClicked} href="/profile">Profile</Link>
                             </li>}
                         </ul>
                     </nav>
