@@ -81,7 +81,7 @@ export default async function RootLayout({ children }) {
                       <Link href="/login">Serve</Link>
                     </li>
                     <li>
-                      <a href="#">HelpRush for Business</a>
+                      <Link href="/helprush-for-business">HelpRush for Business</Link>
                     </li>
                     <li>
                       <a href="#">Partner with HelpRush</a>
@@ -127,7 +127,7 @@ export default async function RootLayout({ children }) {
                   </h3>
                   <ul className="mt-2 flex flex-col gap-2">
                     <li>
-                      <Link href="/resources/how-its-works">How it works </Link>
+                      <Link href="/resources/how-its-works">How it Works </Link>
                     </li>
                     <li>
                       <Link href="/resources/pricing-and-fee">Pricing & Fees</Link>
@@ -158,6 +158,11 @@ export default async function RootLayout({ children }) {
                     Provider
                   </h3>
                   <ul className="mt-2 flex flex-col gap-2">
+                  <li>
+                      <Link href="/provider/how-it-works">
+                     How it Works
+                      </Link>
+                    </li>
                     <li>
                       <Link href="/provider/code-of-conduct">
                         Code of Conduct

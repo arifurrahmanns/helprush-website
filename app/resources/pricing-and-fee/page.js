@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import React from 'react'
 
 
@@ -9,81 +10,205 @@ export const generateMetadata = async () => {
 }
 function page() {
     return (
-        <div className="container py-10 lg:py-20">
+        <main>
+            <div className="container py-8 lg:py-10">
 
-            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
-
-                <div>
-                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
-                        Pricing & Fee
-                    </h1>
-                    <p className='text'>
-                        At HelpRush, we believe in transparent pricing with no hidden charges. Our platform ensures fair compensation for service providers while keeping costs reasonable for customers. Below is a breakdown of how pricing and fees work on HelpRush.
-                    </p>
+                <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
+                <div className='lg:order-2'>
+                        <img className='max-w-md w-full ml-auto' src="/img/69244493_9692297.png" alt="" />
+                    </div>
+                    <div>
+                        <h1 className="text-3xl lg:text-5xl !leading-tight lg:mb-6 font-bold mb-4">
+                            Transparent pricing, no hidden fees
+                        </h1>
+                        <p className='txt lg:!text-lg'>
+                            Fair pricing for customers
+                            More earnings for providers  </p>
+                    </div>
+                   
                 </div>
-                <div>
-                    <img src="/img/pricing-2.jpg" alt="" />
+
+
+            </div>
+            <div className=" bg-indigo-50 bg-opacity-60 py-10 lg:py-20">
+                <div className="container">
+                    <div className="grid max-w-4xl mx-auto lg:grid-cols-2 gap-10">
+                        <div className="bg-theme border rounded-3xl">
+                            <h3 className='bg-white w-[250px] text-center  mx-auto text-2xl font-bold p-3 lg:p-5 rounded-b-3xl '>
+                                For Customers
+                            </h3>
+                            <ul className='p-3 lg:p-5 '>
+                                <li>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-white">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> Service Pricing
+                                    </div>
+                                    <div className="ml-5 mt-2 flex flex-col gap-2">
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Base price varies by location, time, and provider experience.
+                                            </span>
+                                        </p>
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Fixed & flexible pricing available.
+                                            </span>
+                                        </p>
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                The final price is always shown before confirmation.
+                                            </span>
+                                        </p>
+
+
+                                    </div>
+                                </li>
+                                <li className='mt-5'>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-white">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> Additional Charges
+                                    </div>
+                                    <div className="ml-5 mt-2 flex flex-col gap-2">
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                RushHour Pricing: Small fee for urgent services.
+                                            </span>
+                                        </p>
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Location-Based: Higher fees for remote areas.
+                                            </span>
+                                        </p>
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Material Costs: If needed, included in the final bill.
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                </li>
+                                <li className='mt-5'>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-white">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> Cancellation & Refunds
+                                    </div>
+                                    <div className="ml-5 mt-2 flex flex-col gap-2">
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Before Provider Confirms: Free cancellation.
+                                            </span>
+                                        </p>
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                After Confirmation: Fees apply (up to 70%).
+                                            </span>
+                                        </p>
+                                        <p class="text-gray-200 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Refunds: Processed in 7 business days.
+                                            </span>
+                                        </p>
+
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="bg-theme2 border rounded-3xl">
+                            <h3 className='bg-white w-[250px] text-center  mx-auto text-2xl font-bold p-3 lg:p-5 rounded-b-3xl '>
+                                For Providers
+                            </h3>
+                            <ul className='p-3 lg:p-5 '>
+                                <li>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-gray-700">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> <span className="block w-full">
+                                            Platform Fee
+                                        </span>
+                                    </div>
+                                    <div className="ml-5 mt-2 flex flex-col gap-2">
+                                        <p class="text-gray-600 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Level 1 & 2: 10-15% per transaction.
+                                            </span>
+                                        </p>
+                                        <p class="text-gray-600 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Level 3 & 4: 0-5% per transaction.
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                </li>
+                                <li className='mt-5'>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-gray-700">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> <span className="block w-full">
+                                            Subscription Plans (Optional)
+                                        </span>
+                                    </div>
+                                </li>
+                                <li className='mt-5'>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-gray-700">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> <span className="block w-full">
+                                            Basic (Free): Standard listing, customer leads.
+                                        </span>
+                                    </div>
+                                </li>
+                                <li className='mt-5'>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-gray-700">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> <span className="block w-full">
+                                            Premium (₹499/month): Lower fees, priority listing, exclusive perks.
+                                        </span>
+                                    </div>
+                                </li>
+                                <li className='mt-5'>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-gray-700">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> <span className="block w-full">
+                                            Enterprise (₹999/month): Top-tier visibility, analytics, and support.
+                                        </span>
+                                    </div>
+                                </li>
+                                <li className='mt-5'>
+                                    <div className="flex text-xl items-center gap-1 font-medium text-gray-700">
+                                        <Icon icon="lets-icons:check-fill" width="30" height="30" /> <span className="block w-full">
+                                            Payouts
+                                        </span>
+                                    </div>
+                                    <div className="ml-5 mt-2 flex flex-col gap-2">
+                                        <p class="text-gray-600 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Instant & secure payments (0-3 business days).
+                                            </span>
+                                        </p>
+                                        <p class="text-gray-600 flex items-baseline gap-1">
+                                            <Icon icon="akar-icons:pointer-right-fill" width="15" height="15" />
+                                            <span className="block w-full">
+                                                Linked directly to your bank account.
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="lg:col-span-2 text-center  lg:text-left  border p-5 rounded-3xl bg-gray-50">
+                            💡 All prices include taxes. Providers handle their own tax filings.
+                        </div>
+                    </div>
+                    <div className="text-center">
+                        <a href="" className='btn inline-block mt-5 lg:mt-10'> Contact HelpRush Support </a>
+                    </div>
                 </div>
             </div>
-
-
-            <div className="py-10 lg:py-20">
-                <h2 className="text-2xl font-semibold mt-6 mb-3">For Customers</h2>
-                <h3 className="text-xl font-medium mt-3 mb-2">1. Service Pricing</h3>
-                <ul className="list-inside list-disc ml-6">
-                    <li>Each service has a base price, which may vary based on factors like location, time, and provider experience.</li>
-                    <li>Some services have fixed pricing, while others may require a quote from the provider.</li>
-                    <li>The final price will be shown before confirmation, ensuring full transparency.</li>
-                </ul>
-
-                <h3 className="text-xl font-medium mt-3 mb-2">2. Additional Charges</h3>
-                <ul className="list-inside list-disc ml-6">
-                    <li><b>RushHour Pricing:</b> If you book an urgent service, a small priority fee may apply.</li>
-                    <li><b>Location-Based Charges:</b> For remote or high-demand areas, providers may charge extra.</li>
-                    <li><b>Material Costs:</b> If the service requires additional materials, the cost will be included in the final bill.</li>
-                </ul>
-
-                <h3 className="text-xl font-medium mt-3 mb-2">3. Cancellation & Refund Fees</h3>
-                <ul className="list-inside list-disc ml-6">
-                    <li><b>Before Provider Confirmation:</b> Free cancellation.</li>
-                    <li><b>After Provider Confirmation:</b> Cancellation fees apply based on the time before service (up to 70%).</li>
-                    <li><b>Refunds:</b> Processed within 7 business days for eligible cancellations.</li>
-                </ul>
-            </div>
-
-            <h2 className="text-2xl font-semibold mt-6 mb-3">For Providers</h2>
-            <h3 className="text-xl font-medium mt-3 mb-2">1. Platform Fee</h3>
-            <p className="ml-6">
-                HelpRush charges a small platform fee for every completed transaction. This helps maintain the platform, provide customer support, and ensure secure payments.
-            </p>
-            <ul className="list-inside list-disc ml-6">
-                <li><b>Basic Providers (Level 1 & 2):</b> 10-15% per transaction.</li>
-                <li><b>Verified & Premium Providers (Level 3 & 4):</b> 0-5% per transaction.</li>
-            </ul>
-
-            <h3 className="text-xl font-medium mt-3 mb-2">2. Subscription Plans (Optional)</h3>
-            <ul className="list-inside list-disc ml-6">
-                <li><b>Basic (Free):</b> Standard listing, access to customer leads.</li>
-                <li><b>Premium (₹499/month):</b> Lower commission rates, priority listing, exclusive offers.</li>
-                <li><b>Enterprise (₹999/month):</b> Dedicated support, higher visibility, advanced analytics.</li>
-            </ul>
-
-            <h3 className="text-xl font-medium mt-3 mb-2">3. Payouts</h3>
-            <p className="ml-6">
-                Providers receive payments directly into their linked bank accounts.
-            </p>
-            <p className="ml-6"><b>Standard payout processing time:</b> 0-3 business days.</p>
-
-            <h2 className="text-2xl font-semibold mt-6 mb-3">Taxes & Compliance</h2>
-            <ul className="list-inside list-disc ml-6">
-                <li>All applicable taxes (GST, service tax) are included in the final pricing.</li>
-                <li>Providers are responsible for their own tax filings.</li>
-            </ul>
-
-            <p className="mt-6">
-                For any queries related to pricing or fees, feel free to contact our support team. Happy booking with HelpRush!
-            </p>
-        </div>
+        </main>
     )
 }
 

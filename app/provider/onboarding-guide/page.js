@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import React from 'react'
 
 
@@ -9,126 +10,181 @@ export const generateMetadata = async () => {
 }
 function page() {
     return (
-        <div className="container py-10 lg:py-20">
+        <main>
+            <div className="container py-10 lg:py-20">
 
-            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-14">
+                <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-14">
 
-                <div>
-                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
-                        Provider Onboarding Guide - HelpRush
-                    </h1>
-                    <p className='text'>
-                        Welcome to HelpRush! We are excited to have you on board as a service provider. This guide will walk you through the step-by-step process of getting started on our platform, ensuring a seamless experience for both you and your customers.
-                    </p>
+                    <div>
+                        <h1 className="text-3xl lg:text-5xl !leading-tight lg:mb-6 font-bold mb-4">
+                            Get Verified & Start Earning With HelpRush!
+                        </h1>
+                        <p className='text lg:text-lg'>
+                            Follow this simple guide to onboard smoothly and start accepting jobs in minutes
+                        </p>
+
+                        <a href="" className="btn inline-block mt-4">
+                            Download App
+                        </a>
+                    </div>
+                    <div>
+                        <img className='max-w-md w-full lg:ml-auto' src="/img/c0f2850c982c536320f5a803cbf851f8.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div className="bg-indigo-50 bg-opacity-65 py-5 lg:py-10">
+                <div className="grid items-center  gap-10 max-w-4xl mx-auto lg:grid-cols-2">
+                    <div>
+                        <img src="/img/appscreen11.png" className='max-w-[250px] w-full lg:mr-auto' alt="" />
+                    </div>
+                    <div className="col">
+                        <h3 className='text-8xl font-bold text-theme '>
+                            01
+                        </h3>
+                        <h2 className='text-2xl font-bold !leading-tight lg:text-[33px]'>
+                            Sign Up & Registration
+                        </h2>
+                        <p className='txt mt-3'>
+                            Mobile OTP verification. <br />
+                            Identity verification in partnership with Digilocker (DigiLocker + Selfie). <br />
+                            Skill verification  <br />
+                            Submit application
+                        </p>
+                    </div>
 
                 </div>
-                <div>
-                    <img src="/img/2148825865.jpg" alt="" />
+            </div>
+            <div className="py-5 lg:py-10">
+                <div className="grid items-center gap-10 max-w-4xl mx-auto lg:grid-cols-2 mb-5">
+                    <div className='lg:order-2'>
+                        <img src="/img/appscreen11.png" className='max-w-[250px] w-full lg:ml-auto' alt="" />
+                    </div>
+                    <div className="col">
+                        <h3 className='text-8xl font-bold text-theme '>
+                            02
+                        </h3>
+                        <h2 className='text-2xl font-bold !leading-tight lg:text-[33px]'>
+                            Verification & Approval
+                        </h2>
+                        <p className='txt mt-3'>
+                            Application scrutiny  <br />
+                            Background checks & in-person interview <br />
+                            Track status by loggin in to the app  <br />
+                            Account Activation (Normally with 24-48 Hrs)
+                        </p>
+                    </div>
+
                 </div>
             </div>
+            <div className="bg-indigo-50 bg-opacity-65 py-5 lg:py-10">
+                <div className="grid items-center gap-10 max-w-4xl mx-auto lg:grid-cols-2 mb-5">
+                    <div>
+                        <img src="/img/appscreen11.png" className='max-w-[250px] w-full lg:mr-auto' alt="" />
+                    </div>
+                    <div className="col">
+                        <h3 className='text-8xl font-bold text-theme '>
+                            03
+                        </h3>
+                        <h2 className='text-2xl font-bold !leading-tight lg:text-[33px]'>
+                            Profile setup
+                        </h2>
+                        <p className='txt mt-3'>
+                            Fill in profile details <br />
+                            Add services & set Pricing <br />
+                            enable Availability & Working hours
+                        </p>
+                    </div>
 
-
-            <div className="pb-10 lg:pb-14">
-                <h2 className="text-xl font-bold mt-4 mb-2">Step 1: Sign Up & Registration</h2>
-                <ol className="list-decimal list-inside flex flex-col gap-2">
-                    <li><strong>Download the HelpRush Provider App</strong> from the Google Play Store or Apple App Store.</li>
-                    <li><strong>Create an Account</strong> using your mobile number and verify it via OTP.</li>
-                    <li><strong>Enter Basic Information:</strong>
-                        <ul className="list-disc list-inside ml-6">
-                            <li>Full Name</li>
-                            <li>Business Name (if applicable)</li>
-                            <li>Service Category</li>
-                            <li>Location</li>
-                            <li>Preferred Service Areas</li>
-                        </ul>
-                    </li>
-                    <li><strong>Proceed for Identity Verification:</strong>
-                        <ul className="list-disc list-inside ml-6">
-                            <li>Click on Take a selfie</li>
-                            <li>Click on “Verify with digilocker”</li>
-                            <li>Follow the instructions on Digilocker portal</li>
-                            <li>If all the details are correct, your identity verification will be confirmed</li>
-                        </ul>
-                    </li>
-                    <li><strong>Proceed for Skill Verification (Optional):</strong>
-                        <ul className="list-disc list-inside ml-6">
-                            <li>Pick a nearest Hub</li>
-                            <li>Pick a day & Slot</li>
-                        </ul>
-                    </li>
-                    <li><strong>Agree to Terms & Conditions</strong>, including the Service Provider Agreement and Privacy Policy.</li>
-                </ol>
+                </div>
             </div>
+            <div className="py-5 lg:py-10">
+                <div className="grid items-center gap-10 max-w-4xl mx-auto lg:grid-cols-2 mb-5">
+                    <div className='lg:order-2'>
+                        <img src="/img/appscreen11.png" className='max-w-[250px] w-full lg:ml-auto' alt="" />
+                    </div>
+                    <div className="col">
+                        <h3 className='text-8xl font-bold text-theme '>
+                            04
+                        </h3>
+                        <h2 className='text-2xl font-bold !leading-tight lg:text-[33px]'>
+                            Training & Guidelines
+                        </h2>
+                        <p className='txt mt-3'>
+                            Platform orientation <br />Ï
+                            Safety training <br />Ï
+                            Social security , growth & Levels systems
+                        </p>
+                    </div>
 
-            <div className="pb-10 lg:pb-14">
-                <h2 className="text-xl font-bold mt-4 mb-2">Step 2: Profile Setup</h2>
-                <ol className="list-decimal list-inside flex flex-col gap-2">
-                    <li><strong>Complete Your Profile</strong> by adding details and a short bio.</li>
-                    <li><strong>List Your Services</strong> under the appropriate categories and set your pricing.</li>
-                    <li><strong>Upload Work Portfolio</strong> (if applicable) to showcase your previous work.</li>
-                    <li><strong>Enable Availability & Working Hours</strong> to define when you are available for bookings.</li>
-                </ol>
-
+                </div>
             </div>
-            <div className="pb-10 lg:pb-14">
-                <h2 className="text-xl font-bold mt-4 mb-2">Step 3: Verification & Approval</h2>
-                <ol className="list-decimal list-inside flex flex-col gap-2">
-                    <li>HelpRush conducts a background check and verifies your documents.</li>
-                    <li>Our team may schedule an interview or a skill assessment (if required).</li>
-                    <li>Upon approval, your profile will be activated, and you will receive a confirmation notification.</li>
-                </ol>
+            <div className="bg-indigo-50 bg-opacity-65 py-5 lg:py-10">
+                <div className="grid items-center gap-10 max-w-4xl mx-auto lg:grid-cols-2 mb-5">
+                    <div>
+                        <img src="/img/appscreen11.png" className='max-w-[250px] w-full lg:mr-auto' alt="" />
+                    </div>
+                    <div className="col">
+                        <h3 className='text-8xl font-bold text-theme '>
+                            05
+                        </h3>
+                        <h2 className='text-2xl font-bold !leading-tight lg:text-[33px]'>
+                            Start Accepting Bookings
+                        </h2>
+                        <p className='txt mt-3'>
+                            Receive & Accept service bookings <br />
+                            Navigate to customer location on scheduled time <br />
+                            Chat & Call customers within the app <br />
+                            Fulfill orders
+                        </p>
+                    </div>
+
+                </div>
             </div>
+            <div className="py-5 lg:py-10">
+                <div className="grid items-center gap-10 max-w-4xl mx-auto lg:grid-cols-2 mb-5">
+                    <div className='lg:order-2'>
+                        <img src="/img/appscreen11.png" className='max-w-[250px] w-full lg:ml-auto' alt="" />
+                    </div>
+                    <div className="col">
+                        <h3 className='text-8xl font-bold text-theme '>
+                            06
+                        </h3>
+                        <h2 className='text-2xl font-bold !leading-tight lg:text-[33px]'>
+                            Payments & earnings
+                        </h2>
+                        <p className='txt mt-3'>
 
+                            Secure payments <br />
+                            track earnings in the app <br />
+                            withdraw payment
+                        </p>
+                    </div>
 
-            <div className="pb-10 lg:pb-14">
-                <h2 className="text-xl font-bold mt-4 mb-2">Step 4: Training & Guidelines</h2>
-                <ol className="list-decimal list-inside flex flex-col gap-2">
-                    <li><strong>Attend Orientation</strong> to understand the HelpRush platform, policies, and best practices.</li>
-                    <li><strong>Complete Mandatory Training</strong> on service quality, customer interaction, safety measures, and app usage.</li>
-                    <li><strong>Learn About Provider Levels</strong> and how you can progress for better earnings and benefits.</li>
-                </ol>
-
+                </div>
             </div>
-            <div className="pb-10 lg:pb-14">
-                <h2 className="text-xl font-bold mt-4 mb-2">Step 5: Start Accepting Bookings</h2>
-                <ol className="list-decimal list-inside flex flex-col gap-2">
-                    <li><strong>Receive Booking Requests</strong> from customers in your preferred service area.</li>
-                    <li><strong>Accept or Decline Requests</strong> based on your availability.</li>
-                    <li><strong>Communicate with Customers</strong> through in-app chat or call (without sharing personal numbers).</li>
-                    <li><strong>Provide High-Quality Service</strong> to ensure customer satisfaction and positive ratings.</li>
-                </ol>
+            <div className="bg-indigo-50 bg-opacity-65 py-5 lg:py-10">
+                <div className="grid items-center gap-10 max-w-4xl mx-auto lg:grid-cols-2 mb-5">
+                    <div>
+                        <img src="/img/appscreen11.png" className='max-w-[250px] w-full lg:mr-auto' alt="" />
+                    </div>
+                    <div className="col">
+                        <h3 className='text-8xl font-bold text-theme '>
+                            07
+                        </h3>
+                        <h2 className='text-2xl font-bold !leading-tight lg:text-[33px]'>
+                            Reviews & Growth
+                        </h2>
+                        <p className='txt mt-3'>
 
+                            Request customers ratings & reviews <br />
+                            Track performance & Progress <br />
+                            Check analytics & avail trainings
+                        </p>
+                    </div>
+
+                </div>
             </div>
-            <div className="pb-10 lg:pb-14">
-                <h2 className="text-xl font-bold mt-4 mb-2">Step 6: Payments & Earnings</h2>
-                <ol className="list-decimal list-inside flex flex-col gap-2">
-                    <li>Payments are processed securely via HelpRush’s platform.</li>
-                    <li>Earnings are transferred to your registered bank account as per the payout cycle.</li>
-                    <li><strong>Track Your Earnings</strong> via the HelpRush Provider App.</li>
-                </ol>
-
-            </div>
-            <div className="pb-10 lg:pb-14">
-                <h2 className="text-xl font-bold mt-4 mb-2">Step 7: Reviews & Growth</h2>
-                <ol className="list-decimal list-inside flex flex-col gap-2">
-                    <li><strong>Encourage customers to rate and review your services.</strong></li>
-                    <li>Higher ratings improve your visibility and booking chances.</li>
-                    <li><strong>Maintain professional conduct</strong> to move up the Provider Levels, unlocking better incentives and exclusive benefits.</li>
-                </ol>
-
-            </div>
-            <div className="pb-10 lg:pb-14">
-                <h2 className="text-xl font-bold mt-4 mb-2">Support & Assistance</h2>
-                <p>If you need any help, reach out to:</p>
-                <ul className="list-disc list-inside ml-6 flex flex-col gap-2">
-                    <li><strong>HelpRush Support Team</strong> via the app</li>
-                    <li><strong>Email:</strong> support@helprush.in</li>
-                    <li><strong>Helpline:</strong> +91-8899200543</li>
-                </ul>
-
-                <p className='mt-4'>Welcome to HelpRush! We look forward to your success on our platform.</p>
-
-            </div></div>
+        </main>
     )
 }
 

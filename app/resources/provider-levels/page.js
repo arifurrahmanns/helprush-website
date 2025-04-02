@@ -1,4 +1,5 @@
 import Timeline from '@/components/ui/timeline';
+import { Icon } from '@iconify/react';
 import React from 'react'
 
 export const generateMetadata = async () => {
@@ -9,166 +10,81 @@ export const generateMetadata = async () => {
 }
 function page() {
     return (
-        <div className="container py-10 lg:py-20">
+        <main>
+            <div className="container py-8 lg:py-10">
 
-            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
+                <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10">
+                    <div className='lg:order-2'>
+                        <img className='max-w-md w-full ml-auto' src="/img/tempImageSxW9Hk.png" alt="" />
+                    </div>
+                    <div>
+                        <h1 className="text-3xl lg:text-5xl !leading-tight lg:mb-6 font-bold mb-4">
+                            GROW . EARN . LEVEL UP.
+                        </h1>
+                        <p className='txt lg:!text-lg'>
+                            The more you deliver, the more you unlock. Climb the HelpRush Provider Levels and enjoy better earnings, visibility & benefits  </p>
+                    </div>
 
-                <div>
-                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
-                        HelpRush Provider Levels System
-                    </h1>
-                    <p className='text'>
-                        At HelpRush, we believe in recognizing and rewarding excellence. Our Provider Levels system is designed to help professionals grow, build trust, and access greater opportunities on the platform. The levels signify a provider's experience, reliability, and commitment to quality service.
+                </div>
+
+
+            </div>
+            <div className=" bg-indigo-50 bg-opacity-60 py-10 lg:py-20">
+
+                <div className="container">
+                    <p className='lg:text-xl text-center max-w-2xl mx-auto text-lg lg:mb-20 mb-10'>
+                        Providers progress through levels based on performance, ratings, and experience. Higher levels mean better visibility, lower fees, and premium benefits.
                     </p>
+                    <div className="max-w-md mx-auto">
+                        <Timeline
+
+                            items={[
+                                {
+                                    icon: <Icon icon="pajamas:warning" />,
+                                    bg: '#FF5E58',
+                                    title: "Level 1",
+                                    text: "white",
+                                    content: <p>
+                                        Starter (Basic verification + 1 booking) → Standard visibility  </p>
+                                },
+                                {
+                                    icon: <Icon icon="mingcute:check-fill" />,
+                                    bg: '#FFCC00',
+                                    title: "Level 2",
+                                    content: <p>
+                                        Verified Professional (10 bookings + 4.0+ rating) → Better ranking & access to premium jobs </p>
+                                },
+                                {
+                                    icon: <Icon icon="simple-line-icons:badge" />,
+                                    bg: '#009951',
+                                    text: "white",
+                                    title: "Level 3",
+                                    content: <p>
+                                        Trusted Expert (50 bookings + skill verification) → Lower fees & business growth tools </p>
+                                },
+                                {
+                                    icon: <Icon icon="material-symbols:star-outline" />,
+                                    bg: '#008080',
+                                    text: "white",
+                                    title: "Level 4",
+                                    content: <p>
+                                        Elite Provider (200+ bookings + AI trust score) → Highest ranking, premium jobs & branding perks
+                                    </p>
+                                },
+
+                            ]} />
+                    </div>
+                    <div className="text-center flex flex-col gap-4 lg:flex-row mt-5 lg:mt-14 lg:gap-8 items-center justify-center">
+                        <p>
+                            Still curious about Levels?
+                        </p>
+                        <a href="" className='btn inline-block '> Contact HelpRush Support </a>
+                    </div>
                 </div>
-                <div>
-                    <img src="/img/rank.jpg" alt="" />
-                </div>
             </div>
-
-
-            <div className="py-10 lg:py-20">
-                <h2 className="text-2xl font-semibold mt-6 mb-3">Levels Overview</h2>
-                <p className="mb-4">
-                    Providers progress through levels based on performance, customer feedback, and adherence to platform guidelines. Each level unlocks new benefits and greater visibility.
-                </p>
-            </div>
-
-            <Timeline items={[
-                {
-                    title: "Level 1 - Starter",
-                    content: <div>
-                        <p className="ml-6"><b>Entry Criteria:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Basic profile verification completed (KYC, ID verification, phone number, email, and bank details).</li>
-                            <li>Signed up and onboarded via the HelpRush Provider App.</li>
-                            <li>Minimum 1 completed service booking.</li>
-                        </ul>
-                        <p className="ml-6"><b>Benefits:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Access to job requests.</li>
-                            <li>Standard visibility in search results.</li>
-                            <li>Access to customer ratings and reviews.</li>
-                        </ul>
-                        <p className="ml-6"><b>Restrictions:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Limited to basic service categories.</li>
-                            <li>No premium or high-value bookings.</li>
-                        </ul>
-                    </div>
-                },
-
-                {
-                    title: "Level 2 - Verified Professional",
-                    content: <div>
-                        <p className="ml-6"><b>Entry Criteria:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Minimum 10 completed service bookings with an average rating of 4.0+.</li>
-                            <li>Completion of additional profile information (work samples, certifications, etc.).</li>
-                            <li>No active policy violations or disputes.</li>
-                        </ul>
-                        <p className="ml-6"><b>Benefits:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Higher ranking in search results.</li>
-                            <li>Ability to bid on premium service requests.</li>
-                            <li>Access to exclusive training resources.</li>
-                        </ul>
-                        <p className="ml-6"><b>Restrictions:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Can only accept a limited number of high-value bookings.</li>
-                        </ul>
-                    </div>
-                },
-                {
-                    title: "3. Receive & Manage Bookings",
-                    content: <div>
-                        <p className="ml-6"><b>Entry Criteria:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Minimum 50 completed bookings with an average rating of 4.5+.</li>
-                            <li>Completion of HelpRush’s skill verification process (AI & DigiLocker-based verification).</li>
-                            <li>Mandatory enrollment in accident and life insurance.</li>
-                            <li>No major complaints or policy violations in the last 6 months.</li>
-                        </ul>
-                        <p className="ml-6"><b>Benefits:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Priority placement in search results.</li>
-                            <li>Reduced platform fees.</li>
-                            <li>Exclusive access to business growth tools and analytics.</li>
-                            <li>Invitation to participate in promotional campaigns.</li>
-                        </ul>
-                        <p className="ml-6"><b>Restrictions:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Required to maintain consistent response times and high completion rates.</li>
-                        </ul>
-                    </div>
-                },
-                {
-                    title: "Level 4 - Elite Provider",
-                    content: <div>
-
-                        <p className="ml-6"><b>Entry Criteria:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Minimum 200 completed bookings with an average rating of 4.8+.</li>
-                            <li>AI-driven trust score in the top 10%.</li>
-                            <li>Fully compliant with all training, insurance, and policy requirements.</li>
-                            <li>No customer disputes or cancellations in the last 6 months.</li>
-                        </ul>
-                        <p className="ml-6"><b>Benefits:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Highest ranking in search results.</li>
-                            <li>Significantly reduced platform fees.</li>
-                            <li>Early access to new features and premium service requests.</li>
-                            <li>Personalized branding opportunities within the HelpRush app.</li>
-                            <li>Dedicated account support.</li>
-                        </ul>
-                        <p className="ml-6"><b>Restrictions:</b></p>
-                        <ul className="list-inside list-disc ml-6">
-                            <li>Must maintain top-tier service quality.</li>
-                        </ul>
-                    </div>
-                },
-
-            ]} />
-
-
-
-
-
-
-            <div className="pt-10 lg:pt-20">
-                <h2 className="text-2xl font-semibold mt-6 mb-3">Demotions and Level Maintenance</h2>
-                <p className="ml-6">
-                    Providers must consistently meet level criteria to maintain their status. Failure to do so may result in:
-                </p>
-                <ul className="list-inside list-disc ml-6">
-                    <li>Temporary demotion to a lower level.</li>
-                    <li>Loss of associated benefits until performance improves.</li>
-                    <li>Re-evaluation based on customer feedback and service history.</li>
-                </ul>
-
-                <h2 className="text-2xl font-semibold mt-6 mb-3">RushHour & Emergency Bookings</h2>
-                <p className="ml-6">
-                    Higher-level providers receive first preference for urgent service requests through HelpRush’s real-time "RushHour" system.
-                </p>
-
-                <h2 className="text-2xl font-semibold mt-6 mb-3">AI-Powered Smart Matching</h2>
-                <p className="ml-6">
-                    HelpRush utilizes an AI-driven algorithm that considers provider levels, ratings, skill verification, and response times to match providers with the best-suited customers.
-                </p>
-
-                <h2 className="text-2xl font-semibold mt-6 mb-3">Conclusion</h2>
-                <p className="ml-6">
-                    The HelpRush Provider Levels system is designed to create a fair, transparent, and rewarding environment for skilled professionals. By consistently delivering excellent service, providers can unlock better opportunities and maximize their earnings.
-                </p>
-                <p className="ml-6 mt-4">
-                    Ready to level up? Keep delivering top-notch service and enjoy the benefits of growing with HelpRush!
-                </p>
-                <p className="mt-6">
-                    For any questions or assistance, reach out to our support team.
-                </p>
-            </div>
-        </div>
+        </main>
     )
 }
+
 
 export default page

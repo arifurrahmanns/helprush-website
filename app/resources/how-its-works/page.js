@@ -1,4 +1,6 @@
 import Timeline from '@/components/ui/timeline';
+import { Icon } from '@iconify/react';
+import Link from 'next/link';
 import React from 'react'
 
 export const generateMetadata = async () => {
@@ -9,90 +11,102 @@ export const generateMetadata = async () => {
 }
 function page() {
     return (
-        <div className="container py-10 lg:py-20">
+        <main>
+            <div className="container py-10 lg:py-20">
+                <h2 className='text-2xl font-bold !leading-tight lg:text-4xl'>
+                    How HelpRush Works - Simple, Fast & Hassle-Free!
+                </h2>
+                <p className='txt mt-3 max-w-3xl'>
+                    Book trusted experts in minutes. No calls, no stress—just seamless service at your doorstep.
+                </p>
+                <div className='mt-5 max-w-3xl lg:mt-8'>
+                    <ul className='flex flex-col gap-2'>
+                        <li>
+                            <p>
+                                At HelpRush, we make finding and booking expert service providers effortless. Whether you need a quick fix, deep cleaning, or skilled professionals, our platform connects you with verified experts in real time.
+                            </p>
+                        </li>
+                        <li className='lg:flex gap-2'>
 
-            <div className="grid items-center lg:grid-cols-2 gap-5 lg:gap-10 pb-10 lg:pb-20">
+                            <Icon icon='fluent:checkbox-checked-16-filled' className='text-theme text-2xl ' />
+                            <p>
+                                <strong>
+                                    Browse & Compare </strong> - Discover providers, check ratings, and compare prices.
+                            </p>
+                        </li>
+                        <li className='lg:flex gap-2'>
+                            <Icon icon='fluent:checkbox-checked-16-filled' className='text-theme text-2xl ' />
+                            <p>
+                                <strong>Book Instantly - </strong> Select your preferred expert and schedule at your convenience.
+                            </p>
+                        </li>
+                        <li className='lg:flex gap-2'>
+                            <Icon icon='fluent:checkbox-checked-16-filled' className='text-theme text-2xl lg:w-10' />
+                            <p>
+                                <strong>Get the Job Done - </strong> Your service provider arrives on time, ready to help.
+                                No middlemen, no unnecessary delays—just smart, on-demand services when you need them.
+                            </p>
+                        </li>
 
-                <div>
-                    <h1 className="text-3xl lg:text-5xl lg:mb-6 font-bold mb-4">
-                        How HelpRush Works
-                    </h1>
-
-
-                </div>
-                <div>
-                    <img src="/img/15185.jpg" alt="" />
+                    </ul>
+                    <Link href="/signup" className="btn inline-block mt-5 lg:mt-8">Signup Now</Link>
                 </div>
             </div>
-            <section className="pb-10 lg:pb-20">
-                <h2 className="text-2xl font-semibold mb-5">For Customers</h2>
-                <Timeline
-                    items={[
-                        {
-                            title: "1. Find the Right Expert",
-                            content: "Browse through a wide range of services—from home repairs to professional consultations. Use filters to find the best-rated providers near you."
-                        },
 
-                        {
-                            title: "2. Instant Booking or Scheduled Service",
-                            content: "Need help right away? Use RushHour to book an available expert in real time. Prefer a later time? Schedule your service at your convenience."
-                        },
-                        {
-                            title: "3. Transparent Pricing & Comparisons",
-                            content: "Compare multiple providers based on price, experience, and reviews. No hidden fees—what you see is what you pay!"
-                        },
-                        {
-                            title: "4. Secure & Hassle-Free Payments",
-                            content: "Pay securely through the HelpRush platform using your preferred payment method. We ensure seamless transactions and invoice generation for every service."
-                        },
-                        {
-                            title: "5. Service Completion & Review",
-                            content: "Once the service is completed, provide feedback to help maintain quality standards. Ratings help others make informed choices!"
-                        }
-                    ]}
-
-                />
-            </section>
-
-            <section className="pb-10 lg:pb-20">
-                <h2 className="text-2xl font-semibold mb-4">For Service Providers</h2>
-
-                <Timeline items={[
-                    {
-                        title: "1. Sign Up & Get Verified",
-                        content: "Join HelpRush by creating a provider profile. Complete KYC, skill verification, and digital onboarding to start receiving bookings."
-                    },
-
-                    {
-                        title: "2. Offer Services & Set Your Pricing",
-                        content: "List the services you offer and set competitive pricing. Your profile will be visible to thousands of potential customers."
-                    },
-                    {
-                        title: "3. Receive & Manage Bookings",
-                        content: "Accept requests in real-time or schedule services at your convenience. Customers can reach out via in-app chat for coordination."
-                    },
-                    {
-                        title: "4. Earn & Build Your Reputation",
-                        content: "Deliver high-quality service, earn positive reviews, and move up HelpRush’s Provider Levels for better visibility and rewards."
-                    },
-                    {
-                        title: "5. Secure Payments & Growth Opportunities",
-                        content: "Receive payments directly through the platform. Access benefits like insurance, training, and exclusive business tools to grow your service."
-
-                    }
-                ]} />
-               
-            </section>
-
-            <section className="">
-                <h2 className="text-2xl font-semibold mb-4">Why Choose HelpRush?</h2>
-                <p>Trusted Experts for Any Job, Anywhere – Verified professionals with digital KYC and customer reviews.</p>
-                <p>Real-Time Service Matching – Book instantly with RushHour or schedule services as per your need.</p>
-                <p>Fair & Transparent Marketplace – No hidden fees, clear pricing, and an open platform for providers to build their brand.</p>
-                <p>Secure Payments & Support – Easy transactions with customer protection policies and 24/7 support.</p>
-                <p className="mt-4 font-bold">Ready to get started? 📲 Download the HelpRush App & Book a Service Today!</p>
-            </section>
-        </div>
+            <div className=" bg-indigo-50 bg-opacity-60 py-10 lg:py-20">
+                <div className="container">
+                    <h4 class="text-2xl font-bold">A Quick Guide to HelpRush</h4>
+                    <p className='mb-10'>
+                        Here's how HelpRush seamlessly connects customers with expert service providers in real time, step by step:
+                    </p>
+                    <div className="grid lg:grid-cols-4 gap-5 lg:gap-10">
+                        <div className="col">
+                            <h3 className='text-8xl font-bold text-theme '>
+                                01
+                            </h3>
+                            <h2 className='text-2xl font-bold !leading-tight lg:text-[33px]'>
+                                Choose <br className='hidden lg:block' /> a Service
+                            </h2>
+                            <p className='txt mt-3 !text-sm'>
+                                Browse through a wide range of services—from home repairs to professional consultations. Use filters to find the best-rated providers near you.
+                            </p>
+                        </div>
+                        <div className="col">
+                            <h3 className='text-8xl font-bold text-theme '>
+                                02
+                            </h3>
+                            <h2 className='text-2xl font-bold !leading-tight lg:text-3xl'>
+                                Scheduled   <br className='hidden lg:block' />Service
+                            </h2>
+                            <p className='txt mt-3 !text-sm'>
+                                Book an available expert/Service in real time.
+                                Prefer a later time? Schedule your service at your convenience.</p>
+                        </div>
+                        <div className="col">
+                            <h3 className='text-8xl font-bold text-theme '>
+                                03
+                            </h3>
+                            <h2 className='text-2xl font-bold !leading-tight lg:text-3xl'>
+                                Secure & Hassle-Free Payments
+                            </h2>
+                            <p className='txt mt-3 !text-sm'>
+                                Pay securely through the HelpRush platform using your preferred payment method. We ensure seamless transactions and invoice generation for every service. </p>
+                        </div>
+                        <div className="col">
+                            <h3 className='text-8xl font-bold text-theme '>
+                                04
+                            </h3>
+                            <h2 className='text-2xl font-bold !leading-tight lg:text-3xl'>
+                                Service completion & Review
+                            </h2>
+                            <p className='txt mt-3 !text-sm'>
+                                Once the service is completed, provide feedback to help maintain quality standards. Ratings help others make informed choices!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     )
 }
 
