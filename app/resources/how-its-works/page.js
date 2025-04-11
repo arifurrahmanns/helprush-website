@@ -14,7 +14,7 @@ function page() {
         <main>
             <div className="container py-10 lg:py-20">
                 <h2 className='text-2xl font-bold !leading-tight lg:text-4xl'>
-                    How HelpRush Works - Simple, Fast & Hassle-Free!
+                    How HelpRush Works - Simple, Fast & Hassle-Free
                 </h2>
                 <p className='txt mt-3 max-w-3xl'>
                     Book trusted experts in minutes. No calls, no stress—just seamless service at your doorstep.
