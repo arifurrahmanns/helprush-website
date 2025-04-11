@@ -86,38 +86,35 @@ function page() {
     return (
         <main>
             <div className="container py-10 lg:py-20">
-                <h2 className='text-2xl font-bold !leading-tight lg:text-4xl'>
-                    Powering Businesses with <br /> On-Demand Services
-                </h2>
-                <p className='txt mt-3 max-w-3xl'>
-                    Whether you're a small business or a large enterprise, HelpRush simplifies your service needs with vetted professionals, instant bookings, and seamless management.
-                </p>
-                <div className='mt-5 lg:mt-8'>
-                    <ul className='flex flex-col gap-2'>
-                        <li className='lg:flex gap-2'>
-                            <Icon icon='fluent:checkbox-checked-16-filled' className='text-theme text-2xl' />
-                            <strong>
-                                Instant & Scheduled Bookings
-                            </strong> - Get services when you need them, from quick fixes to long-term contracts.
-                        </li>
-                        <li className='lg:flex gap-2'>
-                            <Icon icon='fluent:checkbox-checked-16-filled' className='text-theme text-2xl' />
-                            <strong>Vetted & Verified Providers</strong> - Background-checked professionals for your peace of mind
-                        </li>
-                        <li className='lg:flex gap-2'>
-                            <Icon icon='fluent:checkbox-checked-16-filled' className='text-theme text-2xl' />
-                            <strong>Transparent Pricin</strong> - No hidden costs; pay only for what you need.
-                        </li>
-                        <li className='lg:flex gap-2'>
-                            <Icon icon='fluent:checkbox-checked-16-filled' className='text-theme text-2xl' />
-                            <strong>Easy Team Management</strong> - Assign services, track expenses, and manage invoices effortlessly
-                        </li>
-                        <li className='lg:flex gap-2'>
-                            <Icon icon='fluent:checkbox-checked-16-filled' className='text-theme text-2xl' />
-                            <strong> Dedicated Business Support</strong> - Priority customer service for all your queries.
-                        </li>
-                    </ul>
-                    <Link href="/signup" className="btn inline-block mt-5 lg:mt-8">Signup Now</Link>
+                <div className="grid items-center lg:grid-cols-5 gap-10">
+                    <div className='lg:col-span-3'>
+                        <h2 className='text-2xl font-bold !leading-tight lg:text-4xl'>
+                            Grow Your Business with HelpRush
+                        </h2>
+                        <p className='txt mt-3 max-w-3xl'>
+                            Whether you're a small business or a large enterprise, HelpRush simplifies your service needs with vetted professionals, instant bookings, and seamless management.
+                        </p>
+                        <div className='mt-5 lg:mt-8'>
+                            <ul className='flex flex-col gap-3 font-medium'>
+                                <li className='lg:flex gap-2'>
+                                    <Icon icon='teenyicons:trend-up-outline' className='text-theme text-2xl' />
+
+                                    Reach thousands of new customers
+                                </li>
+                                <li className='lg:flex gap-2'>
+                                    <Icon icon='guidance:tools' className='text-theme text-2xl' />
+                                    Manage teams & boost productivity
+                                </li>
+                                <li className='lg:flex gap-2'>
+                                    <Icon icon='carbon:show-data-cards' className='text-theme text-2xl' />
+                                    Data-driven insights for growth
+                                </li>
+
+                            </ul>
+                            <Link href="/signup" className="btn inline-block mt-5 lg:mt-8">Signup Now</Link>
+                        </div>
+                    </div>
+                    <img className='w-full lg:col-span-2' src="/img/Data analysis-rafiki.svg" alt="" />
                 </div>
             </div>
             <div className="container pb-10 lg:pb-20">
@@ -286,8 +283,8 @@ function page() {
                                 ))
                             }
                         </CarouselContent>
-                        <CarouselPrevious className="hidden lg:flex"/>
-                        <CarouselNext className="hidden lg:flex"/>
+                        <CarouselPrevious className="hidden lg:flex" />
+                        <CarouselNext className="hidden lg:flex" />
                     </Carousel>
 
                 </div>
@@ -305,8 +302,8 @@ function page() {
                                 Sign up and start managing services in minutes!
                             </p>
                             <div className="flex mt-5 items-start lg:mt-8 flex-col gap-5 lg:flex-row">
-                                <Link href={"/signup"} className="btn">Sign Up for Free</Link>
-                                <Link href={""} className="btn !bg-theme2 !text-black">Sign Up for Free</Link>
+                                <Link href={"/signup"} className="btn !bg-theme2 !text-black">Get Started for Free</Link>
+                                <Link href={""} className="btn !border !border-primary !px-10 !border-solid !bg-white !text-theme">Sign In</Link>
 
                             </div>
                         </div>
@@ -314,6 +311,29 @@ function page() {
                     </div>
                 </div>
             </div>
+            <section id="appSection" className="py-10  lg:py-20 bg-neutral-50">
+        <div className="container">
+          <h3>
+            It’s easier in the apps
+          </h3>
+          <div className="grid gap-5 lg:grid-cols-2">
+            <div className="flex p-2 rounded-lg   items-center mt-10  serviceCrd flex-col lg:flex-row gap-5">
+              <img src="/img/qr1.png" className="w-36" alt="" />
+              <div>
+                <h5 className="font-semibold text-center lg:text-left text-xl  lg:text-2xl">Download HelpRush app </h5>
+                <a href="#" className="text-theme justify-center lg:justify-start text-lg flex items-center mt-1 lg:mt-2 gap-2">Scan to download <Icon className="text-xl" icon="humbleicons:arrow-right" /></a>
+              </div>
+            </div>
+            <div className="flex  p-2 rounded-lg items-center serviceCrd mt-10  flex-col lg:flex-row gap-5">
+              <img src="/img/qr2.png" className="w-36" alt="" />
+              <div>
+                <h5 className="font-semibold text-center lg:text-left text-xl  lg:text-2xl">Download Provider app  </h5>
+                <a href="#" className="text-theme justify-center lg:justify-start text-lg flex items-center mt-1 lg:mt-2 gap-2">Scan to download <Icon className="text-xl" icon="humbleicons:arrow-right" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
         </main>
     )
 }

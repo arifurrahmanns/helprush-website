@@ -1,9 +1,12 @@
 'use client';
 import Categories from "@/components/home/Categories";
+import { TrustBadge } from "@/components/home/Trustbadge";
+import { BorderBeam } from "@/components/magicui/border-beam";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react";
 import { GoogleMap, LoadScript, Marker, useJsApiLoader } from '@react-google-maps/api';
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
@@ -66,18 +69,29 @@ export default function Home() {
   return (
     <>
 
-      <section id="hero" className="relative  py-10 lg:py-20 overflow-hidden">
+      <section id="hero" className="relative  py-10 lg:py-24 overflow-hidden">
         <div className="container relative z-10">
           <div className="grid items-center lg:grid-cols-5 gap-10 lg:gap-20">
             <div className="lg:col-span-3">
-              <h2 className="text-4xl lg:text-6xl text-neutral-700 font-bold">
+              <h2 className="text-4xl lg:text-6xl text-black font-extrabold">
                 Get Help Anytime, Anywhere with
                 <span className="relative text-theme z-10">  HelpRush </span>
 
               </h2>
+              <p className="mt-2 !text-black">
+                Instant help from trusted professionals near you.
+              </p>
+              <div className="flex gap-4 mt-5">
+                <Link className="btn !bg-theme2 shadow hover:scale-105 transition-all duration-200 ease-in-out  !text-primary" href="/signup/provider">
+                  Find Help Now
+                </Link>
+                <Link className="btn !bg-theme  shadow hover:scale-105 transition-all duration-200 ease-in-out" href="/signup/customer">
+                  Become a Helper
+                </Link>
+              </div>
               <form action="#" className="searchForm mt-8 max-w-md flex gap-2">
-                <input type="text" placeholder="Search for Services or Providers" className="flex-1" />
-                <button className="bg-primary w-12 h-12 !p-0 flex justify-center items-center btn rounded-full">
+                <input type="text" placeholder="What help do you need?" className="flex-1 shadow-lg" />
+                <button className="bg-primary transition-all duration-200 ease-in-out  hover:scale-105 w-12 h-12  shadow-lg !p-0 flex justify-center items-center btn rounded-full">
                   <Icon icon="meteor-icons:search" width="24" height="24" />
                 </button>
               </form>
@@ -86,7 +100,10 @@ export default function Home() {
               <MapComponent />
             </div>
           </div>
+
+
         </div>
+
         <AnimatedGridPattern
           numSquares={300}
           maxOpacity={0.1}
@@ -99,7 +116,14 @@ export default function Home() {
         />
       </section>
 
-      <section id="categories" className="py-10 lg:py-20">
+      <section id="categories" className="py-10 lg:py-20 relative">
+        <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 z-20">
+          <div className="relative w-full border rounded-xl bg-white p-2 text-xl px-5 font-medium text-theme overflow-hidden">
+            <BorderBeam reverse={false} />
+            🎉 5,000+ Problems Solved
+          </div>
+
+        </div>
         <div className="container">
           <h2 className="secttl">
             Search by Category

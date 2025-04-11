@@ -101,7 +101,8 @@ body {
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
+
     &:disabled {
       background: lighten($primary, 25%);
       color: lighten(#fff, 25%);
@@ -109,7 +110,9 @@ body {
     }
     &:hover {
       background: darken($primary, 5%);
+      scale: 1.05;
     }
+
   }
   #hero {
     background: #fcfcfc;
@@ -135,7 +138,9 @@ body {
       color: #666;
     }
     .searchForm {
+     
       input {
+        // box-shadow: -2px 4px 12px 0px rgb(0 0 0 / 26%);
         outline: none;
         border: 2px solid $primary;
         padding: 8px 15px;
@@ -144,6 +149,9 @@ body {
         background: #fff;
         display: block;
       }
+      // button{
+      //   box-shadow: -2px 4px 12px 0px rgb(0 0 0 / 26%);
+      // }
     }
     .heroMap {
       width: 100%;
